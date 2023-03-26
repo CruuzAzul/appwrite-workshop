@@ -1,0 +1,8 @@
+# ALL
+/**/.idea/
+/**/.DS_Store
+/**/._.DS_Store
+**/node_modules/
+
+docs/.vitepress/dist
+docs/.vitepress/cache
