@@ -2,10 +2,11 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Appwrite Workshop 🚀",
+  title: "Appwrite Workshop",
   description: "This is a workshop to learn basics of Appwrite 🚀",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: './assets/appwrite.svg',
     nav: [
       { text: 'Home 🏠', link: '/' },
       { text: 'Workshop 💼', link: '/workshop/markdown-examples' }

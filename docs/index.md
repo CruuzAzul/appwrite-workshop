@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "Appwrite Workshop 🔥"
+  name: "Appwrite Workshop ✍🏼"
   text: "This is a workshop to learn basics of Appwrite 🚀"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Start workshop 💼
       link: /workshop/markdown-examples
     - theme: alt
-      text: API Examples
-      link: /workshop/api-examples
+      text: Appwrite Documentation 📚
+      link: https://appwrite.io/docs
 
 features:
   - title: Feature A
