@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Appwrite Workshop",
-  description: "This is a workshop to learn basics of Appwrite 🚀",
+  title: "Workshop Appwrite",
+  description: "Il s'agit d'un atelier pour apprendre les bases d'Appwrite 🚀",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: './assets/appwrite.svg',
@@ -19,7 +19,7 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/workshop/markdown-examples' },
           { text: 'Runtime API Examples', link: '/workshop/api-examples' },
-          { text: 'Creators 👨🏼‍💻', link: '/creators.md' }
+          { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' }
         ]
       }
     ],
