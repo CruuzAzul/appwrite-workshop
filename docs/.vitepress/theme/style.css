@@ -116,9 +116,9 @@
 }
 
 .name {
-  max-width: max-content !important;
+  max-width: unset !important;
 }
 
 .text {
-  max-width: 70% !important;
+  max-width: unset !important;
 }

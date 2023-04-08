@@ -9,7 +9,8 @@ export default defineConfig({
     logo: './assets/appwrite.svg',
     nav: [
       { text: 'Home 🏠', link: '/' },
-      { text: 'Workshop 💼', link: '/workshop/markdown-examples' }
+      { text: 'Workshop 💼', link: '/workshop/markdown-examples' },
+      { text: 'Creators 👨🏼‍💻', link: '/creators.md' }
     ],
 
     sidebar: [
@@ -17,7 +18,8 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/workshop/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/workshop/api-examples' }
+          { text: 'Runtime API Examples', link: '/workshop/api-examples' },
+          { text: 'Creators 👨🏼‍💻', link: '/creators.md' }
         ]
       }
     ],
