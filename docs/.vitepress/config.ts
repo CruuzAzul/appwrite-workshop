@@ -3,10 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Workshop Appwrite",
+  lastUpdated: true,
+  lang: 'fr-FR',
   description: "Il s'agit d'un atelier pour apprendre les bases d'Appwrite 🚀",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: './assets/appwrite.svg',
+    lastUpdatedText: 'Dernière mise à jour ',
     nav: [
       { text: 'Accueil 🏠', link: '/' },
       { text: 'Workshop 💼', link: '/workshop/markdown-examples' },
@@ -19,7 +22,12 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/workshop/markdown-examples' },
           { text: 'Runtime API Examples', link: '/workshop/api-examples' },
-          { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' }
+          {
+            text: 'Informations ℹ️',
+            items: [
+              { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' }
+            ]
+          },
         ]
       }
     ],

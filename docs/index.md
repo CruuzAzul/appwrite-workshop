@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Voyage au coeur d'Appwrite :"
   text: "Le backend open-source qui challenge Firebase 🧳"
-  tagline: Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous cette expérience 🛫
+  tagline: Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
   actions:
     - theme: brand
       text: Commencer le workshop 💼
