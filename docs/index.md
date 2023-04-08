@@ -3,23 +3,33 @@
 layout: home
 
 hero:
-  name: "Appwrite Workshop ✍🏼"
-  text: "This is a workshop to learn basics of Appwrite 🚀"
-  tagline: My great project tagline
+  name: "Voyage au coeur d'Appwrite :"
+  text: "Le backend open-source qui challenge Firebase 🧳"
+  tagline: Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous cette expérience 🛫
   actions:
     - theme: brand
-      text: Start workshop 💼
+      text: Commencer le workshop 💼
       link: /workshop/markdown-examples
     - theme: alt
-      text: Appwrite Documentation 📚
+      text: Documentation Appwrite 📚
       link: https://appwrite.io/docs
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon:
+      src: assets/firebase.svg
+    title: Alternative à Firebase
+    details: Alternative à Firebase pour le développement du backend de votre applications web et mobiles.
+  - icon:
+      src: assets/open-source.svg
+    title: Open Source
+    details: Profitez d'une grande communauté de développeurs, d'une amélioration continue et d'une documentation complète.
+  - icon:
+      src: assets/hosting.svg
+    title: Auto hébergé
+    details: Autre que l'hébergement cloud ou celui en one-click, Appwrite peut être installé sur votre propre serveur.
+  - icon:
+      src: assets/dev.svg
+    title: Pour les développeurs
+    details: Conçu par des développeur et pour des développeur ! Facile à utiliser et à intégrer dans vos applications.
 ---
 

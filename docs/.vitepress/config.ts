@@ -8,9 +8,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: './assets/appwrite.svg',
     nav: [
-      { text: 'Home 🏠', link: '/' },
+      { text: 'Accueil 🏠', link: '/' },
       { text: 'Workshop 💼', link: '/workshop/markdown-examples' },
-      { text: 'Creators 👨🏼‍💻', link: '/creators.md' }
+      { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' }
     ],
 
     sidebar: [
@@ -26,6 +26,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/CruuzAzul/appwrite-workshop' }
-    ]
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present Mickael Alves'
+    }
   }
 })

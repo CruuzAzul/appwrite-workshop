@@ -122,3 +122,7 @@
 .text {
   max-width: unset !important;
 }
+
+.tagline {
+  max-width: unset !important;
+}
