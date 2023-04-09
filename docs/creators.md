@@ -36,7 +36,7 @@ const members = [
       Créateurs
     </template>
     <template #lead>
-      Le développement de ce workshop a été créé par deux Appwrite Heroes 🦸🏼‍♂️
+      Le développement de ce workshop a été réalisé par deux Appwrite Heroes 🦸🏼‍♂️
     </template>
   </VPTeamPageTitle>
   <img src="https://pbs.twimg.com/media/FrXROJMWwBsAALU?format=jpg&name=4096x4096" alt="Appwrite Banner" class="VPTeamPageBanner" />

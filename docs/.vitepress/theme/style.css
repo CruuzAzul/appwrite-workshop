@@ -8,14 +8,17 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #f02e65;
-  --vp-c-brand-light: #da486e;
-  --vp-c-brand-lighter: #d74a71;
-  --vp-c-brand-lightest: #d06483;
-  --vp-c-brand-dark: #535bf2;
-  --vp-c-brand-darker: #454ce1;
-  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-}
+   --vp-c-brand: #f02e65;
+   --vp-c-brand-light: #da486e;
+   --vp-c-brand-lighter: #d74a71;
+   --vp-c-brand-lightest: #d06483;
+   --vp-c-brand-dark: #535bf2;
+   --vp-c-brand-darker: #454ce1;
+   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+   --vp-c-green: #10b981;
+   --vp-c-green-light: #34d399;
+   --vp-c-green-dark: #059669;
+ }
 
 /**
  * Component: Button
@@ -65,15 +68,13 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+  --vp-custom-block-tip-border: var(--vp-c-green);
+  --vp-custom-block-tip-text: var(--vp-c-green-dark);
 }
 
 .dark {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+  --vp-custom-block-tip-border: var(--vp-c-green);
+  --vp-custom-block-tip-text: var(--vp-c-green-light);
 }
 
 /**
