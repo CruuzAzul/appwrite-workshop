@@ -80,6 +80,20 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+<Solution>
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+</Solution>
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

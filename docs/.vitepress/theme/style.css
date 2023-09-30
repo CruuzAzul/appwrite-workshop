@@ -21,6 +21,17 @@
 }
 
 /**
+ * Containers Background Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-danger-bg-opacity: rgba(208, 100, 131, 0.25);
+  --vp-c-tip-bg-opacity: rgba(69, 76, 225, 0.1);
+  --vp-c-warning-bg-opacity: rgba(180,83,9, 0.1);
+  --vp-c-solution-bg-opacity: rgba(110, 231, 183, 0.25);
+}
+
+/**
  * Component: Button
  * -------------------------------------------------------------------------- */
 
@@ -33,7 +44,6 @@
   --vp-button-brand-hover-bg: var(--vp-c-brand-light);
   --vp-button-brand-active-border: var(--vp-c-brand-light);
   --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
 }
 
 /**
@@ -64,13 +74,25 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-custom-block-tip-border: var(--vp-c-green);
-  --vp-custom-block-tip-text: var(--vp-c-green-dark);
+  --vp-custom-block-solution-border: var(--vp-c-green);
+  --vp-custom-block-solution-text: var(--vp-c-green-dark);
+  --vp-custom-block-solution-bg: var(--vp-c-solution-bg-opacity);
+  --vp-custom-block-tip-border: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-tip-bg-opacity);
+  --vp-custom-block-warning-bg: var(--vp-c-warning-bg-opacity);
+  --vp-custom-block-danger-bg: var(--vp-c-danger-bg-opacity);
 }
 
 .dark {
-  --vp-custom-block-tip-border: var(--vp-c-green);
-  --vp-custom-block-tip-text: var(--vp-c-green-light);
+  --vp-custom-block-solution-border: var(--vp-c-green);
+  --vp-custom-block-solution-text: var(--vp-c-green-light);
+  --vp-custom-block-solution-bg: var(--vp-c-solution-bg-opacity);
+  --vp-custom-block-tip-border: var(--vp-c-brand-dark);
+  --vp-custom-block-tip-text: var(--vp-c-brand-dark);
+  --vp-custom-block-tip-bg: var(--vp-c-tip-bg-opacity);
+  --vp-custom-block-warning-bg: var(--vp-c-warning-bg-opacity);
+  --vp-custom-block-danger-bg: var(--vp-c-danger-bg-opacity);
 }
 
 /**

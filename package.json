@@ -2,7 +2,8 @@
   "devDependencies": {
     "@algolia/client-search": "^4.16.0",
     "vitepress": "1.0.0-alpha.62",
-    "vue": "^3.2.6",
+    "vue": "3.3.4",
+    "typescript": "5.2.2",
     "prettier": "2.8.7"
   },
   "scripts": {
