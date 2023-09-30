@@ -2,6 +2,7 @@
 import { h } from 'vue';
 import Theme from 'vitepress/theme';
 import './style.css';
+import Solution from './components/Solution.vue';
 
 export default {
   ...Theme,
@@ -10,7 +11,8 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     });
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app, siteData }) {
+    app.component('Solution', Solution);
     siteData;
   },
 };
