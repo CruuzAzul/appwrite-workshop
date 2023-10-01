@@ -145,3 +145,7 @@
 .tagline {
   max-width: unset !important;
 }
+
+img {
+  border-radius: 10px;
+}

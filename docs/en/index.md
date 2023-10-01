@@ -3,32 +3,35 @@
 layout: home
 
 hero:
-  name: "Voyage au coeur d'Appwrite :"
-  text: 'Le backend open-source qui challenge Firebase 🧳'
-  tagline: Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
+  name: "Journey into the Heart of Appwrite :"
+  text: 'The Open-Source Backend Taking on Firebase 🧳'
+  tagline: Welcome to this traveller's guide! 🗺️ This documentation will guide you through each destination at the heart of Appwrite! Consult the detailed information, tips and solutions for each module to discover the fundamentals that make Appwrite an indispensable tool for all developers! Join us for this experience 🛫
   actions:
     - theme: brand
-      text: Commencer le workshop 💼
-      link: /workshop/markdown-examples
+      text: Start the adventure 🚢
+      link: /en/workshop/introduction/rules
     - theme: alt
-      text: Documentation Appwrite 📚
+      text: Appwrite documentation 📚
       link: https://appwrite.io/docs
+    - theme: alt
+      text: Workshop code 👨🏼‍💻
+      link: https://github.com/CruuzAzul/app-appwrite-workshop
 
 features:
   - icon:
       src: assets/firebase.svg
-    title: Alternative à Firebase
-    details: Alternative à Firebase pour le développement du backend de votre applications web et mobiles.
+    title: Firebase alternative
+    details: Alternative to Firebase for developing the backend of your web and mobile applications.
   - icon:
       src: assets/open-source.svg
     title: Open Source
-    details: Profitez d'une grande communauté de développeurs, d'une amélioration continue et d'une documentation complète.
+    details: Take advantage of a large community of developers, continuous improvement and complete documentation.
   - icon:
       src: assets/hosting.svg
-    title: Auto hébergé
-    details: Autre que l'hébergement cloud ou celui en one-click, Appwrite peut être installé sur votre propre serveur.
+    title: Self-hosted
+    details: As an alternative to cloud or one-click hosting, Appwrite can be installed on your own server.
   - icon:
       src: assets/dev.svg
-    title: Pour les développeurs
-    details: Conçu par des développeur et pour des développeur ! Facile à utiliser et à intégrer dans vos applications.
+    title: For developers
+    details: Designed by developers for developers! Easy to use and integrate into your applications.
 ---

@@ -3,6 +3,7 @@ import { h } from 'vue';
 import Theme from 'vitepress/theme';
 import './style.css';
 import Solution from './components/Solution.vue';
+import Hero from './components/Hero.vue';
 
 export default {
   ...Theme,
@@ -13,6 +14,7 @@ export default {
   },
   enhanceApp({ app, siteData }) {
     app.component('Solution', Solution);
+    app.component('Hero', Hero);
     siteData;
   },
 };

@@ -31,18 +31,38 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: '🛫 Introduction',
+            text: '🛫 Exemples (🗑️ après le dev)',
             items: [
               { text: 'Exemple en markdown', link: '/workshop/markdown-examples' },
               { text: "Exemples d'exécution API", link: '/workshop/api-examples' },
             ],
           },
           {
-            text: '🌋 Aventure',
+            text: '⛵︎ Introduction',
             items: [
-              { text: 'Exemple en markdown', link: '/workshop/markdown-examples' },
-              { text: "Exemples d'exécution API", link: '/workshop/api-examples' },
+              { text: 'Règles et explications', link: '/workshop/introduction/rules' },
+              { text: "Début de l'aventure", link: '/workshop/markdown-examples' },
             ],
+          },
+          {
+            text: '🏖️ La Baie de la Configuration',
+            items: [],
+          },
+          {
+            text: "🏝️ L'Île de l'Authentification",
+            items: [],
+          },
+          {
+            text: '️🌳 La Forêt des Databases',
+            items: [],
+          },
+          {
+            text: '🏔️ Les Montagnes du Storage',
+            items: [],
+          },
+          {
+            text: '☁️ La tête dans les Fonctions',
+            items: [],
           },
           {
             text: 'ℹ️ Informations',
@@ -75,18 +95,38 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: '🛫 Introduction',
+            text: '🛫 Examples (🗑️ after dev)',
             items: [
-              { text: 'Markdown Examples', link: '/workshop/markdown-examples' },
-              { text: 'Runtime API Examples', link: '/workshop/api-examples' },
+              { text: 'Exemple en markdown', link: '/workshop/markdown-examples' },
+              { text: "Exemples d'exécution API", link: '/workshop/api-examples' },
             ],
           },
           {
-            text: '🌋 Adventure',
+            text: '⛵︎ Introduction',
             items: [
-              { text: 'Markdown Examples', link: '/workshop/markdown-examples' },
-              { text: 'Runtime API Examples', link: '/workshop/api-examples' },
+              { text: 'Rules and explanations', link: '/workshop/introduction/rules' },
+              { text: 'The adventure begins', link: '/workshop/markdown-examples' },
             ],
+          },
+          {
+            text: '🏖️ The Configuration Bay',
+            items: [],
+          },
+          {
+            text: '🏝️ The Authentication Island',
+            items: [],
+          },
+          {
+            text: '️🌳 The Database Forest',
+            items: [],
+          },
+          {
+            text: '🏔️ The Storage Mountains',
+            items: [],
+          },
+          {
+            text: '☁️ The head in the Functions',
+            items: [],
           },
           {
             text: 'ℹ️ Informations',

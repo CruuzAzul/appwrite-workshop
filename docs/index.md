@@ -5,14 +5,17 @@ layout: home
 hero:
   name: "Voyage au coeur d'Appwrite :"
   text: 'Le backend open-source qui challenge Firebase 🧳'
-  tagline: Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
+  tagline: Bienvenue dans ce guide du voyageur ! 🗺️ Cette documentation vous guidera à travers chaque destination au coeur d'Appwrite ! Consultez les informations détaillées, les astuces et les solutions pour chaque module afin de découvrir les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
   actions:
     - theme: brand
-      text: Commencer le workshop 💼
-      link: /workshop/markdown-examples
+      text: Commencer l'aventure 🚢
+      link: /workshop/introduction/rules
     - theme: alt
       text: Documentation Appwrite 📚
       link: https://appwrite.io/docs
+    - theme: alt
+      text: Code du Workshop 👨🏼‍💻
+      link: https://github.com/CruuzAzul/app-appwrite-workshop
 
 features:
   - icon:
