@@ -41,7 +41,7 @@ export default defineConfig({
             text: '⛵︎ Introduction',
             items: [
               { text: 'Règles et explications', link: '/workshop/introduction/rules' },
-              { text: "Début de l'aventure", link: '/workshop/markdown-examples' },
+              { text: "Début de l'aventure", link: '/workshop/introduction/beginning' },
             ],
           },
           {
@@ -105,7 +105,7 @@ export default defineConfig({
             text: '⛵︎ Introduction',
             items: [
               { text: 'Rules and explanations', link: '/workshop/introduction/rules' },
-              { text: 'The adventure begins', link: '/workshop/markdown-examples' },
+              { text: 'The adventure begins', link: '/workshop/introduction/beginning' },
             ],
           },
           {
