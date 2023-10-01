@@ -4,6 +4,7 @@ import Theme from 'vitepress/theme';
 import './style.css';
 import Solution from './components/Solution.vue';
 import Hero from './components/Hero.vue';
+import Image from './components/Image.vue';
 
 export default {
   ...Theme,
@@ -15,6 +16,7 @@ export default {
   enhanceApp({ app, siteData }) {
     app.component('Solution', Solution);
     app.component('Hero', Hero);
+    app.component('Image', Image);
     siteData;
   },
 };

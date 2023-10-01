@@ -24,6 +24,7 @@ h1 {
   color: var(--vp-c-brand-light);
   text-transform: uppercase;
   text-wrap: balance;
+  line-height: 3rem;
 }
 
 img {
