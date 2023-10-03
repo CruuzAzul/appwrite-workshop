@@ -6,9 +6,7 @@ journey into the fascinating world of Appwrite! You are about to dive into an un
 learning, and adventure come together 🗾"
 />
 
----
-
-### About Appwrite 📰
+## About Appwrite 📰
 
 Appwrite was born out of the need for a high-performance, easy-to-use open-source backend solution. Its creator, Eldad
 A. Fux, was inspired by the open-source community and the desire to provide developers with a powerful tool to simplify
@@ -16,9 +14,7 @@ backend feature management. Since its inception, Appwrite has experienced rapid 
 developer ecosystem and a real alternative to Firebase, offering a multitude of services for building robust web and
 mobile applications 💪🏼
 
----
-
-### Adventure Awaits You! 🏁
+## Adventure Awaits You! 🏁
 
 Now that we know a bit more, your mission, if you choose to accept it, is to traverse the world of Appwrite through
 different modules located at unique destinations.
@@ -30,6 +26,7 @@ adventure; let's keep it for later, as we might need it 🫢
 <Image src="/assets/workshop/introduction/map.jpeg" imageAlt="Workshop map"></Image>
 
 <br/><br/>
+
 
 <Hero
 title="Are you ready to embark on this adventure?"

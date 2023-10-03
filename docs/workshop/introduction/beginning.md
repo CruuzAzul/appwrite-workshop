@@ -6,9 +6,7 @@ extraordinaire dans le monde fascinant d'Appwrite ! Vous êtes sur le point de p
 où la découverte, l'apprentissage et l'aventure se mêlent 🗾"
 />
 
----
-
-### À Propos d'Appwrite 📰
+## À Propos d'Appwrite 📰
 
 Appwrite est né de la nécessité de disposer d'une solution backend open-source, performante et facile à utiliser. Son
 créateur, Eldad A. Fux, a été inspiré par la communauté open-source et le désir d'offrir aux développeurs un outil
@@ -16,9 +14,7 @@ puissant pour simplifier la gestion des fonctionnalités backend. Depuis sa cré
 rapide, devenant un acteur majeur de l'écosystème des développeurs et une réelle alternative à Firebase, qui offre une
 multitude de services pour développer des applications web et mobiles robustes 💪🏼
 
----
-
-### L'aventure vous attend ! 🏁
+## L'aventure vous attend ! 🏁
 
 Maintenant que l'on en sait un peu plus, votre mission, si vous l'acceptez, est de parcourir le monde
 d'Appwrite à travers différents modules situés à des destinations uniques.
