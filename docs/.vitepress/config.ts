@@ -54,7 +54,7 @@ export default defineConfig({
               },
               {
                 text: 'Lier AppVenture à Appwrite',
-                link: '/workshop/configuration/appwrite-configuration-verification',
+                link: '/workshop/configuration/link-application',
               },
             ],
           },
@@ -128,7 +128,7 @@ export default defineConfig({
               },
               {
                 text: 'Link AppVenture to Appwrite',
-                link: '/workshop/configuration/appwrite-configuration-verification',
+                link: '/workshop/configuration/link-application',
               },
             ],
           },
