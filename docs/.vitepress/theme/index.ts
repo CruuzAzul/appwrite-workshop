@@ -5,6 +5,7 @@ import './style.css';
 import Solution from './components/Solution.vue';
 import Hero from './components/Hero.vue';
 import Image from './components/Image.vue';
+import InfoBonus from './components/InfoBonus.vue';
 
 export default {
   ...Theme,
@@ -17,6 +18,7 @@ export default {
     app.component('Solution', Solution);
     app.component('Hero', Hero);
     app.component('Image', Image);
+    app.component('InfoBonus', InfoBonus);
     siteData;
   },
 };

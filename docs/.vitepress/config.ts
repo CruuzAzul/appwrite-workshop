@@ -46,7 +46,17 @@ export default defineConfig({
           },
           {
             text: '🏖️ La Baie de la Configuration',
-            items: [],
+            items: [
+              { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
+              {
+                text: 'Configurer notre application',
+                link: '/workshop/configuration/appwrite-configuration-local',
+              },
+              {
+                text: 'Vérifier notre configuration',
+                link: '/workshop/configuration/appwrite-configuration-verification',
+              },
+            ],
           },
           {
             text: "🏝️ L'Île de l'Authentification",
@@ -110,7 +120,17 @@ export default defineConfig({
           },
           {
             text: '🏖️ The Configuration Bay',
-            items: [],
+            items: [
+              { text: 'Configure Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
+              {
+                text: 'Configure our application',
+                link: '/workshop/configuration/appwrite-configuration-local',
+              },
+              {
+                text: 'Check our configuration',
+                link: '/workshop/configuration/appwrite-configuration-verification',
+              },
+            ],
           },
           {
             text: '🏝️ The Authentication Island',
