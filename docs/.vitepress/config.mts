@@ -1,4 +1,5 @@
 import { defineConfig, HeadConfig } from 'vitepress';
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 
 interface LocaleSpecificConfig<ThemeConfig = any> {
   lang?: string;
@@ -80,7 +81,7 @@ export default defineConfig({
           },
           {
             text: '☁️ La tête dans les Fonctions',
-            items: [],
+            items: [{ text: 'Créer votre propre cloud function', link: '/workshop/functions/introduction' }],
           },
           {
             text: 'ℹ️ Informations',
@@ -162,7 +163,7 @@ export default defineConfig({
           },
           {
             text: '☁️ The head in the Functions',
-            items: [],
+            items: [{ text: 'Create your own cloud function', link: '/workshop/functions/introduction' }],
           },
           {
             text: 'ℹ️ Informations',
@@ -177,6 +178,11 @@ export default defineConfig({
           copyright: 'Copyright © 2023-present Mickael Alves',
         },
       },
+    },
+  },
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin);
     },
   },
 } as LocaleSpecificConfig);
