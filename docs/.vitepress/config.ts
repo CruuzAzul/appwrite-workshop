@@ -50,10 +50,10 @@ export default defineConfig({
               { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Configurer notre application',
-                link: '/workshop/configuration/appwrite-configuration-local',
+                link: '/workshop/configuration/app-configuration',
               },
               {
-                text: 'Vérifier notre configuration',
+                text: 'Lier AppVenture à Appwrite',
                 link: '/workshop/configuration/appwrite-configuration-verification',
               },
             ],
@@ -124,10 +124,10 @@ export default defineConfig({
               { text: 'Configure Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Configure our application',
-                link: '/workshop/configuration/appwrite-configuration-local',
+                link: '/workshop/configuration/app-configuration',
               },
               {
-                text: 'Check our configuration',
+                text: 'Link AppVenture to Appwrite',
                 link: '/workshop/configuration/appwrite-configuration-verification',
               },
             ],
