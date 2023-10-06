@@ -1,3 +1,7 @@
+---
+title: Configuration de l'AppVenture
+---
+
 <Hero
 title="Configuration de l'AppVenture 🚀"
 image="/assets/workshop/configuration/app/bay_app.jpeg"

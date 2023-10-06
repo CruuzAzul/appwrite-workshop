@@ -16,9 +16,11 @@ export default defineConfig({
   locales: {
     root: {
       label: 'FR 🇫🇷',
-      lang: 'fr',
+      lang: 'fr-FR',
       title: 'Workshop Appwrite',
+      titleTemplate: ':title - Workshop Appwrite 🏝️',
       description: "Il s'agit d'un atelier pour apprendre les bases d'Appwrite 🚀",
+      head: [['link', { rel: 'icon', href: '/assets/appwrite.svg' }]],
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: 'https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png',
@@ -95,9 +97,11 @@ export default defineConfig({
     },
     en: {
       label: 'EN 🇬🇧',
-      lang: 'en',
+      lang: 'en-US',
       title: 'Appwrite Workshop',
+      titleTemplate: ':title - Appwrite Workshop 🏝️',
       description: 'This is a workshop to learn the basics of Appwrite 🚀',
+      head: [['link', { rel: 'icon', href: '/assets/appwrite.svg' }]],
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: 'https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png',

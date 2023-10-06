@@ -1,3 +1,7 @@
+---
+title: L'Île de l'Authentification
+---
+
 <Hero
 title="Bienvenue sur L'Île de l'Authentification 🏝️"
 image="/assets/workshop/authentication/island.jpeg"

@@ -1,3 +1,7 @@
+---
+title: Bienvenue dans l'aventure
+---
+
 <Hero
 title="Bienvenue dans l'aventure Appwrite !"
 image="/assets/workshop/introduction/hero.jpeg"

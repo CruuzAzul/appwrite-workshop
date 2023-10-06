@@ -1,5 +1,9 @@
+---
+title: Linking AppVenture to your Appwrite instance
+---
+
 <Hero
-title="Linking AppVenture to Your Appwrite Instance 🌐"
+title="Linking AppVenture to your Appwrite instance 🌐"
 image="/assets/workshop/configuration/app/bay_link.jpg"
 description="Congratulations, you've prepared your AppVenture, and now it's time to link it to your Appwrite Cloud
 instance! 🔗"

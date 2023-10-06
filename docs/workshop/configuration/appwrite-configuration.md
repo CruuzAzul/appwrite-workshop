@@ -1,5 +1,9 @@
+---
+title: La Baie de la Configuration
+---
+
 <Hero
-title="La Baie de la Configuration"
+title="La baie de la configuration"
 image="/assets/workshop/configuration/console/bay.jpeg"
 description="Bienvenue à la Baie de la Configuration, la première étape de notre aventure Appwrite ! 🔧 Dans cette
 section, nous allons plonger dans les configurations initiales nécessaires pour préparer notre voyage ! Assurez-vous de

@@ -1,5 +1,9 @@
+---
+title: The rules of the game
+---
+
 <Hero
-title="The Rules of the Game!"
+title="The rules of the game!"
 image="/assets/workshop/introduction/rules.jpeg"
 description="Before embarking on this adventure into the heart of open-source backend, let us guide you through the rules and objectives of this exciting journey 🧭 In this section, you will discover the essential guidelines for navigating this workshop and reaching the peaks of Appwrite mastery. We invite you to delve into the details and familiarize yourself with the rules of the game, the stages of the journey, and the challenges that await you! 👨🏼‍✈️"
 />
