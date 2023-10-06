@@ -60,7 +60,12 @@ export default defineConfig({
           },
           {
             text: "🏝️ L'Île de l'Authentification",
-            items: [],
+            items: [
+              { text: "Votre arrivée sur L'Île", link: '/workshop/authentication/introduction' },
+              { text: 'Inscription des voyageurs', link: '/workshop/authentication/create-account' },
+              { text: 'La porte de connexion secrète', link: '/workshop/authentication/login' },
+              { text: 'Les chemins alternatifs', link: '/workshop/authentication/social-login' },
+            ],
           },
           {
             text: '️🌳 La Forêt des Databases',
@@ -134,7 +139,12 @@ export default defineConfig({
           },
           {
             text: '🏝️ The Authentication Island',
-            items: [],
+            items: [
+              { text: 'Your arrival on the Island', link: '/workshop/authentication/introduction' },
+              { text: 'Registration of travelers', link: '/workshop/authentication/create-account' },
+              { text: 'The secret login gate', link: '/workshop/authentication/login' },
+              { text: 'Alternative paths', link: '/workshop/authentication/social-login' },
+            ],
           },
           {
             text: '️🌳 The Database Forest',
