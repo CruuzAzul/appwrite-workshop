@@ -73,7 +73,14 @@ export default defineConfig({
           },
           {
             text: '️🌳 La Forêt des Databases',
-            items: [],
+            items: [
+              { text: 'Découverte de la forêt', link: '/workshop/database/introduction' },
+              { text: 'Préparation de la collection', link: '/workshop/database/create-collection' },
+              { text: 'Plantation des premiers documents', link: '/workshop/database/create-document' },
+              { text: 'Récolte des documents', link: '/workshop/database/get-document' },
+              { text: 'Désherbage des mauvais documents', link: '/workshop/database/delete-document' },
+              { text: 'Bonus : Écoute de la forêt', link: '/workshop/database/realtime' },
+            ],
           },
           {
             text: '🏔️ Les Montagnes du Storage',
