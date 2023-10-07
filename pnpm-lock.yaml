@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   vitepress-plugin-tabs:
-    specifier: ^0.4.1
+    specifier: 0.4.1
     version: 0.4.1(vitepress@1.0.0-rc.20)(vue@3.3.4)
 
 devDependencies:
