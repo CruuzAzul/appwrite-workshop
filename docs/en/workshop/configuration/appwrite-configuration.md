@@ -1,3 +1,7 @@
+---
+title: The Configuration Bay
+---
+
 <Hero
 title="The Configuration Bay"
 image="/assets/workshop/configuration/bay.jpeg"

@@ -2,6 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: Home
 hero:
   name: "Journey into the Heart of Appwrite :"
   text: 'The Open-Source Backend Taking on Firebase 🧳'

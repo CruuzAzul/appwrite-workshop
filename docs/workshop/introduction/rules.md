@@ -1,3 +1,7 @@
+---
+title: Les règles du jeu
+---
+
 <Hero 
   title="Les règles du jeu !" 
   image="/assets/workshop/introduction/rules.jpeg" 
