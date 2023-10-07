@@ -6,8 +6,7 @@ title: Inscription des voyageurs
 title="Inscription des voyageurs 📝"
 image="/assets/workshop/authentication/top-island.jpeg"
 description="Arrivé un peu plus haut sur l'île, on semble s'approcher d'une vieille batisse, ça doit être là-bas que
-l'on
-doit aller... Mais avant, nous allons voir comment s'inscrire dans la liste des voyageurs qui ont essayé cette
+l'on doit aller... Mais avant, nous allons voir comment s'inscrire dans la liste des voyageurs qui ont essayé cette
 aventure ! 🌴 Dans cette section, nous allons explorer le processus d'inscription, étape par étape ! L'inscription des
 voyageurs est la première étape essentielle de notre aventure. Avec Appwrite, cette tâche est simplifiée grâce au
 service Account qui gère tout le processus. 🏝️"
@@ -57,12 +56,11 @@ export const account = new Account(AppwriteClient);
 
 - Maintenant que le service Account est initialisé, nous allons pouvoir compléter la fonction `register` que vous pouvez
   trouver dans le fichier `src/api/services/register.service.ts`. Cette fonction prend en paramètre le nom, l'e-mail et
-  le
-  mot de passe du voyageur et utilise l'API Appwrite pour effectuer l'inscription.
+  le mot de passe du voyageur et utilise l'API Appwrite pour effectuer l'inscription.
 
 <Solution>
 
-```js
+```ts
 import {account} from '@/api/config/client.config';
 
 const register = async (email: string, password: string, name: string) => {
@@ -71,9 +69,7 @@ const register = async (email: string, password: string, name: string) => {
     setUser(session);
     router.push(ROUTES.dashboard);
   } catch (error: any) {
-    const appwriteException = error
-    as
-    AppwriteException;
+    const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);
   }
 };
