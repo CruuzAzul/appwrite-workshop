@@ -48,7 +48,25 @@ the [Appwrite documentation on data migration](https://appwrite.io/docs/advanced
 
 **3.** Save the `.env.local` file after making these modifications.
 
-**4.** That's it! Your AppVenture is now ready to interact with your Appwrite instance. You should see a change in your
+**4.** Create a new `client.config.ts` file in the `src/api/config/` folder and add the following code,
+replacing `<PROJECT_ID>` with your project ID.
+
+:::info
+You can use `EnvConfig` to access variables in the `.env.local` file.
+:::
+
+```js
+import {Client} from 'appwrite';
+
+export const AppwriteClient = new Client()
+  .setEndpoint(EnvConfig.endpoint ?? '')
+  .setProject('<PROJECT_ID>');
+```
+
+**This code will initialise the Appwrite SDK that we will use in our application. It will then allow us to initialise the
+various Appwrite services in our application.**
+
+**5.** That's it! Your AppVenture is now ready to interact with your Appwrite instance. You should see a change in your
 application, indicating that your application is now linked to your instance! 🎊
 
 <InfoBonus title="Warning: We Have IDs in Plain Sight in Client-Side Code!! 😱">

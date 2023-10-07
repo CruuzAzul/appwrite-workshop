@@ -35,12 +35,12 @@ les premières variables d'environnement que vous devez configurer :
 <Image src="/assets/workshop/configuration/app/console_settings.png" imageAlt="Project settings screen" withSpacing></Image>
 
 :::tip
-Dans la partie `Settings` de la console Appwrite Cloud, vous trouverez l'ID du projet mais aussi d'autres informations
+Dans la partie `Settings` de la console Appwrite Cloud, vous trouverez l'ID du projet, mais aussi d'autres informations
 pour configurer votre projet :
 
 - L'activations des services Appwrite (Auth, Database, Storage, Functions)
 - La configuration de votre domaine personnalisé, de webhook, de votre serveur SMTP, etc.
-- L'interface pour migrer vos données d'une instance Appwrite self-hosted vers une instance Appwrite Cloud ou encore
+- L'interface pour migrer vos données d'une instance Appwrite self hosted vers une instance Appwrite Cloud ou encore
   pour importer vos données depuis une instance Firebase, Supabase ou encore Nhost dans votre instance Appwrite 🤩
 
 Pour plus d'informations, vous pouvez consulter
@@ -49,7 +49,25 @@ la [documentation d'Appwrite sur la migration des données](https://appwrite.io/
 
 **3.** Sauvegardez le fichier `.env.local` après avoir effectué ces modifications.
 
-**4.** C'est tout ! Votre AppVenture est maintenant prête à interagir avec votre instance Appwrite. Vous devriez voir un
+**4.** Créez un nouveau fichier `client.config.ts` dans le dossier `src/api/config/` et ajoutez-y le code suivant, en
+remplaçant `<PROJECT_ID>` par l'ID de votre projet.
+
+:::info
+Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fichier `.env.local`
+:::
+
+```js
+import {Client} from 'appwrite';
+
+export const AppwriteClient = new Client()
+  .setEndpoint(EnvConfig.endpoint ?? '')
+  .setProject('<PROJECT_ID>');
+```
+
+**Ce code permettra d'initialiser le SDK Appwrite que nous utiliserons dans notre application. Il nous permettra par la
+suite d'initialiser les différents services Appwrite dans notre application.**
+
+**5.** C'est tout ! Votre AppVenture est maintenant prête à interagir avec votre instance Appwrite. Vous devriez voir un
 changement dans votre application, vous indiquant que votre application est maintenant liée à votre instance ! 🎊
 
 <InfoBonus title="Alerte on a des IDs en clair dans le code côté client !! 😱">
