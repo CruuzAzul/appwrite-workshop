@@ -17,7 +17,7 @@ d'authentification pour répondre à vos besoins.
 
 Avec l'authentification Appwrite, vous pouvez gérer les comptes des voyageurs selon leurs préférences, en les regroupant
 en équipes et en garantissant leur sécurité avec un système de permissions robuste. Cette étape est en réalité séparée
-en deux parties qui vont nous permettre d'intéragir avec deux des services d'Appwrite : Account, utilisée pour
+en deux parties qui vont nous permettre d’interagir avec deux des services d'Appwrite : Account, utilisée pour
 l'inscription et la connexion des utilisateurs dans les applications et Users, pour gérer les utilisateurs de notre
 application serveur en mode "admin" ! On ne vous donne pas plus de détails, vous en apprendrez plus sur le chemin ! 🛣️
 
