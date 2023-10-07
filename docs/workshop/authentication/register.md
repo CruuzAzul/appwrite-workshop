@@ -52,6 +52,15 @@ suivant :
 export const account = new Account(AppwriteClient);
 ```
 
+<InfoBonus title="3 autres SDKs côté client !">
+
+Si plus tard, vous souhaitez utiliser un autre langage côté serveur, vous pouvez le faire sans problème. Appwrite propose
+9 SDKs côté serveur différent, pour les langages suivants :
+
+![Client SDKs](/assets/workshop/authentication/client-sdks.png)
+
+</InfoBonus>
+
 ## Étape 2️⃣ : Écrire la fonction d'inscription
 
 - Maintenant que le service Account est initialisé, nous allons pouvoir compléter la fonction `register` que vous pouvez
