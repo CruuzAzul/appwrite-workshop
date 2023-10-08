@@ -12,7 +12,7 @@ your loyal companion on your quest, helping you unlock the secrets of each desti
 to master it entirely to proceed, but understand that it will be there when you need it!"
 />
 
-## Launching and Configuring the AppVenture 🚀
+## Launching and configuring the AppVenture 🚀
 
 Now that you have an idea of the importance of the AppVenture, here's how to launch and configure it:
 
@@ -33,7 +33,7 @@ contents of `.env.example` into `.env.local”; we'll fill in the values later.
 
 And there you have it! You're now ready to set off on your adventure with the AppVenture as your loyal companion 😎
 
-## Key Spots in the AppVenture 🔑
+## Key spots in the AppVenture 🔑
 
 Before setting sail, let's quickly understand the architecture of the AppVenture. This application is built with
 Next.js, a React framework. It allows us to communicate with our Appwrite Cloud instance and interact with various
@@ -44,7 +44,7 @@ need to worry about the rest of the application's code 🧑🏼‍💻
 
 [//]: # (TODO: To be completed once code cleanup is done)
 
-### In the Code 📝 (To be completed once code cleanup is done)
+### In the code 📝 (To be completed once code cleanup is done)
 
 1. **Environment Variables**: You'll find a `.env.local` file to configure environment variables.
    Make sure to adjust them based on the configuration information you obtained when creating your Appwrite Cloud
@@ -58,7 +58,7 @@ need to worry about the rest of the application's code 🧑🏼‍💻
 
 [//]: # (TODO: To be completed once code cleanup is done)
 
-### In the User Interface 🖥️ (To be completed once code cleanup is done)
+### In the user interface 🖥️ (To be completed once code cleanup is done)
 
 1. **The Dashboard**:
 

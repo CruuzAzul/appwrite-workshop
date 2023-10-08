@@ -3,7 +3,7 @@ title: The Configuration Bay
 ---
 
 <Hero
-title="The Configuration Bay"
+title="The Configuration Bay 🏖️"
 image="/assets/workshop/configuration/console/bay.jpeg"
 description="Welcome to the Configuration Bay, the first step of our Appwrite adventure! 🔧 In this section, we will dive
 into the initial configurations necessary to prepare for our journey. Make sure to follow these steps carefully to
@@ -65,12 +65,13 @@ open-source backend with Appwrite. 🌍
 <br />
 
 <InfoBonus title="Other Ways to Set Up an Appwrite Instance 📦">
-<br />
+
+## Self-Hosting and One-Click Setups 📝
 
 Appwrite also offers other methods to obtain your own instance, depending on your preferences. **We won't cover these in
 this workshop**, but you can explore them later in your future adventures with Appwrite.
 
-## Self-Hosting 🏠
+### Self-Hosting 🏠
 
 Appwrite was designed from the ground up with self-hosting in mind. You can install and run Appwrite on any operating
 system capable of running a Docker CLI. Self-hosted Appwrite instances can be configured flexibly with access to the
@@ -89,7 +90,7 @@ docker run -it --rm \
 
 📖 [Documentation - Self-Hosting](https://appwrite.io/docs/advanced/self-hosting)
 
-## One-Click Setups 🖱️
+### One-Click Setups 🖱️
 
 In addition to running Appwrite locally, you can also launch Appwrite using a preconfigured setup. This allows you to
 quickly get started with Appwrite without installing Docker on your local machine.
