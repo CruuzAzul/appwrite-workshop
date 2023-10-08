@@ -84,7 +84,13 @@ export default defineConfig({
           },
           {
             text: '🏔️ Les Montagnes du Storage',
-            items: [{ text: "Le début de l'ascension", link: '/workshop/storage/introduction' }],
+            items: [
+              { text: "Le début de l'ascension", link: '/workshop/storage/introduction' },
+              {
+                text: 'Récupérer le puzzle',
+                link: '/workshop/storage/download-files',
+              },
+            ],
           },
           {
             text: '☁️ La tête dans les Fonctions',
@@ -177,7 +183,12 @@ export default defineConfig({
           },
           {
             text: '🏔️ The Storage Mountains',
-            items: [{ text: ' The beginning of the ascent', link: '/en/workshop/storage/introduction' }],
+            items: [
+              { text: 'The beginning of the ascent', link: '/en/workshop/storage/introduction' },
+              {
+                text: '',
+              },
+            ],
           },
           {
             text: '☁️ The head in the Functions',
