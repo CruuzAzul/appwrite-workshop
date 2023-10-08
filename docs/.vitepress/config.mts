@@ -77,7 +77,7 @@ export default defineConfig({
           },
           {
             text: '🏔️ Les Montagnes du Storage',
-            items: [],
+            items: [{ text: "Le début de l'ascension", link: '/workshop/storage/introduction' }],
           },
           {
             text: '☁️ La tête dans les Fonctions',
@@ -163,7 +163,7 @@ export default defineConfig({
           },
           {
             text: '🏔️ The Storage Mountains',
-            items: [],
+            items: [{ text: ' The beginning of the ascent', link: '/en/workshop/storage/introduction' }],
           },
           {
             text: '☁️ The head in the Functions',
