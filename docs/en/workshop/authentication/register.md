@@ -50,6 +50,15 @@ initialize the Account service in the `src/api/config/client.config.ts` file.
 export const account = new Account(AppwriteClient);
 ```
 
+<InfoBonus title="3 other client SDKs!">
+
+If later on, you want to use another client-side language, you can do so without any problem. Appwrite offers 3
+different client-side SDKs for the following languages:
+
+![Client SDKs](/assets/workshop/authentication/client-sdks.png)
+
+</InfoBonus>
+
 ## Step 2️⃣: Write the Registration Function
 
 - Now that the Account service is initialized, we can complete the `register` function, which you can find in
