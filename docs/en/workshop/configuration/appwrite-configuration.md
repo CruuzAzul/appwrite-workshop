@@ -4,7 +4,7 @@ title: The Configuration Bay
 
 <Hero
 title="The Configuration Bay"
-image="/assets/workshop/configuration/bay.jpeg"
+image="/assets/workshop/configuration/console/bay.jpeg"
 description="Welcome to the Configuration Bay, the first step of our Appwrite adventure! 🔧 In this section, we will dive
 into the initial configurations necessary to prepare for our journey. Make sure to follow these steps carefully to
 ensure a smooth and unforgettable experience with Appwrite 🌊"
@@ -27,7 +27,7 @@ Firstly, you need to create an Appwrite account. To do this, you can go to
 the [Appwrite Cloud Console](https://cloud.appwrite.io/login) to create your account. You can also sign in with your
 GitHub account if you prefer or use an existing account.
 
-<Image src="/assets/workshop/configuration/console_signup.png" imageAlt="Onboarding screen Appwrite Cloud" withSpacing></Image>
+<Image src="/assets/workshop/configuration/console/console_signup.png" imageAlt="Onboarding screen Appwrite Cloud" withSpacing></Image>
 
 ::: info
 This Appwrite Cloud instance is free and will remain your property even after the end of this workshop 💪🏼
@@ -37,24 +37,24 @@ This Appwrite Cloud instance is free and will remain your property even after th
 
 Once your account is created, you can create your first project.
 
-<Image src="/assets/workshop/configuration/console_project.png" imageAlt="Create project screen" withSpacing></Image>
+<Image src="/assets/workshop/configuration/console/console_project.png" imageAlt="Create project screen" withSpacing></Image>
 
 ## Step 3️⃣: Add a Web Platform to Your Project 🌐
 
 After creating your project, you can see your empty instance because it is not yet linked to any platform!
 
-<Image src="/assets/workshop/configuration/console_select_platform.png" imageAlt="Console select platform" withSpacing></Image>
+<Image src="/assets/workshop/configuration/console/console_select_platform.png" imageAlt="Console select platform" withSpacing></Image>
 
 Under **Add a platform**, add a **Web app**. This will allow us to link our web application to this Appwrite instance
 later. You can give your web application any name you like, and for the hostname, you should enter `localhost` because
 it is the domain name that your web application will use to communicate with the Appwrite APIs 📡
 
-<Image src="/assets/workshop/configuration/console_add_platform.png" imageAlt="Console form add platform" withSpacing></Image>
+<Image src="/assets/workshop/configuration/console/console_add_platform.png" imageAlt="Console form add platform" withSpacing></Image>
 
 For the following steps, you can skip them as we will cover them in the next section to allow us to link our web
 application to our Appwrite instance 🤯
 
-<Image src="/assets/workshop/configuration/console_end.png" imageAlt="Console screen" withSpacing></Image>
+<Image src="/assets/workshop/configuration/console/console_end.png" imageAlt="Console screen" withSpacing></Image>
 
 You are ready to embark on the next steps of our journey! Enjoy this exciting learning experience in the heart of the
 open-source backend with Appwrite. 🌍

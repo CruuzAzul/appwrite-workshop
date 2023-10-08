@@ -58,7 +58,7 @@ export const account = new Account(AppwriteClient);
 
 <Solution>
 
-```js
+```ts
 import {account} from '@/api/config/client.config';
 
 const register = async (email: string, password: string, name: string) => {
@@ -67,9 +67,7 @@ const register = async (email: string, password: string, name: string) => {
     setUser(session);
     router.push(ROUTES.dashboard);
   } catch (error: any) {
-    const appwriteException = error
-    as
-    AppwriteException;
+    const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);
   }
 };
