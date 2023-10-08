@@ -81,7 +81,11 @@ export default defineConfig({
           },
           {
             text: '☁️ La tête dans les Fonctions',
-            items: [{ text: 'Créer votre propre cloud function', link: '/workshop/functions/introduction' }],
+            items: [
+              { text: 'L’envol vers les nuages', link: '/workshop/functions/introduction' },
+              { text: 'Créer votre première fonction', link: '/workshop/functions/create-function' },
+              { text: 'Décrypter les destinations', link: '/workshop/functions/develop-function' },
+            ],
           },
           {
             text: 'ℹ️ Informations',
@@ -163,7 +167,11 @@ export default defineConfig({
           },
           {
             text: '☁️ The head in the Functions',
-            items: [{ text: 'Create your own cloud function', link: '/workshop/functions/introduction' }],
+            items: [
+              { text: 'Bursting through the clouds', link: '/en/workshop/functions/introduction' },
+              { text: 'Create your own function', link: '/en/workshop/functions/create-function' },
+              { text: 'Decrypt the destinations', link: '/en/workshop/functions/develop-function' },
+            ],
           },
           {
             text: 'ℹ️ Informations',

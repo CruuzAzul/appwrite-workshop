@@ -1,27 +1,27 @@
 <Hero
     title="Head in the functions! ☁️"
     image="/assets/workshop/functions/clouds.jpeg"
-    description="We've arrived in the clouds! This is the domain of Cloud Function, little bits of code that will let you use the server!"
+    description="We've arrived in the clouds! This is the domain of Function, little bits of code that will let you use the server!"
 />
 
 ## **Arrival guide** ☁️
 
 You may have already asked yourself the question: Appwrite lets me do no backend, but what if I really need to have code executed on the server side?
 
-That's what **Clouds Functions** are for!
+That's what **Functions** are for!
 
 ## **Useful links** 🛩️
 
-- [Appwrite documentation on cloud functions](https://appwrite.io/docs/products/functions)
+- [Appwrite documentation on  unctions](https://appwrite.io/docs/products/functions)
 
 ## **Create your first function**
 
 _Go to the function module in the workshop_.
 
 In our case, we have a list of destinations, but unfortunately they're all encrypted, so it's impossible to know where to go!
-As you can see, when you click on the button to add a destination, the new destination that appears is also always encrypted, so we're going to have to develop a cloud function to decrypt the destination when it's inserted into the database, so that we can finally know where to go!
+As you can see, when you click on the button to add a destination, the new destination that appears is also always encrypted, so we're going to have to develop a function to decrypt the destination when it's inserted into the database, so that we can finally know where to go!
 
-To do this, you'll need to create a new cloud function, and there are several solutions available to you!
+To do this, you'll need to create a new function, and there are several solutions available to you!
 
 :::tabs
 == CLI
