@@ -76,9 +76,9 @@ export default defineConfig({
             items: [
               { text: 'Découverte de la forêt', link: '/workshop/database/introduction' },
               { text: 'Préparation de la collection', link: '/workshop/database/create-collection' },
-              { text: 'Plantation des premiers documents', link: '/workshop/database/create-document' },
+              { text: 'Plantation des documents', link: '/workshop/database/create-document' },
               { text: 'Récolte des documents', link: '/workshop/database/get-document' },
-              { text: 'Désherbage des mauvais documents', link: '/workshop/database/delete-document' },
+              { text: 'Désherbage de documents', link: '/workshop/database/delete-document' },
               { text: 'Bonus : Écoute de la forêt', link: '/workshop/database/realtime' },
             ],
           },
@@ -166,7 +166,14 @@ export default defineConfig({
           },
           {
             text: '️🌳 The Database Forest',
-            items: [],
+            items: [
+              { text: 'Forest discovery', link: '/workshop/database/introduction' },
+              { text: 'Collection Preparation', link: '/workshop/database/create-collection' },
+              { text: 'Planting Documents', link: '/workshop/database/create-document' },
+              { text: 'Harvesting Documents', link: '/workshop/database/get-document' },
+              { text: 'Weeding Out Documents', link: '/workshop/database/delete-document' },
+              { text: 'Bonus: Listening to the Forest', link: '/workshop/database/realtime' },
+            ],
           },
           {
             text: '🏔️ The Storage Mountains',

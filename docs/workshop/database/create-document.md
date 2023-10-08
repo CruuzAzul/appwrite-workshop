@@ -42,14 +42,14 @@ const coordinateCollectionId = EnvConfig.coordinatesCollectionId;
 
 ```ts
 export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinate> => {
-  const { document: coordinates } = await database.createDocument<Coordinates>(
-    EnvConfig.databaseId,
-    EnvConfig.coordinatesCollectionId,
-    ID.unique(),
-    coordinatesData,
-  );
+  const { document: coordinates } = await database.createDocument<Coordinates>( // [!code ++]
+    EnvConfig.databaseId, // [!code ++]
+    EnvConfig.coordinatesCollectionId, // [!code ++]
+    ID.unique(), // [!code ++]
+    coordinatesData, // [!code ++]
+  ); // [!code ++]
 
-  return coordinates;
+  return coordinates; // [!code ++]
 };
 ```
 

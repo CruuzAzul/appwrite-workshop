@@ -8,7 +8,9 @@ title: Préparer notre collection
   description="Après un peu de marche, on atteint vite un coin de la forêt un peu plus vierge, c'est exactement ce qu'il nous fallait pour commencer à travailler et créer notre propre collection !"
 />
 
-Notre carte est bien vide actuellement, pour pouvoir trouver le trésor, il va nous falloir récupérer des coordonnées !
+Qui dit chasse au trésor dit carte ! Et bien heureusement nous avons la notre avec nous. Cependant, elle est bien vide actuellement, mais j’ai comme l’impression que finir ces différents modules nous donne des coordonnées que l’on pourra ensuite afficher sur notre carte ! Il ne nous manque plus qu’un moyen de les ranger quelque part pour ne pas les perdre ...
+
+## Création d’une collection
 
 La première étape est de créer une collection pour les stocker.
 Dans Appwrite, on peut créer plusieurs base de données, qui peuvent contenir plusieurs collections, qui contiennent plusieurs documents.

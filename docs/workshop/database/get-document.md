@@ -10,18 +10,20 @@ title: Récupérer nos données
 
 Des données en base, c'est bien, des données en base affichées sur notre interface, c'est encore mieux !
 
+## Récupération de documents
+
 Pour ce faire, vous pouvez remplir la fonction `getCoordinatesList` pour qu'elle récupère toutes les coordonnées depuis notre collection, pour qu'elles puisse s'afficher dans directement sur l’AppVenture.
 
 <Solution>
 
 ```ts
 export const getCoordinatesList = async (): Promise<Coordinates[]> => {
-  const { documents: coordinatesList } = await database.listDocuments<Coordinates>(
-    EnvConfig.databaseId,
-    EnvConfig.coordinatesCollectionId,
-  );
+  const { documents: coordinatesList } = await database.listDocuments<Coordinates>( // [!code ++]
+    EnvConfig.databaseId, // [!code ++]
+    EnvConfig.coordinatesCollectionId, // [!code ++]
+  ); // [!code ++]
 
-  return coordinatesList;
+  return coordinatesList; // [!code ++]
 };
 ```
 
@@ -31,10 +33,14 @@ Un fois la fonction de récupération réalisée, vous devriez pouvoir voir les 
 
 Cependant, avec tout nos tests il est possible que des mauvais documents ai été inséré en base, continuons notre chemin, nous trouverons peut être une solution.
 
-<InfoBonus title="GraphQL">
+<InfoBonus title="Différentes solution de récupération">
 
-Avec Appwrite, vous pouvez récupérer vos données avec GraphQL sans aucune configuration !
+Dans ce workshop, tout passe par les différents SDK d’Appwrite.
+Cependant, vous avez aussi la possibilité d'accéder à vos données avec deux autres méthodes :
 
-Et cerise sur le gâteau, l’interaction avec Appwrite par GraphQL est disponible pour tout les modules, hormis celui d’authentification 🤩
+- Avec des appels REST
+- Avec GraphQL
+
+Et cerise sur le gâteau, l’interaction avec Appwrite par GraphQL ou REST est disponible pour tout les modules, hormis celui d’authentification pour GraphQL, le tout sans aucune configuration ! 🤩
 
 </InfoBonus>

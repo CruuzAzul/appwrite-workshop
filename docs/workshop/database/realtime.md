@@ -8,45 +8,95 @@ title: 'Écouter la forêt'
   description="Avant de partir vers de nouvelle contrées, peut être que nous pouvons prendre le temps, et écouter les différents bruits et évènements qui se cache dans cette forêt"
 />
 
-Notre AppVenture fonctionne bien, nous pouvons à présent y insérer les coordonnées qui nous amènerons au trésor.
+## Le problème sans Realtime ... ⏰
 
-Cependant, vous avez besoin de recharger la page pour les voir s'afficher après une création, et ça n'est pas l'idéal ...
+Notre AppVenture fonctionne bien, nous pouvons à présent y insérer les coordonnées qui nous amènerons au trésor. Cependant, vous avez besoin de recharger la page pour les voir s'afficher après une création, et ça n'est pas l'idéal ...
 
-On pourrai attendre le retour d’une création de document, pour ensuite l’ajouter au donnée en local, mais si on veux que plusieurs utilisateurs puisse ajouter des informations en parallèle et que leurs affichages reste à jour avec la base de donnée, cela ne suffira pas.
+On pourrai attendre le retour d’une création de document, pour ensuite l’ajouter aux données en local, mais si on veux que plusieurs utilisateurs puisse ajouter des informations en parallèle et que leurs affichages reste à jour avec la base de donnée, cela ne suffira pas.
 
-Pour résoudre ce problème, Appwrite met à disposition une solution de **Realtime**, qui vous permet coté client d’écouter les changements de la base de donnée, pour mettre à jour votre interface en conséquence.
+## Le Realtime d’Appwrite ⌚
 
-Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le fichier `realtime.ts`, et compléter la fonction `realtimeCoordinateList`. Cette fonction est appelé à la création du composant, et permettra d'ouvrir une connexion avec votre base de donnée pour que la liste de coordonnées reste à jour !
+Pour résoudre ce problème, Appwrite met à disposition une solution de **Realtime**, qui vous permet coté client d’écouter les changements de l’instance, pour mettre à jour votre interface en conséquence. C'est un système qui va nous permettre de nous abonner à différents channel représentant les différentes ressources disponible, comme une collection par exemple, pour ensuite recevoir tout les changements qui la concerne, par l’intermédiaire d’une WebSocket.
 
-Dans notre cas, il faudra écouter deux évènements différents, la création d’un document et la suppression d’un document, tout les deux dans la collection **Clues** que vous avez créé au début de ce module.
+Une fois abonné à un channel, chaque retour concernera un certain nombre d’événements, comme la création ou la modification d’un document, et il faudra trier en fonction de ça pour réagir uniquement aux événements qui nous intéressent.
+
+## À vous de jouer 🎮
+
+Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le composant `CoordinatesCardList`, et compléter la fonction `unsubscribe` dans le `useEffect`. Cette fonction est appelé à la création du composant, et permettra d'ouvrir une connexion avec votre base de donnée pour que la liste de coordonnées reste à jour !
 
 N'hésitez pas à vous servir de la [documentation d’Appwrite](https://appwrite.io/docs/apis/realtime).
+
+**1.** S'abonner au bon channel
+
+La première étape est de s'abonner au client Appwrite avec la fonction `subscribe` du client Appwrite, cette fonction prend deux paramètres :
+
+- Le **channel** auquel on veux s'inscrire, qui représente précisément la ressource dont on veux recevoir les changements en temps réel, voir la [documentation](https://appwrite.io/docs/apis/realtime#channels).
+- La fonction de callback, qui sera appelé à chaque fois qu'un événement est déclenché sur le channel choisi.
+
+Ici, on veut s’abonner au channel d’une collection, la collection `Coordinates` que l’on a créé plus tôt dans ce workshop. À vous de réussir à écouter les changements sur cette collection !
 
 <Solution>
 
 ```ts
-export const realtimeCoordinateList = () => {
+useEffect(() => {
+  const coordinatesCollection = `databases.${EnvConfig.databaseId}.collections.${EnvConfig.coordinatesCollectionId}.documents`; // [!code ++]
+
+  return AppwriteClient.subscribe(coordinatesCollection, (response: RealtimeResponseEvent<Coordinates>) => { // [!code ++]
+    // TODO: Mettre à jour l’affichage de l’AppVenture
+  }); // [!code ++]
+}, []);
+```
+
+</Solution>
+
+**2.** Écouter les bon événements
+
+Une fois notre fonction abonné au bon channel, il faut filtrer les événements pour lesquels on veux réagir.
+
+Dans notre cas, il faudra écouter deux évènements différents, la création et la suppression d’un document, et dans les deux cas il faudra mettre à jour la liste des coordonnées dans l‘interface.
+L’application étant codé en React, on utilise un hook pour gérer notre état, la seul chose importante est de savoir que `updatedCoordinatesList` est notre liste de coordonnées, et `setUpdatedCoordinatesList` est la fonction qui modifie cette état, par la valeur qui lui est donnée en paramètre.
+
+::: tip
+
+Dans la réponse realtime, les différents événements déclenchés sont tous stocké dans un tableau d’événement.
+Pour vous simplifier la vie, nous vous mettons à disposition une fonction utilitaire qui récupère le type d’évènement à partir de ce tableau, `getEventType` que vous pouvez importer depuis `/utils/realtime.utils.ts`.
+On trouve aussi dans le fichier une `Enum` qui correspond au type de retour de la fonction, que vous pouvez lui aussi utiliser :
+
+```ts
+export const enum EventType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+}
+```
+
+:::
+
+<Solution>
+
+```ts
+useEffect(() => {
   const coordinatesCollection = `databases.${EnvConfig.databaseId}.collections.${EnvConfig.coordinatesCollectionId}.documents`;
 
   return AppwriteClient.subscribe(coordinatesCollection, (response: RealtimeResponseEvent<Coordinates>) => {
-    const eventType = getEventType({
-      events: response.events,
-    });
+    const eventType = getEventType({ // [!code ++]
+      events: response.events, // [!code ++]
+    }); // [!code ++]
 
-    switch (eventType) {
-      case EventType.CREATE:
-        setUpdatedCoordinatesList([response.payload as Coordinates, ...updatedCoordinatesList]);
-        break;
-      case EventType.DELETE:
-        const deletedItemId = response.payload.$id;
-        const filtered = updatedCoordinatesList.filter((item) => item.id !== deletedItemId);
-        setUpdatedCoordinatesList([...filtered]);
-        break;
-      default:
-        break;
+    switch (eventType) { // [!code ++]
+      case EventType.CREATE: // [!code ++]
+        setUpdatedCoordinatesList([response.payload as Coordinates, ...updatedCoordinatesList]); // [!code ++]
+        break; // [!code ++]
+      case EventType.DELETE: // [!code ++]
+        const deletedItemId = response.payload.$id; // [!code ++]
+        const filtered = updatedCoordinatesList.filter((item) => item.id !== deletedItemId); // [!code ++]
+        setUpdatedCoordinatesList([...filtered]); // [!code ++]
+        break; // [!code ++]
+      default: // [!code ++]
+        break; // [!code ++]
     }
   });
-};
+}, []);
 ```
 
 </Solution>
