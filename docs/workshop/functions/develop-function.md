@@ -42,12 +42,12 @@ Elle seront ensuite disponible dans vos fonction à travers la bibliothèque sys
 import { Client } from 'node-appwrite';
 
 export default async ({ req, res }) => {
-  const client = new Client()
-    .setEndpoint(process.env.APPWRITE_ENDPOINT)
-    .setProject(process.env.APPWRITE_PROJECT_ID)
-    .setKey(process.env.APPWRITE_API_KEY);
-
-  return res.send();
+  const client = new Client() 
+    .setEndpoint(process.env.APPWRITE_ENDPOINT) 
+    .setProject(process.env.APPWRITE_PROJECT_ID) 
+    .setKey(process.env.APPWRITE_API_KEY);  
+ 
+  return res.send(); 
 };
 ```
 
@@ -70,7 +70,7 @@ export default async ({ req, res }) => {
     .setProject(process.env.APPWRITE_PROJECT_ID)
     .setKey(process.env.APPWRITE_API_KEY);
 
-  const database = new Databases(client);
+  const database = new Databases(client); // [!code ++]
 
   return res.send();
 };
@@ -98,7 +98,7 @@ mv ./utils/decrypt.js ./functions/<NomDeVotreFonction>/src
 ```js
 import { Client, Databases } from 'node-appwrite';
 
-import { decrypt } from './decrypt.js';
+import { decrypt } from './decrypt.js'; // [!code ++]
 
 export default async ({ req, res }) => {
   const client = new Client()
@@ -108,14 +108,14 @@ export default async ({ req, res }) => {
 
   const database = new Databases(client);
 
-  database.updateDocument(
-    process.env.APPWRITE_DATABASE_ID,
-    process.env.APPWRITE_DESTINATION_COLLECTION_ID,
-    req.body.$id,
-    {
-      destination: decrypt(req.body.destination),
-    },
-  );
+  database.updateDocument( // [!code ++]
+    process.env.APPWRITE_DATABASE_ID, // [!code ++]
+    process.env.APPWRITE_DESTINATION_COLLECTION_ID, // [!code ++]
+    req.body.$id, // [!code ++]
+    { // [!code ++]
+      destination: decrypt(req.body.destination), // [!code ++]
+    }, // [!code ++]
+  ); // [!code ++]
 
   return res.send();
 };
