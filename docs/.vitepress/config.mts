@@ -68,7 +68,7 @@ export default defineConfig({
               { text: 'Inscription des voyageurs', link: '/workshop/authentication/register' },
               { text: 'La porte de connexion secrète', link: '/workshop/authentication/login' },
               { text: 'Rencontrer les voyageurs', link: '/workshop/authentication/users' },
-              { text: 'Les chemins alternatifs', link: '/workshop/authentication/social-login' },
+              { text: 'BONUS - Options alternatives', link: '/workshop/authentication/other-auth-methods' },
             ],
           },
           {
@@ -154,7 +154,7 @@ export default defineConfig({
               { text: 'Registration of travelers', link: '/en/workshop/authentication/register' },
               { text: 'The secret login gate', link: '/en/workshop/authentication/login' },
               { text: 'Meet the travelers', link: '/en/workshop/authentication/users' },
-              { text: 'Alternative paths', link: '/en/workshop/authentication/social-login' },
+              { text: 'BONUS - Other options', link: '/en/workshop/authentication/other-auth-methods' },
             ],
           },
           {
