@@ -47,12 +47,6 @@ const login = async (email: string, password: string) => {
 
 </Solution>
 
-:::tip ℹ️ Handling Appwrite Errors
-When using Appwrite services, it's essential to handle potential errors that may occur. Appwrite
-allows you to retrieve errors with the `AppwriteException` type. You can then handle the error
-accordingly in your application!
-:::
-
 ## Step 2️⃣: Completing the Registration Function
 
 Once we have retrieved the traveler's session, it's necessary to authenticate, as
@@ -91,7 +85,7 @@ the form to log in!
 
 Now that you can log in successfully, it would be good to be able to log out as well, wouldn't it? 🤔
 
-For this, we will once again use the Account service to destroy the traveler's session. You can use it
+For this, we will once again use the Account service to log out the traveler's session. You can use it
 at the end of the workshop to mark the end of your adventure! 🏁
 
 <Solution>

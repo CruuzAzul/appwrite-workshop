@@ -47,12 +47,6 @@ const login = async (email: string, password: string) => {
 
 </Solution>
 
-:::tip ℹ️ Gestion des Erreurs Appwrite
-Lorsque vous utilisez les services Appwrite, il est essentiel de gérer les erreurs qui peuvent survenir. Appwrite vous
-permet de récupérer les erreurs avec le type `AppwriteException`. Vous pouvez ensuite extraire le message ou le code
-d'erreur et traiter l'erreur en conséquence dans votre application !
-:::
-
 ## Étape 2️⃣ : Compléter la fonction d'inscription
 
 Une fois que l'on a récupéré la session du voyageur, il est nécessaire de s'authentifier, car
@@ -92,7 +86,7 @@ pour vous connecter !
 
 Maintenant que vous pouvez vous connecter, il serait bien de pouvoir vous déconnecter aussi, non ? 🤔
 
-Pour cela, nous allons à nouveau utiliser le service Account pour détruire la session du voyageur. Vous pouvez trouver
+Pour cela, nous allons à nouveau utiliser le service Account pour déconnecter notre voyageur. Vous pouvez trouver
 la fonction `logout` dans le fichier `src/api/services/logout.service.ts`. Cette fonction ne prend aucun paramètre et
 utilise l'API Appwrite pour détruire la session du voyageur. Vous pourrez l'utiliser à la fin du workshop pour marquer
 la fin de votre aventure ! 🏁
