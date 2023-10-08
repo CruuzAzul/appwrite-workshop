@@ -10,7 +10,7 @@ d'utiliser le Storage d'Appwrite pour récupérer toutes les images et d'essayer
 toutes les images soient en bon état..."
 />
 
-## Récupérer les Images du Stockage 🖼️
+## Récupérer les images du Storage 🖼️
 
 Félicitations, aventurier ! Vous avez réussi à récupérer toutes les images éparpillées lors de votre ascension de la
 montagne. Maintenant, il est temps de les afficher dans votre application pour résoudre le mystère du puzzle ! 🧩
@@ -60,7 +60,7 @@ export const getFilesForPreviews = ({fileId}: FilePreview): URL => {
 
 </Solution>
 
-## Les Pouvoirs des Transformations d'Images 🌟
+## Les pouvoirs des Transformations d'Images 🌟
 
 Malheureusement, une nouvelle énigme se présente à vous. Les images que vous avez collectées semblent endommagées, on ne
 parvient pas à les voir à l'écran malgré qu'elles soient bien présentes. Elles ne sont pas encore utilisables en l'état,
@@ -142,5 +142,5 @@ pour redimensionner une image pour une vue mobile. Vous pouvez en apprendre plus
 d'images d'Appwrite dans la [documentation](https://appwrite.io/docs/products/storage/images).
 :::
 
-**Vous semblez avoir tout ce qu'il faut pour résoudre le mystère du puzzle et passez à létape suivante pour vérifier
+**Vous semblez avoir tout ce qu'il faut pour résoudre le mystère du puzzle et passez à l'étape suivante pour vérifier
 votre découverte 🧩**

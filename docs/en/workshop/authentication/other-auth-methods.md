@@ -31,7 +31,7 @@ bonus options 🎁"
 
 :::tip
 To use OAuth 2, you must first configure third-party providers in the Appwrite console. Here are the
-Providers you can configure from the Authentication > Settings tab in the Appwrite console:
+Providers you can configure from the **Authentication > Settings** tab in the Appwrite console:
 
 <br/>
 
