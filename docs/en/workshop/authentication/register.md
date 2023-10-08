@@ -56,11 +56,6 @@ export const account = new Account(AppwriteClient);
   the `src/api/services/register.service.ts` file. This function takes the traveler's name, email, and password as
   parameters and uses the Appwrite API to perform the registration.
 
-- Once we have retrieved the traveler's session, it is necessary to authenticate them with their credentials because the
-  login is not automatic after registration. For this, we need to use the `login` function, which you can find in
-  the `src/api/services/login.service.ts` file... Unfortunately, this function is not written yet! 🤔 We'll come back to
-  this part later!
-
 <Solution>
 
 ```js
@@ -70,7 +65,6 @@ const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
     setUser(session);
-    await login(email, password);
     router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error
@@ -80,14 +74,24 @@ const register = async (email: string, password: string, name: string) => {
   }
 };
 ```
-
 </Solution>
+
+:::tip 🆔 Generating a Unique Identifier
+When you interact with Appwrite during any data creation, it is necessary that your data has a unique identifier. For
+this Appwrite provides a utility function `ID.unique()` that allows you to generate a unique identifier. After that, you
+can use this identifier to create your data in Appwrite.
+:::
 
 :::tip ℹ️ La gestion des erreurs Appwrite
 Lorsque vous utilisez les services Appwrite, il est important de gérer les erreurs qui peuvent survenir. Pour cela,
 Appwrite vous permet de récupérer les erreurs avec le type `AppwriteException`. Vous pouvez ensuite récupérer le message
 ou le code de l'erreur et traiter l'erreur en conséquence dans votre application !
 :::
+
+- Once we have retrieved the traveler's session, it is necessary to authenticate them with their credentials because the
+  login is not automatic after registration. For this, we need to use the `login` function, which you can find in
+  the `src/api/services/login.service.ts` file... Unfortunately, this function is not written yet! 🤔 We'll come back to
+  this part later!
 
 ## Step 3️⃣: Sign Up!
 
@@ -97,5 +101,5 @@ code is already written; you just need to go to the registration page `/register
 ## Step 4️⃣: Verify Your Account
 
 After filling out the form, you should be redirected to the login page `/login`. You should also see your user appear in
-the list of users in the Appwrite console! 📝 If you see your user in the list, everything went well, and you'll be able
-to complete the login page in the next step! 🥳
+the list of users in the Appwrite console! 📝 If you see it, then everything has gone well, and you'll be able to
+complete the login page in the next step! 🥳

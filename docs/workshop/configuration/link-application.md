@@ -49,12 +49,14 @@ la [documentation d'Appwrite sur la migration des données](https://appwrite.io/
 
 **3.** Sauvegardez le fichier `.env.local` après avoir effectué ces modifications.
 
-**4.** Créez un nouveau fichier `client.config.ts` dans le dossier `src/api/config/` et ajoutez-y le code suivant, en
-remplaçant `<PROJECT_ID>` par l'ID de votre projet.
+**4.** Créez un nouveau fichier `client.config.ts` dans le dossier `src/api/config/` et ajoutez-y le code permettant
+d'initialiser le SDK Appwrite côté client.
 
 :::info
 Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fichier `.env.local`
 :::
+
+<Solution>
 
 ```js
 import {Client} from 'appwrite';
@@ -63,6 +65,7 @@ export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
   .setProject('<PROJECT_ID>');
 ```
+</Solution>
 
 **Ce code permettra d'initialiser le SDK Appwrite que nous utiliserons dans notre application. Il nous permettra par la
 suite d'initialiser les différents services Appwrite dans notre application.**

@@ -60,11 +60,6 @@ export const account = new Account(AppwriteClient);
   le
   mot de passe du voyageur et utilise l'API Appwrite pour effectuer l'inscription.
 
-- Une fois que l'on a récupéré la session du voyageur, il est nécessaire de s'authentifier avec ses identifiants, car
-  la connexion n'est pas automatique après l'inscription. Pour cela, nous devons utiliser la fonction `login` que vous
-  pouvez trouver dans le fichier `src/api/services/login.service.ts`... Pas de chance, cette fonction n'est pas encore
-  écrite ! 🤔 On reviendra donc sur cette partie plus tard !
-
 <Solution>
 
 ```js
@@ -74,7 +69,6 @@ const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
     setUser(session);
-    await login(email, password);
     router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error
@@ -84,14 +78,24 @@ const register = async (email: string, password: string, name: string) => {
   }
 };
 ```
-
 </Solution>
+
+:::tip 🆔 Génération d'un identifiant unique
+Lorsque vous interagissez avec Appwrite lors d'une création de données quelconque, il est nécessaire que votre donnée
+possède un identifiant unique. Pour cela, Appwrite vous fournit une fonction `ID.unique()` qui vous permet de générer
+un identifiant unique à chaque appel. Vous pouvez ensuite utiliser cet identifiant pour créer votre donnée !
+:::
 
 :::tip ℹ️ La gestion des erreurs Appwrite
 Lorsque vous utilisez les services Appwrite, il est important de gérer les erreurs qui peuvent survenir. Pour cela,
 Appwrite vous permet de récupérer les erreurs avec le type `AppwriteException`. Vous pouvez ensuite récupérer le message
 ou le code de l'erreur et traiter l'erreur en conséquence dans votre application !
 :::
+
+- Une fois que l'on a récupéré la session du voyageur, il est nécessaire de s'authentifier avec ses identifiants, car
+  la connexion n'est pas automatique après l'inscription. Pour cela, nous devons utiliser la fonction `login` que vous
+  pouvez trouver dans le fichier `src/api/services/login.service.ts`... Pas de chance, cette fonction n'est pas encore
+  écrite ! 🤔 On reviendra donc sur cette partie plus tard !
 
 ## Étape 3️⃣ : Inscrivez-vous !
 
@@ -102,6 +106,5 @@ formulaire !
 ## Étape 4️⃣ : Vérifiez votre compte
 
 Une fois que vous avez rempli le formulaire, vous devriez être redirigé vers la page de connexion `/login`. Vous devriez
-également voir apparaître votre utilisateur dans la liste des utilisateurs dans la console Appwrite ! 📝 Si vous voyez
-votre utilisateur dans la liste, c'est que tout s'est bien passé et que vous allez pouvoir compléter la page de login
-dans l'étape suivante ! 🥳
+également voir apparaître votre utilisateur dans la liste des utilisateurs dans la console Appwrite ! 📝 Si vous le
+voyez, c'est que tout s'est bien passé et que vous allez pouvoir compléter la page de login dans l'étape suivante ! 🥳
