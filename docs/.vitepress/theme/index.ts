@@ -6,6 +6,7 @@ import Solution from './components/Solution.vue';
 import Hero from './components/Hero.vue';
 import Image from './components/Image.vue';
 import InfoBonus from './components/InfoBonus.vue';
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client';
 
 export default {
   ...Theme,
@@ -20,5 +21,6 @@ export default {
     app.component('Image', Image);
     app.component('InfoBonus', InfoBonus);
     siteData;
+    enhanceAppWithTabs(app);
   },
 };

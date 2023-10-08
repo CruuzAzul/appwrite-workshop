@@ -1,14 +1,17 @@
 {
   "devDependencies": {
     "@algolia/client-search": "^4.16.0",
-    "vitepress": "1.0.0-alpha.62",
-    "vue": "3.3.4",
+    "prettier": "2.8.7",
     "typescript": "5.2.2",
-    "prettier": "2.8.7"
+    "vitepress": "1.0.0-rc.20",
+    "vue": "3.3.4"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress-plugin-tabs": "0.4.1"
   }
 }

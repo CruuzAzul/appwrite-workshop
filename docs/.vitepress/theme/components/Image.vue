@@ -3,11 +3,12 @@ defineProps<{
   src?: string;
   imageAlt?: string;
   withSpacing?: boolean;
+  withoutShadow?: boolean;
 }>();
 </script>
 
 <style scoped>
-img {
+.withShadow {
   box-shadow: 0 0 8px 0 var(--vp-c-brand-light);
 }
 
@@ -17,5 +18,5 @@ img {
 </style>
 
 <template>
-  <img :src="src" :alt="imageAlt" :class="{ withSpacing: withSpacing }" />
+  <img :src="src" :alt="imageAlt" :class="{ withSpacing, withShadow: !withoutShadow }" />
 </template>
