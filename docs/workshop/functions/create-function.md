@@ -4,7 +4,7 @@ title: Creer votre première fonction
 
 <Hero
     title="Créons notre propre fonction"
-    image=""
+    image="/assets/workshop/functions/create.jpg"
     description="Une fois arrivé dans les nuages, il ne nous reste plus qu’a choisir dans la multitude de possibilité pour créer notre fonction ... Quel langage choisir ? Avec quelle méthode de création ? Nous allons explorer tout ça"
 />
 
@@ -81,6 +81,8 @@ Pour se faire, allez dans l'onglet **Functions**, cliquez sur votre fonction fra
 Vous arrivez sur une vue où vous pouvez voir le status de votre fonction, son historique de déploiement et lequel de ses derniers est actif.
 
 Pour tester rapidement votre fonction, vous pouvez cliquer sur le bouton **Execute now**, et une nouvelle execution apparaîtra dans l’onglet **Execution**
+
+<Image src="/assets/workshop/functions/execution.png" imageAlt="Onglet execution du module de fonction sur la console Appwrite" />
 
 Une fois l’execution terminée (en général après quelque millisecondes), on peut accéder aux différents log de notre fonction, dans lesquels on devra trouver les différents affichage de notre fonction, "Hello, logs" et le "Hello, errors!"
 

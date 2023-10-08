@@ -4,7 +4,7 @@ title: Développer votre fonction
 
 <Hero
     title="Développons notre fonction"
-    image=""
+    image="/assets/workshop/functions/develop.jpg"
     description="Notre fonction existe, elle est la, mais pour l'instant on ne peux pas dire qu'elle est très utile. Je suis sur que l’on peut faire en sorte qu'elle nous aide à régler notre problème de destination, pour aller chercher un indice qui nous mènera au trésor !"
 />
 
