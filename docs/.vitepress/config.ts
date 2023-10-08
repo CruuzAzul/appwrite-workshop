@@ -64,7 +64,7 @@ export default defineConfig({
             text: "🏝️ L'Île de l'Authentification",
             items: [
               { text: "Votre arrivée sur L'Île", link: '/workshop/authentication/introduction' },
-              { text: 'Inscription des voyageurs', link: '/workshop/authentication/create-account' },
+              { text: 'Inscription des voyageurs', link: '/workshop/authentication/register' },
               { text: 'La porte de connexion secrète', link: '/workshop/authentication/login' },
               { text: 'Les chemins alternatifs', link: '/workshop/authentication/social-login' },
             ],
@@ -107,47 +107,47 @@ export default defineConfig({
         logo: 'https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png',
         lastUpdatedText: 'Last update ',
         nav: [
-          { text: 'Home 🏠', link: '/' },
-          { text: 'Workshop 💼', link: '/workshop/markdown-examples' },
-          { text: 'Creators 👨🏼‍💻', link: '/creators.md' },
+          { text: 'Home 🏠', link: '/en/' },
+          { text: 'Workshop 💼', link: '/en/workshop/markdown-examples' },
+          { text: 'Creators 👨🏼‍💻', link: '/en/creators.md' },
         ],
 
         sidebar: [
           {
             text: '🛫 Examples (🗑️ after dev)',
             items: [
-              { text: 'Exemple en markdown', link: '/workshop/markdown-examples' },
-              { text: "Exemples d'exécution API", link: '/workshop/api-examples' },
+              { text: 'Exemple en markdown', link: '/en/workshop/markdown-examples' },
+              { text: "Exemples d'exécution API", link: '/en/workshop/api-examples' },
             ],
           },
           {
             text: '⛵︎ Introduction',
             items: [
-              { text: 'Rules and explanations', link: '/workshop/introduction/rules' },
-              { text: 'The adventure begins', link: '/workshop/introduction/beginning' },
+              { text: 'Rules and explanations', link: '/en/workshop/introduction/rules' },
+              { text: 'The adventure begins', link: '/en/workshop/introduction/beginning' },
             ],
           },
           {
             text: '🏖️ The Configuration Bay',
             items: [
-              { text: 'Configure Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
+              { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Configure our application',
-                link: '/workshop/configuration/app-configuration',
+                link: '/en/workshop/configuration/app-configuration',
               },
               {
                 text: 'Link AppVenture to Appwrite',
-                link: '/workshop/configuration/link-application',
+                link: '/en/workshop/configuration/link-application',
               },
             ],
           },
           {
             text: '🏝️ The Authentication Island',
             items: [
-              { text: 'Your arrival on the Island', link: '/workshop/authentication/introduction' },
-              { text: 'Registration of travelers', link: '/workshop/authentication/create-account' },
-              { text: 'The secret login gate', link: '/workshop/authentication/login' },
-              { text: 'Alternative paths', link: '/workshop/authentication/social-login' },
+              { text: 'Your arrival on the Island', link: '/en/workshop/authentication/introduction' },
+              { text: 'Registration of travelers', link: '/en/workshop/authentication/register' },
+              { text: 'The secret login gate', link: '/en/workshop/authentication/login' },
+              { text: 'Alternative paths', link: '/en/workshop/authentication/social-login' },
             ],
           },
           {
@@ -164,7 +164,7 @@ export default defineConfig({
           },
           {
             text: 'ℹ️ Informations',
-            items: [{ text: 'Creators 👨🏼‍💻', link: '/creators.md' }],
+            items: [{ text: 'Creators 👨🏼‍💻', link: '/en/creators.md' }],
           },
         ],
 
