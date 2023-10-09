@@ -24,7 +24,7 @@ export default defineConfig({
       head: [['link', { rel: 'icon', href: '/assets/appwrite.svg' }]],
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: 'https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png',
+        logo: '/assets/appwrite.svg',
         lastUpdatedText: 'Dernière mise à jour ',
         nav: [
           { text: 'Accueil 🏠', link: '/' },
@@ -120,7 +120,7 @@ export default defineConfig({
       head: [['link', { rel: 'icon', href: '/assets/appwrite.svg' }]],
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: 'https://seeklogo.com/images/A/appwrite-logo-D33B39992A-seeklogo.com.png',
+        logo: '/assets/appwrite.svg',
         lastUpdatedText: 'Last update ',
         nav: [
           { text: 'Home 🏠', link: '/en/' },
