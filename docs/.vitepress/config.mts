@@ -79,7 +79,7 @@ export default defineConfig({
               { text: 'Plantation des documents', link: '/workshop/database/create-document' },
               { text: 'Récolte des documents', link: '/workshop/database/get-document' },
               { text: 'Désherbage de documents', link: '/workshop/database/delete-document' },
-              { text: 'Bonus : Écoute de la forêt', link: '/workshop/database/realtime' },
+              { text: 'BONUS : Écoute de la forêt', link: '/workshop/database/realtime' },
             ],
           },
           {
@@ -87,8 +87,12 @@ export default defineConfig({
             items: [
               { text: "Le début de l'ascension", link: '/workshop/storage/introduction' },
               {
-                text: 'Récupérer le puzzle',
+                text: 'Récupérer toutes les pièces',
                 link: '/workshop/storage/download-files',
+              },
+              {
+                text: 'La réponse au puzzle',
+                link: '/workshop/storage/send-files',
               },
             ],
           },
@@ -178,7 +182,7 @@ export default defineConfig({
               { text: 'Planting Documents', link: '/workshop/database/create-document' },
               { text: 'Harvesting Documents', link: '/workshop/database/get-document' },
               { text: 'Weeding Out Documents', link: '/workshop/database/delete-document' },
-              { text: 'Bonus: Listening to the Forest', link: '/workshop/database/realtime' },
+              { text: 'BONUS: Listening to the Forest', link: '/workshop/database/realtime' },
             ],
           },
           {
@@ -186,7 +190,12 @@ export default defineConfig({
             items: [
               { text: 'The beginning of the ascent', link: '/en/workshop/storage/introduction' },
               {
-                text: '',
+                text: 'Retrieve all the pieces',
+                link: '/en/workshop/storage/download-files',
+              },
+              {
+                text: 'The answer to the puzzle',
+                link: '/en/workshop/storage/download-files',
               },
             ],
           },
@@ -195,7 +204,7 @@ export default defineConfig({
             items: [
               { text: 'Bursting through the clouds', link: '/en/workshop/functions/introduction' },
               { text: 'Create your own function', link: '/en/workshop/functions/create-function' },
-              { text: 'Decrypt the destinations', link: '/en/workshop/functions/develop-function' },
+              { text: 'Decrypt the destinations', link: '/en/workshop/functions/send-files' },
             ],
           },
           {
