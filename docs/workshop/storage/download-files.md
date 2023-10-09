@@ -31,7 +31,7 @@ import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
 export const getStorageFiles = async (): Promise<FilesList> => {
-  return await storage.listFiles(EnvConfig.storageBucketId); // [!code hl]
+  return await storage.listFiles(EnvConfig.storageBucketId); // [!code ++]
 };
 ```
 
@@ -51,10 +51,10 @@ import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
 export const getFilesForPreviews = ({fileId}: FilePreview): URL => {
-  return storage.getFilePreview( // [!code hl]
-    EnvConfig.storageBucketId, // [!code hl]
-    fileId, // [!code hl]
-  ); // [!code hl]
+  return storage.getFilePreview( // [!code ++]
+    EnvConfig.storageBucketId, // [!code ++]
+    fileId, // [!code ++]
+  ); // [!code ++]
 };
 ```
 

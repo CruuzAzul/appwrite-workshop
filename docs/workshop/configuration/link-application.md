@@ -14,7 +14,7 @@ Ce processus aurait également pu être effectué dans des étapes précédentes
 l'instance Appwrite et de votre projet dans la console Appwrite Cloud 🏞️️
 :::
 
-## Apprêtez votre AppVenture : Le Raccordement à Appwrite 🧵
+## Apprêtez votre AppVenture : Le raccordement à Appwrite 🧵
 
 Pour le moment lorsque vous accédez à votre AppVenture, vous verrez une page vous indiquant que votre application n'est
 pas encore liée à votre instance Appwrite. C'est normal, nous allons régler cela maintenant ! Pour cela l'application a
@@ -98,7 +98,7 @@ on a vu mieux comme sécurité... Vous penserez à changer ça plus tard 😅)
 
 </InfoBonus>
 
-## À la recherche des Traces des Anciens Explorateurs 🕵️‍♂️
+## À la recherche des traces des anciens explorateurs 🕵️‍♂️
 
 Avant de nous lancer dans ce périple passionnant, il est temps de jeter un coup d'œil que les anciens
 explorateurs ont laissés derrière eux. En effet, ils ont laissé des indices et des éléments qui

@@ -18,7 +18,7 @@ interagir avec Appwrite et que vous avez terminé les sections dans la
 partie [Configuration](/workshop/configuration/appwrite-configuration) 📝
 :::
 
-## Inscription d'un Voyageur 🧳
+## Inscription d'un voyageur 🧳
 
 <br/>
 
@@ -74,12 +74,12 @@ import {account} from '@/api/config/client.config';
 
 const register = async (email: string, password: string, name: string) => {
   try {
-    const session = await account.create(ID.unique(), email, password, name);
-    setUser(session);
-    router.push(ROUTES.dashboard);
+    const session = await account.create(ID.unique(), email, password, name); // [!code ++]
+    setUser(session); 
+    router.push(ROUTES.dashboard); 
   } catch (error: any) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
+    const appwriteException = error as AppwriteException; // [!code ++]
+    console.error(appwriteException.message); // [!code ++]
   }
 };
 ```

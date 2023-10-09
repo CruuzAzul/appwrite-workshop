@@ -35,12 +35,12 @@ import {account} from '@/api/config/client.config';
 
 const login = async (email: string, password: string) => {
   try {
-    await account.createEmailSession(email, password);
+    await account.createEmailSession(email, password); // [!code ++]
     await loadAccount();
     router.push(ROUTES.dashboard);
   } catch (error: any) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
+    const appwriteException = error as AppwriteException; // [!code ++]
+    console.error(appwriteException.message); // [!code ++]
   }
 };
 ```
@@ -62,12 +62,10 @@ const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
     setUser(session);
-    await login(email, password); // 👈
+    await login(email, password); // 👈 // [!code ++]
     router.push(ROUTES.dashboard);
   } catch (error: any) {
-    const appwriteException = error
-    as
-    AppwriteException;
+    const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);
   }
 };
@@ -94,7 +92,7 @@ at the end of the workshop to mark the end of your adventure! 🏁
 import {account} from '@/api/config/client.config';
 
 const logout = async () => {
-  await account.deleteSession('current');
+  await account.deleteSession('current'); // [!code ++]
   setUser(null);
   router.push(ROUTES.dashboard);
 };

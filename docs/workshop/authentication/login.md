@@ -1,5 +1,5 @@
 <Hero
-title="Connexion des Voyageurs 🔐"
+title="Connexion des voyageurs 🔐"
 image="/assets/workshop/authentication/house-island.jpeg"
 description="Nous voici arrivés devant la batisse, la prochaine étape de notre voyage : la connexion des voyageurs.
 Avant de pouvoir déverrouiller l'indice qui nous attend, nous devons d'abord accéder à notre application en étant
@@ -63,13 +63,11 @@ const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
     setUser(session);
-    await login(email, password); // 👈
+    await login(email, password); // 👈 // [!code ++]
     router.push(ROUTES.dashboard);
   } catch (error: any) {
-    const appwriteException = error
-    as
-    AppwriteException;
-    console.error(appwriteException.message);
+    const appwriteException = error as AppwriteException; // [!code ++]
+    console.error(appwriteException.message); // [!code ++]
   }
 };
 ```
@@ -97,7 +95,7 @@ la fin de votre aventure ! 🏁
 import {account} from '@/api/config/client.config';
 
 const logout = async () => {
-  await account.deleteSession('current');
+  await account.deleteSession('current');  // [!code ++]
   setUser(null);
   router.push(ROUTES.dashboard);
 };

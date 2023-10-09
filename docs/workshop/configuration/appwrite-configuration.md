@@ -3,7 +3,7 @@ title: La Baie de la Configuration
 ---
 
 <Hero
-title="La baie de la configuration"
+title="La baie de la configuration 🏖️"
 image="/assets/workshop/configuration/console/bay.jpeg"
 description="Bienvenue à la Baie de la Configuration, la première étape de notre aventure Appwrite ! 🔧 Dans cette
 section, nous allons plonger dans les configurations initiales nécessaires pour préparer notre voyage ! Assurez-vous de
@@ -67,13 +67,14 @@ Profitez de cette expérience d'apprentissage passionnante au cœur du backend o
 <br />
 
 <InfoBonus title="Les autres moyens de configurer une instance Appwrite 📦">
-<br />
+
+## Auto-Hébergement et Solutions en un clic 📝
 
 Appwrite offre également d'autres moyens d'obtenir votre propre instance, en fonction de vos préférences, **nous
 n'allons pas les couvrir dans ce workshop**, mais vous pouvez les consulter plus tard sur vos prochaines aventures avec
 Appwrite
 
-## Auto-Hébergement 🏠
+### Auto-Hébergement 🏠
 
 Appwrite a été conçu dès le départ dans une optique d'auto-hébergement. Vous pouvez installer et exécuter Appwrite sur
 n'importe quel système d'exploitation capable d'exécuter une CLI Docker. Les instances Appwrite auto-hébergées peuvent
@@ -93,7 +94,7 @@ docker run -it --rm \
 
 📖 [Documentation - Auto-Hébergement](https://appwrite.io/docs/advanced/self-hosting)
 
-## Solutions en un clic 🖱️
+### Solutions en un clic 🖱️
 
 En plus d'exécuter Appwrite localement, vous pouvez également lancer Appwrite à l'aide d'une installation préconfigurée.
 Cela vous permet de démarrer rapidement avec Appwrite sans installer Docker sur votre machine locale.

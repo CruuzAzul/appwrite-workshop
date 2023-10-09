@@ -34,13 +34,6 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: '🛫 Exemples (🗑️ après le dev)',
-            items: [
-              { text: 'Exemple en markdown', link: '/workshop/markdown-examples' },
-              { text: "Exemples d'exécution API", link: '/workshop/api-examples' },
-            ],
-          },
-          {
             text: '⛵︎ Introduction',
             items: [
               { text: 'Règles et explications', link: '/workshop/introduction/rules' },
@@ -136,13 +129,6 @@ export default defineConfig({
         ],
 
         sidebar: [
-          {
-            text: '🛫 Examples (🗑️ after dev)',
-            items: [
-              { text: 'Exemple en markdown', link: '/en/workshop/markdown-examples' },
-              { text: "Exemples d'exécution API", link: '/en/workshop/api-examples' },
-            ],
-          },
           {
             text: '⛵︎ Introduction',
             items: [
