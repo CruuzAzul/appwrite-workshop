@@ -20,19 +20,19 @@ hero:
 
 features:
   - icon:
-      src: assets/firebase.svg
+      src: ../assets/firebase.svg
     title: Firebase alternative
     details: Alternative to Firebase for developing the backend of your web and mobile applications.
   - icon:
-      src: assets/open-source.svg
+      src: ../assets/open-source.svg
     title: Open Source
     details: Take advantage of a large community of developers, continuous improvement and complete documentation.
   - icon:
-      src: assets/hosting.svg
+      src: ../assets/hosting.svg
     title: Self-hosted
     details: As an alternative to cloud or one-click hosting, Appwrite can be installed on your own server.
   - icon:
-      src: assets/dev.svg
+      src: ../assets/dev.svg
     title: For developers
     details: Designed by developers for developers! Easy to use and integrate into your applications.
 ---
