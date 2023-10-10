@@ -2,6 +2,8 @@
 title: 'Écouter la forêt'
 ---
 
+<Documentation link="https://appwrite.io/docs/apis/realtime"></Documentation>
+
 <Hero
 title="Écoutons ce que la forêt peut nous offrir 👂🏼"
 image="/assets/workshop/database/realtime.jpg"

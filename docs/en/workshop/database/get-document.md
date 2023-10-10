@@ -2,6 +2,8 @@
 title: Retrieving Our Data
 ---
 
+<Documentation link="https://appwrite.io/docs/products/databases/quick-start#list-documents"></Documentation>
+
 <Hero
 title="Let's Retrieve Our Data! 📑"
 image="/assets/workshop/database/get.jpg"

@@ -2,6 +2,8 @@
 title: Forêt des Databases
 ---
 
+<Documentation link="https://appwrite.io/docs/products/databases"></Documentation>
+
 <Hero
 title="Arrivée dans la forêt des Databases 🗄️"
 image="/assets/workshop/database/forest.jpg"
@@ -18,9 +20,4 @@ possibilité d’écouter les données en temps réel avec le Realtime !
 
 Pour commencer notre voyage, nous allons devoir trouver un endroit pour créer notre première collection ... 🔍
 
-_Rendez-vous sur le module de Database dans l’AppVenture_
-
-## Liens utiles 🛩️
-
-- [Documentation Appwrite sur la base de donnée](https://appwrite.io/docs/products/databases)
-
+**Rendez-vous sur le module de Database dans l’AppVenture**

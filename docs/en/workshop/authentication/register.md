@@ -1,6 +1,8 @@
 ---
-title: Traveler Registration 📝
+title: Traveler Registration
 ---
+
+<Documentation link="https://appwrite.io/docs/products/auth/email-password#sign-up"></Documentation>
 
 <Hero
 title="Traveler Registration 📝"

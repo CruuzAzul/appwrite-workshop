@@ -2,6 +2,8 @@
 title: Creating a Document
 ---
 
+<Documentation link="https://appwrite.io/docs/products/databases/quick-start#create-documents"></Documentation>
+
 <Hero
 title="Let's Plant Our First Document 🌱"
 image="/assets/workshop/database/create.jpg"

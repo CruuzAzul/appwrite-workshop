@@ -2,6 +2,8 @@
 title: La tête dans les functions
 ---
 
+<Documentation link="https://appwrite.io/docs/products/functions"></Documentation>
+
 <Hero
     title="La tête dans les functions ! ☁️"
     image="/assets/workshop/functions/clouds.jpeg"
@@ -29,7 +31,3 @@ Cependant, votre clé API n'a accès qu'au service de gestion d'utilisateur, il 
 vous permettra et de modifier un document en base !
 
 **Une fois créé, nous allons pouvoir nous atteler à créer notre premiere fonction ! 🔨**
-
-## **Liens utiles** 🛩️
-
-- [Documentation Appwrite sur les clouds functions](https://appwrite.io/docs/products/functions)

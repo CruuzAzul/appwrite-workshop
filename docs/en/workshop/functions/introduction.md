@@ -2,6 +2,8 @@
 title: Head in the functions
 ---
 
+<Documentation link="https://appwrite.io/docs/products/functions"></Documentation>
+
 <Hero
 title="Head in the functions! ☁️"
 image="/assets/workshop/functions/clouds.jpeg"
@@ -29,7 +31,3 @@ However, your API key only has access to the user management service, so you'll 
 allow you to modify a document in the database!
 
 **Once created, we can get down to work and create our first function! 🔨**
-
-## **Useful links** 🛩️
-
-- [Appwrite documentation on cloud functions](https://appwrite.io/docs/products/functions)

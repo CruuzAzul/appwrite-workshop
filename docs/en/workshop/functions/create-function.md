@@ -2,6 +2,8 @@
 title: Creating your first function
 ---
 
+<Documentation link="https://appwrite.io/docs/products/functions/quick-start"></Documentation>
+
 <Hero
 title="Let's create our own function ➕"
 image="/assets/workshop/functions/create.jpg"

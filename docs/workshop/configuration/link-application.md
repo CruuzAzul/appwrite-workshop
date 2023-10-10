@@ -2,6 +2,8 @@
 title: Lier l'AppVenture à votre Instance Appwrite
 ---
 
+<Documentation link="https://appwrite.io/docs/quick-starts/nextjs"></Documentation>
+
 <Hero
 title="Lier l'AppVenture à votre Instance Appwrite 🌐"
 image="/assets/workshop/configuration/app/bay_link.jpg"

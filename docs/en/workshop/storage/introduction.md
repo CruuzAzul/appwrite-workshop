@@ -2,6 +2,8 @@
 title: Down from the Storage mountains
 ---
 
+<Documentation link="https://appwrite.io/docs/products/storage"></Documentation>
+
 <Hero
 title="The Beginning of the Ascent 🏞️"
 image="/assets/workshop/storage/mountains.jpeg"

@@ -2,6 +2,8 @@
 title: Deleting a Document
 ---
 
+<Documentation link="https://appwrite.io/docs/references/cloud/client-web/databases#deleteDocument"></Documentation>
+
 <Hero
 title="Let's remove the unwanted documents 🗑️"
 image="/assets/workshop/database/forest.jpg"

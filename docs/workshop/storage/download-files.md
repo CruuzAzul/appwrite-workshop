@@ -2,6 +2,8 @@
 title: Le Mystère des Images du Stockage Appwrite
 ---
 
+<Documentation link="https://appwrite.io/docs/products/storage/quick-start#download-file"></Documentation>
+
 <Hero
 title="Le Mystère des Images du Stockage 🖼️"
 image="/assets/workshop/storage/mountain-top.jpeg"
