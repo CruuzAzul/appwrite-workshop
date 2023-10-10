@@ -2,6 +2,8 @@
 title: The Configuration Bay
 ---
 
+<Documentation link="https://appwrite.io/docs/quick-starts/nextjs"></Documentation>
+
 <Hero
 title="The Configuration Bay 🏖️"
 image="/assets/workshop/configuration/console/bay.jpeg"
