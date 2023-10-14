@@ -18,8 +18,8 @@ Félicitations, aventurier ! Vous avez réussi à récupérer toutes les images 
 montagne. Maintenant, il est temps de les afficher dans votre application pour résoudre le mystère du puzzle ! 🧩
 
 Après avoir initialisé le SDK Appwrite pour vous permettre de communiquer avec la partie **Storage** d'Appwrite, vous
-vous rendez dans le fichier `src/api/modules/storage.ts` et modifier la fonction `getStorageFiles` qui va récupérer
-et retourner les images du stockage.
+vous rendez dans le fichier `src/workshop/api/modules/storage/puzzle.ts` et modifier la fonction `getPuzzlePieces` qui
+va récupérer et retourner les images du stockage.
 
 :::tip
 Vous pouvez utiliser des logs pour afficher les images récupérées dans la console de votre navigateur, si vous souhaitez
@@ -29,10 +29,10 @@ valider cette première étape.
 <Solution>
 
 ```ts
-import {storage} from '@/api/config/client.config';
-import {EnvConfig} from '@/api/config/env.config';
+import {storage} from '@/api/config/client.config'; // [!code ++]
+import {EnvConfig} from '@/api/config/env.config'; // [!code ++]
 
-export const getStorageFiles = async (): Promise<FilesList> => {
+export const getPuzzlePieces = async (): Promise<FilesList> => {
   return await storage.listFiles(EnvConfig.storageBucketId); // [!code ++]
 };
 ```
@@ -42,9 +42,9 @@ export const getStorageFiles = async (): Promise<FilesList> => {
 ## Afficher les images trouvées 🧐
 
 Maintenant que vous avez récupéré les images du stockage, il est temps de les afficher dans votre application. On semble
-déjà avoir le code permettant d'itérer sur les images récupérées, mais il manque encore un petit quelque chose pour les
-afficher. Pour cela, nous allons utiliser une des méthodes d'Appwrite qui va nous permettre de récupérer une preview de
-l'image, c'est-à-dire son URL à partir de son ID.
+déjà avoir le code permettant d'itérer sur les images récupérées, mais il manque encore un petit quelque chose dans la
+fonction `getPuzzlePiecesForPreviews` pour les afficher. Pour cela, nous allons utiliser une des méthodes d'Appwrite qui
+va nous permettre de récupérer une preview de l'image, c'est-à-dire son URL à partir de son ID
 
 <Solution>
 
@@ -52,7 +52,7 @@ l'image, c'est-à-dire son URL à partir de son ID.
 import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
-export const getFilesForPreviews = ({fileId}: FilePreview): URL => {
+export const getPuzzlePiecesForPreviews = ({fileId}: FilePreview): URL => {
   return storage.getFilePreview( // [!code ++]
     EnvConfig.storageBucketId, // [!code ++]
     fileId, // [!code ++]
@@ -77,8 +77,9 @@ secrets de la montagne !
 
 ### Étape 1️⃣ : Modifier la fonction de récupération des previews
 
-Dans le fichier `src/api/modules/storage.ts`, modifiez la fonction `getFilesForPreviews` pour qu'elle
-accepte des paramètres supplémentaires qui vont permettre d'appliquer des transformations sur les images récupérées.
+Dans le fichier `src/workshop/api/modules/storage/puzzle.ts`, modifiez la
+fonction `getPuzzlePiecesForPreviews` pour qu'elle accepte des paramètres supplémentaires qui vont permettre
+d'appliquer des transformations sur les images récupérées.
 
 <Solution>
 
@@ -86,7 +87,7 @@ accepte des paramètres supplémentaires qui vont permettre d'appliquer des tran
 import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
-export const getFilesForPreviews = ({
+export const getPuzzlePiecesForPreviews = ({
   fileId,
   width, // [!code ++]
   height, // [!code ++]
@@ -122,14 +123,14 @@ export const getFilesForPreviews = ({
 
 ### Étape 2️⃣ : Modifier l'appel à la fonction pour changer la couleur de fond
 
-Dans la page `app/[locale]/storage/preview/page.tsx` responsoable de l'affichage des images, nous allons modifier
-l'appel à la fonction `getFilesForPreviews` pour passer un paramètre `background` qui va permettre de changer la couleur
+Dans la page `src/workshop/components/storage/puzzle.tsx` responsable de l'affichage des images, nous allons modifier
+l'appel à la fonction `getPuzzlePiecesForPreviews` pour passer un paramètre `background` qui va permettre de changer la couleur
 de fond des images avec du noir.
 
 <Solution>
 
 ```ts
-const imgSrc = getFilesForTransformedPreviews({
+const imgSrc = getPuzzlePiecesForPreviews({
   fileId: file.$id,
   background: '000000', // [!code ++]
 });

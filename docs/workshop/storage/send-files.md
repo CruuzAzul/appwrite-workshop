@@ -25,6 +25,8 @@ plus qu'à envoyer le bon fichier 📤**
 <Solution>
 
 ```ts
+import {AppwriteException, ID, Models} from 'appwrite'; // [!code ++]
+
 export const uploadFiles = async (
   files: File[]
 ): Promise<Awaited<Models.File>[]> => {
@@ -40,6 +42,7 @@ export const uploadFiles = async (
     );
   } catch (error: any) {
     throw new AppwriteException(error); // [!code ++]
+    console.error(error); // [!code ++]
   }
 };
 ```
@@ -59,7 +62,21 @@ fichier !
 Vous pouvez retrouver les contraintes de votre bucket en allant dans la section **Storage > Puzzle > Settings** pour
 voir les indications sur la taille et les extensions de fichier.
 
-<Image src="/assets/workshop/storage/ext-size.png" alt="Contraintes du bucket" />
+<Image src="/assets/workshop/storage/ext-size.png" alt="Contraintes du bucket"></Image>
+
+<br/>
+
+---
+<br/>
+
+<InfoBonus title="Référencer un fichier du storage dans un document de database ?">
+<br/>
+
+Vous pouvez utiliser le service de stockage Appwrite pour stocker des fichiers et les référencer dans vos documents de
+database. Pour cela, il vous suffit de récupérer l'URL de votre fichier comme nous venons de le faire pour l'affichage
+et de la référencer dans votre document lors de sa création dans un champ de type `string`.
+
+</InfoBonus>
 
 <br/>
 

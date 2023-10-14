@@ -25,6 +25,8 @@ file 📤**
 <Solution>
 
 ```ts
+import {AppwriteException, ID, Models} from 'appwrite'; // [!code ++]
+
 export const uploadFiles = async (
   files: File[]
 ): Promise<Awaited<Models.File>[]> => {
@@ -40,6 +42,7 @@ export const uploadFiles = async (
     );
   } catch (error: any) {
     throw new AppwriteException(error); // [!code ++]
+    console.error(error); // [!code ++]
   }
 };
 ```
@@ -58,7 +61,21 @@ adventurers is configured not to accept just any file!
 You can find the constraints of your bucket by going to the **Storage > Puzzle > Settings** section to see the
 indications regarding file size and extensions.
 
-<Image src="/assets/workshop/storage/ext-size.png" alt="Bucket Constraints" />
+<Image src="/assets/workshop/storage/ext-size.png" alt="Bucket Constraints"></Image>
+
+<br/>
+
+---
+<br/>
+
+<InfoBonus title="Referencing a file from your storage in your database documents?">
+<br/>
+
+You can use the Appwrite storage service to store files and reference them in your database documents. To do this, all
+you need to do is retrieve the URL of your file, as we have just done for the display and reference it in your document
+when you create it in a `string` field.
+
+</InfoBonus>
 
 <br/>
 
