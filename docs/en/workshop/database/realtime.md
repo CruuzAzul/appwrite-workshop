@@ -90,6 +90,29 @@ export const enum EventType {
 ```
 :::
 
+::: tip
+To modify the list of coordinates displayed by our component, you should use the following pieces of code:
+
+For addition:
+
+```ts
+setUpdatedCoordinatesList((currentCoordinatesList) => [
+	<COORDINATE_YOU_WANT_TO_ADD>,
+	...currentCoordinatesList,
+]);
+```
+
+For deletion:
+
+```ts
+setUpdatedCoordinatesList((currentCoordinatesList) =>
+	currentCoordinatesList.filter(
+		(item) => item.$id !== <ID_YOU_WANT_TO_DELETE>
+	)
+);
+```
+:::
+
 <Solution>
 
 ```ts
@@ -103,12 +126,18 @@ useEffect(() => {
 
     switch (eventType) { // [!code ++]
       case EventType.CREATE: // [!code ++]
-        setUpdatedCoordinatesList([response.payload as Coordinates, ...updatedCoordinatesList]); // [!code ++]
+        		setUpdatedCoordinatesList((currentCoordinatesList) => [ // [!code ++]
+							response.payload as Coordinates, // [!code ++]
+							...currentCoordinatesList, // [!code ++]
+						]); // [!code ++]
         break; // [!code ++]
       case EventType.DELETE: // [!code ++]
         const deletedItemId = response.payload.$id; // [!code ++]
-        const filtered = updatedCoordinatesList.filter((item) => item.id !== deletedItemId); // [!code ++]
-        setUpdatedCoordinatesList([...filtered]); // [!code ++]
+        		setUpdatedCoordinatesList((currentCoordinatesList) => // [!code ++]
+							currentCoordinatesList.filter( // [!code ++]
+								(item) => item.$id !== deletedItemId // [!code ++]
+							) // [!code ++]
+						); // [!code ++]
         break; // [!code ++]
       default: // [!code ++]
         break; // [!code ++]
