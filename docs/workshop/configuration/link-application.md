@@ -7,8 +7,9 @@ title: Lier l'AppVenture à votre Instance Appwrite
 <Hero
 title="Lier l'AppVenture à votre Instance Appwrite 🌐"
 image="/assets/workshop/configuration/app/bay_link.jpg"
-description="Félicitations, vous avez préparé votre AppVenture et maintenant il est temps de la lier à votre instance
-Appwrite Cloud ! 🔗"
+description="Félicitations, vous avez préparé votre AppVenture et maintenant, il est temps de la lier à votre instance
+Appwrite Cloud ! Sans ça l'AppVenture ne pourra pas interagir avec votre instance Appwrite et vous ne pourrez pas
+continuer votre voyage 🚢"
 />
 
 :::info
@@ -20,13 +21,13 @@ l'instance Appwrite et de votre projet dans la console Appwrite Cloud 🏞️️
 
 Pour le moment lorsque vous accédez à votre AppVenture, vous verrez une page vous indiquant que votre application n'est
 pas encore liée à votre instance Appwrite. C'est normal, nous allons régler cela maintenant ! Pour cela l'application a
-besoin de
-quelques variables d'environnement :
+besoin de quelques variables d'environnement :
 
-**1.** Ouvrez le fichier `.env.local` de votre projet AppVenture.
+**1.** Créez un fichier `.env.local` à la racine du projet et configurez les variables d'environnement nécessaires en
+utilisant les informations que vous avez obtenues lors de la création de votre instance Appwrite Cloud. Copiez le
+contenu de`.env.example` dans `.env.local`.
 
-**2.** Normalement, vous y avez déjà copié les variables d'environnement (vide) depuis le fichier `.env.example`. Voici
-les premières variables d'environnement que vous devez configurer :
+**2.** Voici les premières variables d'environnement que vous devez configurer :
 
 - `NEXT_PUBLIC_APPWRITE_ENDPOINT` : Remplacez la valeur par l'URL de votre instance Appwrite Cloud, par default ce
   sera : `https://cloud.appwrite.io/v1`.
@@ -123,19 +124,18 @@ AppVenture à Appwrite. Une fois cela fait, lancez le script et laissez-le faire
 
 <br/>
 
-[//]: # (TODO : à compléter une fois le clean code effectué)
 **🧑🏼‍💻 Pour utiliser ce script, vous pouvez depuis un terminal, exécutez la commande :**
 
 _**Charger les données dans votre instance :**_
 
 ```bash
-node script.js
+node ./script/init-travel.js
 ```
 
 _**Réinitailiser les données de votre instance :**_
 
 ```bash
-node /script/script.js
+node ./script/reset-travel.js
 ```
 
 <br/>

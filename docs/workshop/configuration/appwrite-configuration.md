@@ -1,15 +1,15 @@
 ---
-title: La Baie de la Configuration
+title: Configuration de la Console
 ---
 
 <Documentation link="https://appwrite.io/docs/quick-starts/nextjs"></Documentation>
 
 <Hero
-title="La baie de la configuration 🏖️"
-image="/assets/workshop/configuration/console/bay.jpeg"
-description="Bienvenue à la Baie de la Configuration, la première étape de notre aventure Appwrite ! 🔧 Dans cette
-section, nous allons plonger dans les configurations initiales nécessaires pour préparer notre voyage ! Assurez-vous de
-suivre attentivement ces étapes pour que votre expérience avec Appwrite soit fluide et inoubliable 🌊"
+title="Configuration de la Console 🛠️"
+image="/assets/workshop/configuration/console/console_config.jpeg"
+description="Bienvenue dans la partie Configuration de la Console Appwrite, une étape essentielle de notre voyage
+Appwrite ! 🧭 Ici, nous allons préparer notre outil de gestion Appwrite pour explorer le vaste univers qui s'offre à
+nous. Ces configurations initiales garantiront une expérience agréable et sans accroc tout au long de notre aventure 🚀"
 />
 
 ## Configuration Initiale ⚙️
@@ -38,20 +38,22 @@ Cette instance Appwrite Cloud est gratuite et restera votre propriété même ap
 
 ## Étape 2️⃣ : Créer de votre premier projet 🏗️
 
-Une fois votre compte créé, vous pouvez créer votre premier projet.
+Une fois votre compte créé, vous pouvez créer votre premier projet. Nommez-le par exemple `AppVenture` 📝
 
 <Image src="/assets/workshop/configuration/console/console_project.png" imageAlt="Create project screen" withSpacing></Image>
 
 ## Étape 3️⃣ : Ajouter une plateforme web à votre projet 🌐
 
-Une fois votre projet créée, vous pouvez voir votre instance vide car elle n'est encore liée à aucune plateforme !
+Une fois votre projet créée, vous pouvez voir votre instance vide, car elle n'est encore liée à aucune plateforme !
 
 <Image src="/assets/workshop/configuration/console/console_select_platform.png" imageAlt="Console select platform" withSpacing></Image>
 
 Sous **Add a platform**, ajoutez une **Web app**. Cela vous nous permettres par la suite de
-lié notre application web à cette instance Appwrite. Vous pouvez donner le nom que vous souhaitez pour désigner votre
-application web et pour le nom d'hôte, vous devez renseigner `localhost` car c'est le nom de domaine qui sera utilisé
-par votre application web pour communiquer avec les APIs Appwrite 📡
+lié notre application web à cette instance Appwrite.
+
+Vous pouvez donner le nom `AppVenture Web` pour désigner votre application web et pour le nom d'hôte, vous devez
+renseigner `localhost` car c'est le nom de domaine qui sera utilisé par votre application web pour communiquer avec les
+APIs Appwrite 📡
 
 <Image src="/assets/workshop/configuration/console/console_add_platform.png" imageAlt="Console form add platform" withSpacing></Image>
 
@@ -59,14 +61,6 @@ Pour les étapes suivantes, vous pouvez passer ces étapes, car nous allons les 
 permettre cette fois de lié notre application web à notre instance Appwrite 🤯
 
 <Image src="/assets/workshop/configuration/console/console_end.png" imageAlt="Console screen" withSpacing></Image>
-
-Vous êtes prêt à embarquer pour les prochaines étapes de notre voyage !
-Profitez de cette expérience d'apprentissage passionnante au cœur du backend open-source avec Appwrite. 🌍
-
-<br />
-
----
-<br />
 
 <InfoBonus title="Les autres moyens de configurer une instance Appwrite 📦">
 
@@ -104,3 +98,13 @@ Cela vous permet de démarrer rapidement avec Appwrite sans installer Docker sur
 📖 [Documentation - Configurations en un clic](https://appwrite.io/docs/advanced/self-hosting#one-click-setups)
 
 </InfoBonus>
+
+<br/>
+
+---
+<br/>
+
+**C'est parti pour une aventure passionnante au cœur du monde d'Appwrite avec l'AppVenture à vos côtés ! Votre bateau
+reste encore à quai, le temps de lier votre application et votre instance Appwrite pour le grand départ 🌍**
+
+<Image src="/assets/workshop/configuration/app/bay_app_boat.jpeg" imageAlt="Lexica image with a boat in a bay" withSpacing></Image>

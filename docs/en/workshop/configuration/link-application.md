@@ -8,7 +8,8 @@ title: Linking AppVenture to your Appwrite instance
 title="Linking AppVenture to your Appwrite instance 🌐"
 image="/assets/workshop/configuration/app/bay_link.jpg"
 description="Congratulations, you've prepared your AppVenture, and now it's time to link it to your Appwrite Cloud
-instance! 🔗"
+instance! Without this, the AppVenture won't be able to interact with your Appwrite instance, and you won't be able to
+continue your journey 🚢"
 />
 
 :::info
@@ -22,10 +23,11 @@ For now, when you access your AppVenture, you'll see a page telling you that you
 Appwrite instance. This is normal, and we'll fix that now! To do this, the application needs a few environment
 variables:
 
-**1.** Open the `.env.local` file in your AppVenture project.
+**1.** Create a `.env.local` file at the project's root and configure the necessary environment variables using the
+information you obtained when creating your Appwrite Cloud instance. Copy the
+contents of `.env.example` into `.env.local`.
 
-**2.** Normally, you've already copied the (empty) environment variables from the `.env.example` file. Here are the
-first environment variables you need to configure:
+**2.** Here are the first environment variables you need to configure:
 
 - `NEXT_PUBLIC_APPWRITE_ENDPOINT`: Replace the value with the URL of your Appwrite Cloud instance. By default, it will
   be: `https://cloud.appwrite.io/v1`.
@@ -120,19 +122,18 @@ Appwrite. Once that's done, launch the script and let it do its work.
 
 <br/>
 
-[//]: # (TODO : à compléter une fois le clean code effectué)
 **🧑🏼‍💻 To use this script, you can run the following command from a terminal:**
 
 _**Load data into your instance:**_
 
 ```bash
-node script.js
+node ./script/init-travel.js
 ```
 
 _**Reset data in your instance:**_
 
 ```bash
-node /script/reset.js
+node ./script/reset-travel.js
 ```
 
 <br/>

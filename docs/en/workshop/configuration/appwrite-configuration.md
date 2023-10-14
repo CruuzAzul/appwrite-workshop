@@ -1,15 +1,15 @@
 ---
-title: The Configuration Bay
+title: Console Configuration
 ---
 
 <Documentation link="https://appwrite.io/docs/quick-starts/nextjs"></Documentation>
 
 <Hero
-title="The Configuration Bay 🏖️"
-image="/assets/workshop/configuration/console/bay.jpeg"
-description="Welcome to the Configuration Bay, the first step of our Appwrite adventure! 🔧 In this section, we will dive
-into the initial configurations necessary to prepare for our journey. Make sure to follow these steps carefully to
-ensure a smooth and unforgettable experience with Appwrite 🌊"
+title="Console Configuration 🛠️"
+image="/assets/workshop/configuration/console/console_config.jpeg"
+description="Welcome to the Configuration section of the Appwrite Console, an essential part of our journey.
+Appwrite! 🧭 Here, we're going to get our Appwrite management tool ready to explore the vast universe before us
+universe. These initial configurations will ensure a smooth and enjoyable experience throughout our adventure 🚀"
 />
 
 ## Initial Configuration ⚙️
@@ -37,7 +37,7 @@ This Appwrite Cloud instance is free and will remain your property even after th
 
 ## Step 2️⃣: Create Your First Project 🏗️
 
-Once your account is created, you can create your first project.
+Once your account is created, you can create your first project. For example, you can name it `AppVenture` 📝
 
 <Image src="/assets/workshop/configuration/console/console_project.png" imageAlt="Create project screen" withSpacing></Image>
 
@@ -48,7 +48,9 @@ After creating your project, you can see your empty instance because it is not y
 <Image src="/assets/workshop/configuration/console/console_select_platform.png" imageAlt="Console select platform" withSpacing></Image>
 
 Under **Add a platform**, add a **Web app**. This will allow us to link our web application to this Appwrite instance
-later. You can give your web application any name you like, and for the hostname, you should enter `localhost` because
+later.
+
+You can give your web application the name `AppVenture Web`, and for the hostname, you should enter `localhost` because
 it is the domain name that your web application will use to communicate with the Appwrite APIs 📡
 
 <Image src="/assets/workshop/configuration/console/console_add_platform.png" imageAlt="Console form add platform" withSpacing></Image>
@@ -58,13 +60,6 @@ application to our Appwrite instance 🤯
 
 <Image src="/assets/workshop/configuration/console/console_end.png" imageAlt="Console screen" withSpacing></Image>
 
-You are ready to embark on the next steps of our journey! Enjoy this exciting learning experience in the heart of the
-open-source backend with Appwrite. 🌍
-
-<br />
-
----
-<br />
 
 <InfoBonus title="Other Ways to Set Up an Appwrite Instance 📦">
 
@@ -100,3 +95,13 @@ quickly get started with Appwrite without installing Docker on your local machin
 📖 [Documentation - One-Click Setups](https://appwrite.io/docs/advanced/self-hosting#one-click-setups)
 
 </InfoBonus>
+
+<br/>
+
+---
+<br/>
+
+**It's time for an exciting adventure in the heart of the Appwrite world with the AppVenture by your side! Your ship is
+still at the dock, waiting for you to link your application and your Appwrite instance for the grand departure 🌍**
+
+<Image src="/assets/workshop/configuration/app/bay_app_boat.jpeg" imageAlt="Lexica image with a boat in a bay" withSpacing></Image>

@@ -43,11 +43,15 @@ export default defineConfig({
           {
             text: '🏖️ La Baie de la Configuration',
             items: [
-              { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
               {
-                text: 'Configurer notre application',
-                link: '/workshop/configuration/app-configuration',
+                text: 'Entrée de la Baie',
+                link: '/workshop/configuration/introduction',
               },
+              {
+                text: 'Démarrer notre application',
+                link: '/workshop/configuration/start-application',
+              },
+              { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Lier AppVenture à Appwrite',
                 link: '/workshop/configuration/link-application',
@@ -139,11 +143,15 @@ export default defineConfig({
           {
             text: '🏖️ The Configuration Bay',
             items: [
-              { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
               {
-                text: 'Configure our application',
-                link: '/en/workshop/configuration/app-configuration',
+                text: 'Bay entrance',
+                link: '/en/workshop/configuration/introduction',
               },
+              {
+                text: 'Start our application',
+                link: '/en/workshop/configuration/start-application',
+              },
+              { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Link AppVenture to Appwrite',
                 link: '/en/workshop/configuration/link-application',
