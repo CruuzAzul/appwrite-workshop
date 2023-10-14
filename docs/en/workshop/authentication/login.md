@@ -68,6 +68,7 @@ const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
     await login(email, password); // 👈 // [!code ++]
+    return session;
   } catch (error: any) {
     const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);

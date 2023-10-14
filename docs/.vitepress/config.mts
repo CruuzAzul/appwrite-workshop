@@ -28,7 +28,7 @@ export default defineConfig({
         lastUpdatedText: 'Dernière mise à jour ',
         nav: [
           { text: 'Accueil 🏠', link: '/' },
-          { text: 'Workshop 💼', link: '/workshop/markdown-examples' },
+          { text: 'Workshop 💼', link: '/workshop/introduction/rules' },
           { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' },
         ],
 
@@ -128,7 +128,7 @@ export default defineConfig({
         lastUpdatedText: 'Last update ',
         nav: [
           { text: 'Home 🏠', link: '/en/' },
-          { text: 'Workshop 💼', link: '/en/workshop/markdown-examples' },
+          { text: 'Workshop 💼', link: '/en/workshop/introduction/rules' },
           { text: 'Creators 👨🏼‍💻', link: '/en/creators.md' },
         ],
 
