@@ -104,6 +104,6 @@ To quickly test your function, you can click on the **Execute now** button, and 
 <Image src="/assets/workshop/functions/execution.png" imageAlt="Execution tab in Appwrite Functions module" ></Image>
 
 Once execution is complete (usually after a few milliseconds), you can access the various function logs, in which you
-should find the various function displays, _"Hello, logs"_ and the _"Hello, errors!"_.
+should find the various function displays, _"Hello, logs!"_ and the _"Hello, errors!"_.
 
 **That's it! Our function reacts well, and now it's time to make it do more than just display console messages 🤩**

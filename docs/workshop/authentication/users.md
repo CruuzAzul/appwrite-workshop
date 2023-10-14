@@ -118,7 +118,9 @@ import {users} from '@/api/config/server.config'; // [!code ++]
 import {Users} from '@/models/users';
 
 export const getTravelersList = async (): Promise<Users> => {
-  return await users.list<Users>(); // [!code ++]
+  const {users: usersList} = await users.list<Users>(); // [!code ++]
+
+  return usersList; // [!code ++]
 };
 ```
 

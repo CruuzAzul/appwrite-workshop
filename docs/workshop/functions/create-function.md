@@ -111,7 +111,7 @@ apparaîtra dans l’onglet **Execution** 🚀
 <Image src="/assets/workshop/functions/execution.png" imageAlt="Onglet execution du module de fonction sur la console Appwrite" ></Image>
 
 Une fois l’execution terminée (en général après quelque millisecondes), on peut accéder au différent log de notre
-fonction, dans lesquels on devra trouver le différent affichage de notre fonction, _"Hello, logs"_ et le _"Hello,
+fonction, dans lesquels on devra trouver le différent affichage de notre fonction, _"Hello, logs!"_ et le _"Hello,
 errors!"_
 
 **C'est bon ! Notre fonction réagi bien, il est maintenant temps de lui faire faire autre chose que d’uniquement afficher
