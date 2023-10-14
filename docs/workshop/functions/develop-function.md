@@ -2,6 +2,8 @@
 title: Développer votre fonction
 ---
 
+<Documentation link="https://appwrite.io/docs/products/functions/development"></Documentation>
+
 <Hero
 title="Développons notre fonction ✍🏼"
 image="/assets/workshop/functions/develop.jpg"

@@ -2,6 +2,8 @@
 title: The Authentication Island
 ---
 
+<Documentation link="https://appwrite.io/docs/products/auth"></Documentation>
+
 <Hero
 title="Welcome to the Authentication Island 🏝️"
 image="/assets/workshop/authentication/island.jpeg"

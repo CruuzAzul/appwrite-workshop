@@ -2,6 +2,8 @@
 title: L'Énigme Résolue - Module de Stockage Appwrite
 ---
 
+<Documentation link="https://appwrite.io/docs/products/storage/quick-start#create-file"></Documentation>
+
 <Hero
 title="Énigme Résolue 🧩"
 image="/assets/workshop/storage/mountains-end.jpeg"

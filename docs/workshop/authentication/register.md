@@ -2,6 +2,8 @@
 title: Inscription des voyageurs
 ---
 
+<Documentation link="https://appwrite.io/docs/products/auth/email-password#sign-up"></Documentation>
+
 <Hero
 title="Inscription des voyageurs 📝"
 image="/assets/workshop/authentication/top-island.jpeg"

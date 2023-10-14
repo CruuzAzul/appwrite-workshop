@@ -1,3 +1,9 @@
+---
+title: Gestion des voyageurs
+---
+
+<Documentation link="https://appwrite.io/docs/references/cloud/server-nodejs/users"></Documentation>
+
 <Hero
 title="Gestion des voyageurs 🧭"
 image="/assets/workshop/authentication/house-end.jpeg"

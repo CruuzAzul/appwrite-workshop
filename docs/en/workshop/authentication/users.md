@@ -1,3 +1,9 @@
+---
+title: User Management
+---
+
+<Documentation link="https://appwrite.io/docs/references/cloud/server-nodejs/users"></Documentation>
+
 <Hero
 title="User Management 🧭"
 image="/assets/workshop/authentication/house-end.jpeg"

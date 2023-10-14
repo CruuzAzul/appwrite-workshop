@@ -1,3 +1,9 @@
+---
+title: Connexion des voyageurs
+---
+
+<Documentation link="https://appwrite.io/docs/products/auth/email-password#login"></Documentation>
+
 <Hero
 title="Connexion des voyageurs 🔐"
 image="/assets/workshop/authentication/house-island.jpeg"

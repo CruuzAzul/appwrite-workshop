@@ -2,6 +2,8 @@
 title: Aux pieds des montagnes du Storage
 ---
 
+<Documentation link="https://appwrite.io/docs/products/storage"></Documentation>
+
 <Hero
 title="Le début de l'ascension 🏞️"
 image="/assets/workshop/storage/mountains.jpeg"

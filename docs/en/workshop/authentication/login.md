@@ -1,3 +1,9 @@
+---
+title: Traveler's Login
+---
+
+<Documentation link="https://appwrite.io/docs/products/auth/email-password#login"></Documentation>
+
 <Hero
 title="Traveler's Login 🔐"
 image="/assets/workshop/authentication/house-island.jpeg"

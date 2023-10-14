@@ -2,6 +2,8 @@
 title: The Puzzle Solved - Appwrite Storage Module
 ---
 
+<Documentation link="https://appwrite.io/docs/products/storage/quick-start#create-file"></Documentation>
+
 <Hero
 title="Puzzle Solved 🧩"
 image="/assets/workshop/storage/mountains-end.jpeg"

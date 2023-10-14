@@ -2,6 +2,8 @@
 title: Database Forest
 ---
 
+<Documentation link="https://appwrite.io/docs/products/databases"></Documentation>
+
 <Hero
 title="Arrival in the Database Forest 🗄️"
 image="/assets/workshop/database/forest.jpg"
@@ -18,8 +20,4 @@ Realtime!
 
 To begin our journey, we need to find a place to create our first collection... 🔍
 
-_Head over to the Database module in AppVenture_
-
-## Useful Links 🛩️
-
-- [Appwrite Database Documentation](https://appwrite.io/docs/products/databases)
+**Head over to the Database module in AppVenture**

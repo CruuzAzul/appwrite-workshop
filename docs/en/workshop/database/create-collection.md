@@ -2,6 +2,8 @@
 title: Preparing Our Collection
 ---
 
+<Documentation link="https://appwrite.io/docs/products/databases/quick-start"></Documentation>
+
 <Hero
 title="Let's Prepare Our Collection 💾"
 image="/assets/workshop/database/database.jpg"
