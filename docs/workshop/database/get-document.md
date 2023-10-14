@@ -20,13 +20,14 @@ notre collection, pour qu'elle puisse s'afficher dans directement sur l’AppVen
 <Solution>
 
 ```ts
+import {database} from '../../config/client.config'; // [!code ++]
+import {EnvConfig} from '../../config/env.config'; // [!code ++]
+
 export const getCoordinatesList = async (): Promise<Coordinates[]> => {
-  const {documents: coordinatesList} = await database.listDocuments<Coordinates>( // [!code ++]
+  return await database.listDocuments<Coordinates>( // [!code ++]
     EnvConfig.databaseId, // [!code ++]
     EnvConfig.coordinatesCollectionId, // [!code ++]
   ); // [!code ++]
-
-  return coordinatesList; // [!code ++]
 };
 ```
 

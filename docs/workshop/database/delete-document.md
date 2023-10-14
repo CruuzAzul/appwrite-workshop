@@ -16,12 +16,15 @@ trésor sera à nous ! 🗺️"
 ## Suppression d’un document 🚯
 
 Heureusement, un bouton de suppression est là pour vous permettre de supprimer le document que nous ne voulons pas, il
-ne vous reste plus qu'à compléter la fonction `deleteCoordinates` dans le fichier `coordinates.ts` pour que ce bouton
-soit fonctionnel, et le tour est joué !
+ne vous reste plus qu'à compléter la fonction `deleteCoordinates` dans le
+fichier `src/workshop/api/modules/database/coordinates.ts` pour que ce bouton soit fonctionnel, et le tour est joué !
 
 <Solution>
 
 ```ts
+import {database} from '../../config/client.config'; // [!code ++]
+import {EnvConfig} from '../../config/env.config'; // [!code ++]
+
 export const deleteCoordinates = async (id: string): Promise<void> => {
   await database.deleteDocument(EnvConfig.databaseId, EnvConfig.coordinatesCollectionId, id); // [!code ++]
 };

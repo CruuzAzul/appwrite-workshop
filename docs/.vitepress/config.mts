@@ -171,12 +171,12 @@ export default defineConfig({
           {
             text: '️🌳 The Database Forest',
             items: [
-              { text: 'Forest discovery', link: '/workshop/database/introduction' },
-              { text: 'Collection Preparation', link: '/workshop/database/create-collection' },
-              { text: 'Planting Documents', link: '/workshop/database/create-document' },
-              { text: 'Harvesting Documents', link: '/workshop/database/get-document' },
-              { text: 'Weeding Out Documents', link: '/workshop/database/delete-document' },
-              { text: 'BONUS: Listening to the Forest', link: '/workshop/database/realtime' },
+              { text: 'Forest discovery', link: '/en/workshop/database/introduction' },
+              { text: 'Collection Preparation', link: '/en/workshop/database/create-collection' },
+              { text: 'Planting Documents', link: '/en/workshop/database/create-document' },
+              { text: 'Harvesting Documents', link: '/en/workshop/database/get-document' },
+              { text: 'Weeding Out Documents', link: '/en/workshop/database/delete-document' },
+              { text: 'BONUS: Listening to the Forest', link: '/en/workshop/database/realtime' },
             ],
           },
           {
