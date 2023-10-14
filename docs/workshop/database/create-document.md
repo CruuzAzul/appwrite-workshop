@@ -15,9 +15,10 @@ Dans le module Database de l’AppVenture, vous pouvez voir un formulaire de cr�
 permettre d'entrer les précieuses coordonnées qui nous mèneront au fabuleux trésor ! 💰 Actuellement, le formulaire ne
 fonctionne pas, **c'est à vous de le compléter pour pouvoir ajouter votre première destination.**
 
-Pour ce faire, rendez-vous dans le fichier `coordinates.ts`, où vous pourrez trouver la fonction `createCoordinates` qui
-est appelé à la soumission du formulaire. À vous de la compléter en faisant appel au **SDK Appwrite** pour vous
-connecter à la base de donnée, et créer un document avec les informations contenu dans le formulaire !
+Pour ce faire, rendez-vous dans le fichier `src/workshop/api/modules/database/coordinates.ts`, où vous pourrez trouver
+la fonction `createCoordinates` qui est appelé à la soumission du formulaire. À vous de la compléter en faisant appel au
+**SDK Appwrite** pour vous connecter à la base de donnée, et créer un document avec les informations contenu dans le
+formulaire !
 
 :::tip 🆔 Génération d'un identifiant unique
 Lorsque vous interagissez avec Appwrite lors d'une création de données quelconque, il est nécessaire que votre donnée
@@ -32,15 +33,17 @@ Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fi
 <Solution>
 
 ```ts
+import {ID} from 'appwrite'; // [!code ++]
+import {database} from '../../config/client.config'; // [!code ++]
+import {EnvConfig} from '../../config/env.config'; // [!code ++]
+
 export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinate> => {
-  const {document: coordinates} = await database.createDocument<Coordinates>( // [!code ++]
+  return await database.createDocument<Coordinates>( // [!code ++]
     EnvConfig.databaseId, // [!code ++]
     EnvConfig.coordinatesCollectionId, // [!code ++]
     ID.unique(), // [!code ++]
     coordinatesData, // [!code ++]
   ); // [!code ++]
-
-  return coordinates; // [!code ++]
 };
 ```
 
@@ -52,5 +55,5 @@ dans notre application ! Vous pouvez aller voir le type `Coordinates` pour voir 
 :::
 
 Une fois le développement de votre fonction terminé, vous devriez pouvoir créer une nouvelle coordonnée en base avec le
-formulaire ! Cependant, elle n'apparaît pas sur l'interface ... **Continuons notre avancée dans cette énorme forêt pour trouver une
-solution à ce problème.**
+formulaire ! Cependant, elle n'apparaît pas sur l'interface ... **Continuons notre avancée dans cette énorme forêt pour
+trouver une solution à ce problème.**

@@ -44,8 +44,6 @@ valeur minimale et maximale pour un nombre, ou si l'attribut est requis par exem
 
 <Image src="/assets/workshop/database/attributeModal.png" imageAlt="Modal de création d'attribut" withSpacing></Image>
 
-_Exemple de création de l'attribut latitude_
-
 #### Le document de coordonnée est le schéma suivant :
 
 ```ts
@@ -53,7 +51,7 @@ type Coordinate = {
   name: string; // Required
   latitude: float; // Required
   longitude: float; // Required
-  picture?: url; // Optional
+  picture?: url; // Optional (?)
 };
 ```
 
@@ -66,8 +64,6 @@ ces dernières dans l’onglet **Settings**, pour que tous les utilisateurs conn
 supprimer des documents.
 
 <Image src="/assets/workshop/database/permission.png" imageAlt="Permission d'une collection" withSpacing></Image>
-
-_Exemple de permission d’une collection_
 
 ## Récupération de l’ID de la collection 🆔
 

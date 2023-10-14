@@ -41,8 +41,6 @@ maximum values for a number or whether the attribute is required, for example.
 
 <Image src="/assets/workshop/database/attributeModal.png" imageAlt="Attribute Creation Modal" withSpacing ></Image>
 
-_Example of creating the latitude attribute_
-
 #### The coordinate document follows this schema:
 
 ```ts
@@ -50,7 +48,7 @@ type Coordinate = {
   name: string; // Required
   latitude: float; // Required
   longitude: float; // Required
-  picture?: url; // Optional
+  picture?: url; // Optional (?)
 };
 ```
 
@@ -62,8 +60,6 @@ Firstly, Appwrite does not grant any default access permissions to collections, 
 *Settings** tab to allow all logged-in users to retrieve, create, modify, and delete documents.
 
 <Image src="/assets/workshop/database/permission.png" imageAlt="Collection Permission" withSpacing ></Image>
-
-_Example of collection permission_
 
 ## Retrieving the Collection ID 🆔
 

@@ -36,11 +36,10 @@ intéressent.
 ---
 <br/>
 
-Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le composant `CoordinatesCardList`, et compléter
-la fonction `unsubscribe` dans le `useEffect`. Cette fonction est appelé à la création du composant, et permettra
-d'ouvrir une connexion avec votre base de donnée pour que la liste de coordonnées reste à jour !
-
-N'hésitez pas à vous servir de la [documentation d’Appwrite](https://appwrite.io/docs/apis/realtime).
+Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le composant `CoordinatesCardList`
+dans `src/workshop/components/database`, et ajouter la fonction `unsubscribe` dans le `useEffect`. Cette fonction est
+appelé à la création du composant, et permettra d'ouvrir une connexion avec votre base de donnée pour que la liste de
+coordonnées reste à jour !
 
 ## Étape 1️⃣ : S'abonner au bon channel
 
@@ -57,6 +56,10 @@ workshop. À vous de réussir à écouter les changements sur cette collection !
 <Solution>
 
 ```ts
+import {RealtimeResponseEvent} from 'appwrite'; // [!code ++]
+import {AppwriteClient} from '@/workshop/api/config/client.config'; // [!code ++]
+import {EnvConfig} from '@/workshop/api/config/env.config'; // [!code ++]
+
 useEffect(() => {
   const coordinatesCollection = `databases.${EnvConfig.databaseId}.collections.${EnvConfig.coordinatesCollectionId}.documents`; // [!code ++]
 
@@ -96,7 +99,9 @@ export const enum EventType {
 ::: tip
 Pour modifier la liste des coordonnées affichée par notre composant, vous devez utiliser les bouts de code suivants :
 
-Pour l’ajout :
+<br/>
+
+**➕ Pour l’ajout :**
 
 ```ts
 setUpdatedCoordinatesList((currentCoordinatesList) => [
@@ -105,7 +110,9 @@ setUpdatedCoordinatesList((currentCoordinatesList) => [
 ]);
 ```
 
-Pour la suppression : 
+<br/>
+
+**🗑️ Pour la suppression :** 
 
 ```ts
 setUpdatedCoordinatesList((currentCoordinatesList) =>
@@ -119,28 +126,33 @@ setUpdatedCoordinatesList((currentCoordinatesList) =>
 <Solution>
 
 ```ts
-useEffect(() => {
-  const coordinatesCollection = `databases.${EnvConfig.databaseId}.collections.${EnvConfig.coordinatesCollectionId}.documents`;
+import {RealtimeResponseEvent} from 'appwrite'; // [!code ++]
+import {EventType, getEventType} from '@/utils/realtime.utils'; // [!code ++]
+import {AppwriteClient} from '@/workshop/api/config/client.config'; // [!code ++]
+import {EnvConfig} from '@/workshop/api/config/env.config'; // [!code ++]
 
-  return AppwriteClient.subscribe(coordinatesCollection, (response: RealtimeResponseEvent<Coordinates>) => {
+useEffect(() => {
+  const coordinatesCollection = `databases.${EnvConfig.databaseId}.collections.${EnvConfig.coordinatesCollectionId}.documents`;  // [!code ++]
+
+  const unsubscribe = AppwriteClient.subscribe(coordinatesCollection, (response: RealtimeResponseEvent<Coordinates>) => { // [!code ++]
     const eventType = getEventType({ // [!code ++]
       events: response.events, // [!code ++]
     }); // [!code ++]
 
     switch (eventType) { // [!code ++]
       case EventType.CREATE: // [!code ++]
-        		setUpdatedCoordinatesList((currentCoordinatesList) => [ // [!code ++]
-							response.payload as Coordinates, // [!code ++]
-							...currentCoordinatesList, // [!code ++]
-						]); // [!code ++]
+        setUpdatedCoordinatesList((currentCoordinatesList) => [ // [!code ++]
+          response.payload as Coordinates, // [!code ++]
+          ...currentCoordinatesList, // [!code ++]
+        ]); // [!code ++]
         break; // [!code ++]
       case EventType.DELETE: // [!code ++]
         const deletedItemId = response.payload.$id; // [!code ++]
-        		setUpdatedCoordinatesList((currentCoordinatesList) => // [!code ++]
-							currentCoordinatesList.filter( // [!code ++]
-								(item) => item.$id !== deletedItemId // [!code ++]
-							) // [!code ++]
-						); // [!code ++]
+        setUpdatedCoordinatesList((currentCoordinatesList) => // [!code ++]
+          currentCoordinatesList.filter( // [!code ++]
+            (item) => item.$id !== deletedItemId // [!code ++]
+          ) // [!code ++]
+        ); // [!code ++]
         break; // [!code ++]
       default: // [!code ++]
         break; // [!code ++]
@@ -150,5 +162,26 @@ useEffect(() => {
 ```
 </Solution>
 
+## Étape 3️⃣ : Se désabonner du realtime
+
+Pour finir, il faut penser à se désabonner du realtime lorsque le composant est détruit, pour éviter de laisser des
+connexions ouvertes inutilement. La fonction `.subscribe` retourne une fonction de désabonnement, qu’il suffit d’appeler
+pour se désabonner.
+
+Étant donné que l'utilisation de cette mathode relève de compétences en React, vous avez juste à copier-coller le code
+suivant directement à la fin de votre fonction `useEffect` :
+
+```ts
+useEffect(() => {
+  // ...
+  
+  return () => { // [!code ++]
+    unsubscribe(); // [!code ++]
+  }; // [!code ++]
+}, []);
+```
+
+<br/>
+
 **Après avoir développé votre fonction, essayer d'ajouter une coordonnée sur l’AppVenture, elle devrait apparaître
-directement sans rechargement de page !**
+directement sans rechargement de page ! 📍**

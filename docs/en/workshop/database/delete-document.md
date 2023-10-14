@@ -16,11 +16,15 @@ ours! 🗺️"
 ## Deleting a document 🚯
 
 Fortunately, a delete button is here to help you get rid of the documents we don't want. All you need to do is complete
-the `deleteCoordinates` function in the `coordinates.ts` file to make this button functional, and you're good to go!
+the `deleteCoordinates` function in the `src/workshop/api/modules/database/coordinates.ts` file to make this button
+functional, and you're good to go!
 
 <Solution>
 
 ```ts
+import {database} from '../../config/client.config'; // [!code ++]
+import {EnvConfig} from '../../config/env.config'; // [!code ++]
+
 export const deleteCoordinates = async (id: string): Promise<void> => {
   await database.deleteDocument(EnvConfig.databaseId, EnvConfig.coordinatesCollectionId, id); // [!code ++]
 };
