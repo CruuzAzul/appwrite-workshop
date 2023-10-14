@@ -47,8 +47,8 @@ communiquer avec Appwrite sont manquants**... **Vous allez devoir réparer tout 
 
 Avant de pouvoir utiliser le service Account, vous devez l'initialiser avec votre client Appwrite. Pour ce faire, vous
 devez importer le service Account et créer une nouvelle instance de celui-ci en lui passant votre client Appwrite en
-paramètre. Vous pouvez initialiser le service Account dans le fichier `src/api/config/client.config.ts` avec le code
-suivant :
+paramètre. Vous pouvez initialiser le service Account dans le fichier `src/workshop/api/config/client.config.ts` avec le
+code suivant :
 
 ```js
 export const account = new Account(AppwriteClient);
@@ -66,19 +66,17 @@ Si plus tard, vous souhaitez utiliser un autre langage côté client, vous pouve
 ## Étape 2️⃣ : Écrire la fonction d'inscription
 
 - Maintenant que le service Account est initialisé, nous allons pouvoir compléter la fonction `register` que vous pouvez
-  trouver dans le fichier `src/api/services/register.service.ts`. Cette fonction prend en paramètre le nom, l'e-mail et
+  trouver dans le fichier `src/workshop/api/modules/account/account.ts`. Cette fonction prend en paramètre le nom, l'e-mail et
   le mot de passe du voyageur et utilise l'API Appwrite pour effectuer l'inscription.
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name); // [!code ++]
-    setUser(session); 
-    router.push(ROUTES.dashboard); 
   } catch (error: any) {
     const appwriteException = error as AppwriteException; // [!code ++]
     console.error(appwriteException.message); // [!code ++]
@@ -101,7 +99,7 @@ ou le code de l'erreur et traiter l'erreur en conséquence dans votre applicatio
 
 - Une fois que l'on a récupéré la session du voyageur, il est nécessaire de s'authentifier avec ses identifiants, car
   la connexion n'est pas automatique après l'inscription. Pour cela, nous devons utiliser la fonction `login` que vous
-  pouvez trouver dans le fichier `src/api/services/login.service.ts`... Pas de chance, cette fonction n'est pas encore
+  pouvez trouver dans le fichier `src/workshop/api/modules/account/account.ts`... Pas de chance, cette fonction n'est pas encore
   écrite ! 🤔 On reviendra donc sur cette partie plus tard !
 
 ## Étape 3️⃣ : Inscrivez-vous !

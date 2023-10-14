@@ -16,7 +16,7 @@ quand vous aurez besoin d'elle !"
 
 Maintenant que vous avez une idée de l'importance de l'AppVenture, voici comment la lancer :
 
-**1.** Clonez la branche `workshop` [repository de l'AppVenture](https://app-appwrite-workshop-cruzazul.vercel.app/en)
+**1.** Clonez la branche `workshop` [repository de l'AppVenture](https://github.com/CruuzAzul/app-appwrite-workshop)
 depuis GitHub grâce à la commande 🥳
 
 ```bash

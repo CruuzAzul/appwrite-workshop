@@ -68,7 +68,7 @@ application.
 
 ## Étape 2️⃣ : Initialisation du SDK côté serveur d'Appwrite
 
-Pour initialiser un SDK côté serveur, nous allons créer un fichier `src/api/config/server.config.ts` et cette
+Pour initialiser un SDK côté serveur, nous allons créer un fichier `src/workshop/api/config/server.config.ts` et cette
 fois-ci, vous devez importer le `Client` Appwrite non pas depuis le SDK côté client, mais depuis le SDK côté serveur.
 Dans notre cas, nous allons utiliser le SDK côté serveur pour Node.js.
 
@@ -108,19 +108,17 @@ Utilisez le SDK pour récupérer la liste complète des utilisateurs enregistré
 liste des utilisateurs, nous avons déjà une page qui est prête à l'emploi, il s'agit de la page `/users` de notre
 application. Il semble manquer un bout de code pour afficher la liste des utilisateurs, non ? 🤔
 
-Dans le fichier `src/api/modules/users.ts`, nous allons donc pouvoir compléter la fonction `getUsersList` pour récupérer
-la liste des utilisateurs 👥
+Dans le fichier `src/workshop/api/modules/users/travelers.ts`, nous allons donc pouvoir compléter la
+fonction `getTravelersList` pour récupérer la liste des utilisateurs 👥
 
 <Solution>
 
 ```ts
-import {users} from '@/api/config/server.config'; // TODO: Change name of the import
+import {users} from '@/api/config/server.config'; // [!code ++]
 import {Users} from '@/models/users';
 
 export const getUsersList = async (): Promise<Users> => {
-  const {users: usersList} = await users.list<Users>();
-
-  return usersList;
+  return await users.list<Users>(); // [!code ++]
 };
 ```
 

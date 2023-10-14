@@ -31,19 +31,18 @@ again! 🧑‍🔧
 ## Step 1️⃣: Writing the Login Function
 
 Knowing that the Account service has already been initialized in the previous part, all that's
-left is to complete the `login` function, which is used to perform the login using the traveler's
-email and password.
+left is to complete the `login` function, which you can find in the
+`src/workshop/api/modules/account/account.ts` file. Nothing could be simpler; this function
+takes the traveler's email and password as parameters and uses the Appwrite API to log in.
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const login = async (email: string, password: string) => {
   try {
     await account.createEmailSession(email, password); // [!code ++]
-    await loadAccount();
-    router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error as AppwriteException; // [!code ++]
     console.error(appwriteException.message); // [!code ++]
@@ -57,19 +56,18 @@ const login = async (email: string, password: string) => {
 
 Once we have retrieved the traveler's session, it's necessary to authenticate, as
 the login isn't automatic after registration. For this, we needed the `login` function, which is
-used to authenticate the traveler.
+used to authenticate the traveler. You can now complete the `register` function by calling the
+`login` function you just created...
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
-    setUser(session);
     await login(email, password); // 👈 // [!code ++]
-    router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);
@@ -89,18 +87,18 @@ the form to log in!
 
 Now that you can log in successfully, it would be good to be able to log out as well, wouldn't it? 🤔
 
-For this, we will once again use the Account service to log out the traveler's session. You can use it
-at the end of the workshop to mark the end of your adventure! 🏁
+For this, we will once again use the Account service to log out the traveler's session. You can
+find the `logout` function in the `src/workshop/api/modules/account/account.ts` file. This function
+takes no parameters and uses the Appwrite API to log out the traveler's session. You can use it at the end of the
+workshop to mark the end of your adventure! 🏁
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const logout = async () => {
   await account.deleteSession('current'); // [!code ++]
-  setUser(null);
-  router.push(ROUTES.dashboard);
 };
 ```
 

@@ -52,7 +52,7 @@ la [documentation d'Appwrite sur la migration des données](https://appwrite.io/
 
 **3.** Sauvegardez le fichier `.env.local` après avoir effectué ces modifications.
 
-**4.** Créez un nouveau fichier `client.config.ts` dans le dossier `src/api/config/` et ajoutez-y le code permettant
+**4.** Modifiez le fichier `client.config.ts` dans le dossier `src/workshop/api/config/` et ajoutez-y le code permettant
 d'initialiser le SDK Appwrite côté client.
 
 :::info

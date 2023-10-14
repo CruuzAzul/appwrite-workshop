@@ -30,23 +30,21 @@ de code pour communiquer avec Appwrite soient manquants**... Vous devrez donc le
 ## Étape 1️⃣ : Écriture de la fonction de connexion
 
 En sachant que le service Account a déjà été initialisé dans la partie précédente, il ne nous reste plus qu'à
-compléter la fonction `login`, que vous pouvez trouver dans le fichier `src/api/services/login.service.ts`. Rien de
-plus simple, cette fonction prend en paramètre l'e-mail et le mot de passe du voyageur et utilise l'API Appwrite pour
-effectuer la connexion.
+compléter la fonction `login`, que vous pouvez trouver dans le fichier `src/workshop/api/modules/account/account.ts`.
+Rien de plus simple, cette fonction prend en paramètre l'e-mail et le mot de passe du voyageur et utilise l'API Appwrite
+pour effectuer la connexion.
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const login = async (email: string, password: string) => {
   try {
-    await account.createEmailSession(email, password);
-    await loadAccount();
-    router.push(ROUTES.dashboard);
+    await account.createEmailSession(email, password);  // [!code ++]
   } catch (error: any) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
+    const appwriteException = error as AppwriteException;  // [!code ++]
+    console.error(appwriteException.message);  // [!code ++]
   }
 };
 ```
@@ -63,14 +61,12 @@ votre fonction avec les bons paramètres.
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);
-    setUser(session);
     await login(email, password); // 👈 // [!code ++]
-    router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error as AppwriteException; // [!code ++]
     console.error(appwriteException.message); // [!code ++]
@@ -91,19 +87,17 @@ pour vous connecter !
 Maintenant que vous pouvez vous connecter, il serait bien de pouvoir vous déconnecter aussi, non ? 🤔
 
 Pour cela, nous allons à nouveau utiliser le service Account pour déconnecter notre voyageur. Vous pouvez trouver
-la fonction `logout` dans le fichier `src/api/services/logout.service.ts`. Cette fonction ne prend aucun paramètre et
-utilise l'API Appwrite pour détruire la session du voyageur. Vous pourrez l'utiliser à la fin du workshop pour marquer
-la fin de votre aventure ! 🏁
+la fonction `logout` dans le fichier `src/workshop/api/modules/account/account.ts`. Cette fonction ne prend aucun
+paramètre et utilise l'API Appwrite pour détruire la session du voyageur. Vous pourrez l'utiliser à la fin du workshop
+pour marquer la fin de votre aventure ! 🏁
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const logout = async () => {
   await account.deleteSession('current');  // [!code ++]
-  setUser(null);
-  router.push(ROUTES.dashboard);
 };
 ```
 
