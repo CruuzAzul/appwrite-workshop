@@ -64,9 +64,8 @@ Do not grant your API key access to all application fields. This could compromis
 
 ## Step 2️⃣: Initialize the Server-Side SDK
 
-To initialize a server-side SDK, we'll create a file `src/api/config/server.config.ts`. This time, we'll import the
-Appwrite `Client` not from the client-side SDK but from the server-side SDK.
-In our case, we'll use the Node.js SDK.
+To initialize a server-side SDK, we'll create a file `src/workshop/api/config/server.config.ts`. This time, we'll import
+the Appwrite `Client` not from the client-side SDK but from the server-side SDK. In our case, we'll use the Node.js SDK.
 
 <Solution>
 
@@ -101,18 +100,17 @@ Use the SDK to retrieve the complete list of users registered in your applicatio
 already have a page ready to use, which is the /users page of our application. It seems like a piece of code is missing
 to display the list of users, right? 🤔
 
-In the src/api/modules/users.ts file, we can complete the getUsersList function to retrieve the list of users.
+In the `src/workshop/api/modules/users/travelers.ts` file, we can complete the `getTravelersList` function to retrieve
+the list of users.
 
 <Solution>
 
 ```ts
-import {users} from '@/api/config/server.config'; // TODO: Change name of the import
+import {users} from '@/api/config/server.config'; // [!code ++]
 import {Users} from '@/models/users';
 
 export const getUsersList = async (): Promise<Users> => {
-  const {users: usersList} = await users.list<Users>();
-
-  return usersList;
+  return await users.list<Users>(); // [!code ++]
 };
 ```
 
@@ -129,5 +127,5 @@ If you have followed the previous steps correctly, you should now see the list o
 your application, with plenty of information about the wonderful individuals who are closely or remotely involved in
 this adventure! 🎉
 
-Speaking of adventure, it's time to move on to the next part. There's still plenty more to discover, so head to your
-next destination! 🏝
+**Speaking of adventure, it's time to move on to the next part. There's still plenty more to discover, so head to your
+next destination! 🏝**

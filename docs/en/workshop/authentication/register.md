@@ -46,7 +46,7 @@ for us, it seems to have been damaged, and some **code snippets for communicatin
 
 Before you can use the Account service, you need to initialize it with your Appwrite client. To do this, you should
 import the Account service and create a new instance of it, passing your Appwrite client as a parameter. You can
-initialize the Account service in the `src/api/config/client.config.ts` file.
+initialize the Account service in the `src/workshop/api/config/client.config.ts` file.
 
 ```js
 export const account = new Account(AppwriteClient);
@@ -64,19 +64,17 @@ different client-side SDKs for the following languages:
 ## Step 2️⃣: Write the Registration Function
 
 - Now that the Account service is initialized, we can complete the `register` function, which you can find in
-  the `src/api/services/register.service.ts` file. This function takes the traveler's name, email, and password as
+  the `src/workshop/api/modules/account/account.ts` file. This function takes the traveler's name, email, and password as
   parameters and uses the Appwrite API to perform the registration.
 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config';
+import {account} from '@/api/config/client.config'; // [!code ++]
 
 const register = async (email: string, password: string, name: string) => {
   try {
     const session = await account.create(ID.unique(), email, password, name);  // [!code ++]
-    setUser(session);
-    router.push(ROUTES.dashboard);
   } catch (error: any) {
     const appwriteException = error as AppwriteException;  // [!code ++]
     console.error(appwriteException.message);  // [!code ++]
@@ -99,7 +97,7 @@ ou le code de l'erreur et traiter l'erreur en conséquence dans votre applicatio
 
 - Once we have retrieved the traveler's session, it is necessary to authenticate them with their credentials because the
   login is not automatic after registration. For this, we need to use the `login` function, which you can find in
-  the `src/api/services/login.service.ts` file... Unfortunately, this function is not written yet! 🤔 We'll come back to
+  the `src/workshop/api/modules/account/account.ts` file... Unfortunately, this function is not written yet! 🤔 We'll come back to
   this part later!
 
 ## Step 3️⃣: Sign Up!

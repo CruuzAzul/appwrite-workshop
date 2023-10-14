@@ -15,7 +15,7 @@ to master it entirely to move forward, but understand that it will be there when
 
 Now that you have an idea of the importance of AppVenture, here's how to launch it:
 
-1. Clone the `workshop` branch of the [AppVenture repository](https://app-appwrite-workshop-cruzazul.vercel.app/en) from
+1. Clone the `workshop` branch of the [AppVenture repository](https://github.com/CruuzAzul/app-appwrite-workshop) from
    GitHub using the following command 🥳[start-application.md](start-application.md)
 
 ```bash

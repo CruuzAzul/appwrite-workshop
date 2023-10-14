@@ -52,7 +52,7 @@ the [Appwrite documentation on data migration](https://appwrite.io/docs/advanced
 
 **3.** Save the `.env.local` file after making these modifications.
 
-**4.** Create a new `client.config.ts` file in the `src/api/config/` folder and add the code to initialize the
+**4.** Update the file `client.config.ts` file in the `src/workshop/api/config/` folder and add the code to initialize the
 client-side Appwrite SDK.
 
 :::info
