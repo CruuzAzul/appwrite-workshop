@@ -109,7 +109,7 @@ the list of users.
 import {users} from '@/api/config/server.config'; // [!code ++]
 import {Users} from '@/models/users';
 
-export const getUsersList = async (): Promise<Users> => {
+export const getTravelersList = async (): Promise<Users> => {
   return await users.list<Users>(); // [!code ++]
 };
 ```
