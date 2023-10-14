@@ -24,10 +24,12 @@ import {database} from '../../config/client.config'; // [!code ++]
 import {EnvConfig} from '../../config/env.config'; // [!code ++]
 
 export const getCoordinatesList = async (): Promise<Coordinates[]> => {
-  return await database.listDocuments<Coordinates>( // [!code ++]
+  const {documents} = await database.listDocuments<Coordinates>( // [!code ++]
     EnvConfig.databaseId, // [!code ++]
     EnvConfig.coordinatesCollectionId, // [!code ++]
   ); // [!code ++]
+
+  return documents; // [!code ++]
 };
 ```
 
