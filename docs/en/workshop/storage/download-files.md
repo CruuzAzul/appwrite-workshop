@@ -17,8 +17,8 @@ Congratulations, adventurer! You've successfully retrieved all the scattered ima
 Now, it's time to display them in your application to solve the puzzle! 🧩
 
 After initializing the Appwrite SDK to allow you to communicate with the **Storage** part of Appwrite,
-you'll go to the `src/api/modules/storage.ts` file and modify the `getStorageFiles` function that will retrieve
-and return the storage images.
+you'll go to the `src/workshop/api/modules/storage/puzzle.ts` file and modify the `getPuzzlePieces` function that will
+retrieve and return the storage images.
 
 :::tip
 You can use logs to display the retrieved images in your browser's console if you want to validate this first step.
@@ -27,10 +27,10 @@ You can use logs to display the retrieved images in your browser's console if yo
 <Solution>
 
 ```ts
-import {storage} from '@/api/config/client.config';
-import {EnvConfig} from '@/api/config/env.config';
+import {storage} from '@/api/config/client.config'; // [!code ++]
+import {EnvConfig} from '@/api/config/env.config'; // [!code ++]
 
-export const getStorageFiles = async (): Promise<FilesList> => {
+export const getPuzzlePieces = async (): Promise<FilesList> => {
   return await storage.listFiles(EnvConfig.storageBucketId); // [!code ++]
 };
 ```
@@ -40,9 +40,9 @@ export const getStorageFiles = async (): Promise<FilesList> => {
 ## Displaying found images 🧐
 
 Now that you've retrieved the storage images, it's time to display them in your application.
-It seems like you already have the code for iterating over the retrieved images, but something is still missing to
-display them. For this, we'll use one of Appwrite's methods to retrieve an image preview, which is its URL based on its
-ID.
+It seems like you already have the code for iterating over the retrieved images, but something is still missing in the
+`getPuzzlePiecesForPreviews` function to display them. For this, we'll use one of Appwrite's methods to retrieve an
+image preview, which is its URL based on its ID.
 
 <Solution>
 
@@ -50,7 +50,7 @@ ID.
 import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
-export const getFilesForPreviews = ({fileId}: FilePreview): URL => {
+export const getPuzzlePiecesForPreviews = ({fileId}: FilePreview): URL => {
   return storage.getFilePreview( // [!code ++]
     EnvConfig.storageBucketId, // [!code ++]
     fileId, // [!code ++]
@@ -74,8 +74,8 @@ applied, the images should be ready for puzzle-solving and discovering the secre
 
 ### Step 1️⃣: Modify the Preview Retrieval Function
 
-In the `src/api/modules/storage.ts` file, modify the `getFilesForPreviews` function to accept additional parameters that
-will allow you to apply transformations to the retrieved images.
+In the `src/workshop/api/modules/storage/puzzle.ts` file, modify the `getPuzzlePiecesForPreviews` function to
+accept additional parameters that will allow you to apply transformations to the retrieved images.
 
 <Solution>
 
@@ -83,7 +83,7 @@ will allow you to apply transformations to the retrieved images.
 import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
-export const getFilesForPreviews = ({
+export const getPuzzlePiecesForPreviews = ({
   fileId,
   width, // [!code ++]
   height, // [!code ++]
@@ -119,13 +119,13 @@ export const getFilesForPreviews = ({
 
 ### Step 2️⃣: Modify the Function Call to Change the Background Color
 
-In the `app/[locale]/storage/preview/page.tsx` page responsible for displaying images, you'll modify the function call
-to `getFilesForPreviews`to pass a `background` parameter to change the background color of the images to black.
+In the `src/workshop/components/storage/puzzle.tsx` page responsible for displaying images, you'll modify the function call
+to `getPuzzlePiecesForPreviews`to pass a `background` parameter to change the background color of the images to black.
 
 <Solution>
 
 ```ts
-const imgSrc = getFilesForTransformedPreviews({
+const imgSrc = getPuzzlePiecesForPreviews({
   fileId: file.$id,
   background: '000000', // [!code ++]
 });
