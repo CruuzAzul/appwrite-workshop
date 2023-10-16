@@ -37,12 +37,16 @@ import {database} from '../../config/client.config'; // [!code ++]
 import {EnvConfig} from '../../config/env.config'; // [!code ++]
 
 export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinate> => {
-  return await database.createDocument<Coordinates>( // [!code ++]
-    EnvConfig.databaseId, // [!code ++]
-    EnvConfig.coordinatesCollectionId, // [!code ++]
-    ID.unique(), // [!code ++]
-    coordinatesData, // [!code ++]
-  ); // [!code ++]
+  try {
+    return await database.createDocument<Coordinates>( // [!code ++]
+      EnvConfig.databaseId, // [!code ++]
+      EnvConfig.coordinatesCollectionId, // [!code ++]
+      ID.unique(), // [!code ++]
+      coordinatesData, // [!code ++]
+    ); // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 

@@ -84,9 +84,8 @@ export async function register(
 ): Promise<UserType | undefined> {
   try {
     return await account.create(ID.unique(), email, password, name); // [!code ++]
-  } catch (error) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
+  } catch (error: any) {
+    throw new AppwriteException(error);
   }
 }
 ```

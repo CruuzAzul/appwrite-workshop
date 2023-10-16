@@ -40,12 +40,11 @@ takes the traveler's email and password as parameters and uses the Appwrite API 
 ```ts
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-export async function login(email: string, password: string): Promise<void> {
+export async function login(email: string, password: string) {
   try {
     await account.createEmailSession(email, password); // [!code ++]
   } catch (error: any) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
+    throw new AppwriteException(error);
   }
 };
 ```
@@ -71,16 +70,15 @@ export async function register(
   password: string,
   name: string,
   login: (email: string, password: string) => Promise<void>
-): Promise<UserType | undefined> {
+): Promise<UserType> {
   try {
     const session = await account.create(ID.unique(), email, password, name); // [!code ++]
     await login(email, password); // 👈 // [!code ++]
 
     return session; // [!code ++]
-  } catch (error) {
-    const appwriteException = error as AppwriteException;
-    console.error(appwriteException.message);
-  }
+  } catch (error: any) {
+    throw new AppwriteException(error);
+	}
 }
 ```
 
@@ -107,7 +105,11 @@ workshop to mark the end of your adventure! 🏁
 import {account} from '@/api/config/client.config'; // [!code ++]
 
 export async function logout() {
-  await account.deleteSession('current'); // [!code ++]
+  try {
+    await account.deleteSession('current'); // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 

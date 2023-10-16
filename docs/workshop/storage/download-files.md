@@ -33,7 +33,11 @@ import {storage} from '@/api/config/client.config'; // [!code ++]
 import {EnvConfig} from '@/api/config/env.config'; // [!code ++]
 
 export const getPuzzlePieces = async (): Promise<FilesList> => {
-  return await storage.listFiles(EnvConfig.storageBucketId); // [!code ++]
+  try {
+    return await storage.listFiles(EnvConfig.storageBucketId); // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 
@@ -53,10 +57,14 @@ import {storage} from '@/api/config/client.config';
 import {EnvConfig} from '@/api/config/env.config';
 
 export const getPuzzlePiecesForPreviews = ({fileId}: FilePreview): URL => {
-  return storage.getFilePreview( // [!code ++]
-    EnvConfig.storageBucketId, // [!code ++]
-    fileId, // [!code ++]
-  ); // [!code ++]
+  try {
+    return storage.getFilePreview( // [!code ++]
+      EnvConfig.storageBucketId, // [!code ++]
+      fileId, // [!code ++]
+    ); // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 
@@ -101,21 +109,25 @@ export const getPuzzlePiecesForPreviews = ({
   background, // [!code ++]
   output, // [!code ++]
 }: FilePreview): URL => {
-  return storage.getFilePreview(
-    EnvConfig.storageBucketId,
-    fileId,
-    width, // [!code ++]
-    height, // [!code ++]
-    gravity, // [!code ++]
-    quality, // [!code ++]
-    borderWidth, // [!code ++]
-    borderColor, // [!code ++]
-    borderRadius, // [!code ++]
-    opacity, // [!code ++]
-    rotation, // [!code ++]
-    background, // [!code ++]
-    output // [!code ++]
-  );
+  try {
+    return storage.getFilePreview(
+      EnvConfig.storageBucketId,
+      fileId,
+      width, // [!code ++]
+      height, // [!code ++]
+      gravity, // [!code ++]
+      quality, // [!code ++]
+      borderWidth, // [!code ++]
+      borderColor, // [!code ++]
+      borderRadius, // [!code ++]
+      opacity, // [!code ++]
+      rotation, // [!code ++]
+      background, // [!code ++]
+      output // [!code ++]
+    );
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 

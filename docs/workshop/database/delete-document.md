@@ -26,7 +26,11 @@ import {database} from '../../config/client.config'; // [!code ++]
 import {EnvConfig} from '../../config/env.config'; // [!code ++]
 
 export const deleteCoordinates = async (id: string): Promise<void> => {
-  await database.deleteDocument(EnvConfig.databaseId, EnvConfig.coordinatesCollectionId, id); // [!code ++]
+  try {
+    await database.deleteDocument(EnvConfig.databaseId, EnvConfig.coordinatesCollectionId, id); // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 </Solution>

@@ -135,9 +135,13 @@ import {users} from '@/api/config/server.config'; // [!code ++]
 import {Users} from '@/models/users';
 
 export const getTravelersList = async (): Promise<Users> => {
-  const {users: usersList} = await users.list<Users>(); // [!code ++]
+  try {
+    const {users: usersList} = await users.list<Users>(); // [!code ++]
 
-  return usersList; // [!code ++]
+    return usersList; // [!code ++]
+  } catch (error: any) {
+    throw new AppwriteException(error);
+  }
 };
 ```
 
