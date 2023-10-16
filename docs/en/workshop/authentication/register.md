@@ -8,8 +8,7 @@ title: Traveler Registration
 title="Traveler Registration 📝"
 image="/assets/workshop/authentication/top-island.jpeg"
 description="As we ascend further up the island, it seems we're getting closer to an old building; that must be where we
-need
-to go. But before that, let's find out how to get registered in the list of travelers who have embarked on this
+need to go. But before that, let's find out how to get registered in the list of travelers who have embarked on this
 adventure! 🌴 In this section, we will explore the registration process, step by step! Traveler registration is the first
 essential step of our journey. With Appwrite, this task is simplified thanks to the Account service, which handles the
 entire process. 🏝️"
@@ -70,16 +69,23 @@ different client-side SDKs for the following languages:
 <Solution>
 
 ```ts
+import {UserType} from '@/types/UserHook.type';
+import {AppwriteException, ID} from 'appwrite'; // [!code ++]
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const register = async (email: string, password: string, name: string) => {
+export async function register(
+  email: string,
+  password: string,
+  name: string,
+  login: (email: string, password: string) => Promise<void>
+): Promise<UserType | undefined> {
   try {
-    return await account.create(ID.unique(), email, password, name);  // [!code ++]
-  } catch (error: any) {
-    const appwriteException = error as AppwriteException;  // [!code ++]
-    console.error(appwriteException.message);  // [!code ++]
+    return await account.create(ID.unique(), email, password, name); // [!code ++]
+  } catch (error) {
+    const appwriteException = error as AppwriteException;
+    console.error(appwriteException.message);
   }
-};
+}
 ```
 </Solution>
 

@@ -72,16 +72,23 @@ Si plus tard, vous souhaitez utiliser un autre langage côté client, vous pouve
 <Solution>
 
 ```ts
+import {UserType} from '@/types/UserHook.type';
+import {AppwriteException, ID} from 'appwrite'; // [!code ++]
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const register = async (email: string, password: string, name: string) => {
+export async function register(
+  email: string,
+  password: string,
+  name: string,
+  login: (email: string, password: string) => Promise<void>
+): Promise<UserType | undefined> {
   try {
     return await account.create(ID.unique(), email, password, name); // [!code ++]
-  } catch (error: any) {
-    const appwriteException = error as AppwriteException; // [!code ++]
-    console.error(appwriteException.message); // [!code ++]
+  } catch (error) {
+    const appwriteException = error as AppwriteException;
+    console.error(appwriteException.message);
   }
-};
+}
 ```
 </Solution>
 
