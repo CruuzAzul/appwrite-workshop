@@ -76,7 +76,6 @@ Dans notre cas, nous allons utiliser le SDK côté serveur pour Node.js.
 
 ```ts
 import {Client} from 'node-appwrite';
-
 import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
@@ -107,6 +106,24 @@ propose 9 SDKs côté serveur différent, pour les langages suivants :
 Utilisez le SDK pour récupérer la liste complète des utilisateurs enregistrés dans votre application. Pour afficher la
 liste des utilisateurs, nous avons déjà une page qui est prête à l'emploi, il s'agit de la page `/users` de notre
 application. Il semble manquer un bout de code pour afficher la liste des utilisateurs, non ? 🤔
+
+Pour commencer, vous devez comme à chaque fois que l'on utilise un nouveau service, initialiser le service **Users**
+dans le fichier `src/workshop/api/config/server.config.ts` !
+
+<Solution>
+
+```ts
+import {Client, Users} from 'node-appwrite';
+import {EnvConfig} from './env.config';
+
+export const AppwriteClient = new Client()
+  .setEndpoint(EnvConfig.endpoint ?? '')
+  .setProject(EnvConfig.projectId ?? '')
+  .setKey(EnvConfig.apiKey ?? '');
+
+export const users = new Users(AppwriteClient); // [!code ++]
+```
+</Solution>
 
 Dans le fichier `src/workshop/api/modules/users/travelers.ts`, nous allons donc pouvoir compléter la
 fonction `getTravelersList` pour récupérer la liste des utilisateurs 👥

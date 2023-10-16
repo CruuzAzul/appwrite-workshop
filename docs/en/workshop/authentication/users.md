@@ -71,7 +71,6 @@ the Appwrite `Client` not from the client-side SDK but from the server-side SDK.
 
 ```ts
 import {Client} from 'node-appwrite';
-
 import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
@@ -97,8 +96,27 @@ If you decide to use another server-side language later on, you can do so withou
 ## Step 3️⃣: Retrieve Travelers
 
 Use the SDK to retrieve the complete list of users registered in your application. To display the list of users, we
-already have a page ready to use, which is the /users page of our application. It seems like a piece of code is missing
+already have a page ready to use, which is the `/users` page of our application. It seems like a piece of code is
+missing
 to display the list of users, right? 🤔
+
+To begin with, you need to initialise the **Users** service in the `src/workshop/api/config/server.config.ts` file, as
+you do every time you use a new service.
+
+<Solution>
+
+```ts
+import {Users} from 'node-appwrite';
+
+export const AppwriteClient = new Client()
+  .setEndpoint(EnvConfig.endpoint ?? '')
+  .setProject(EnvConfig.projectId ?? '')
+  .setKey(EnvConfig.apiKey ?? '');
+
+export const users = new Users(AppwriteClient); // [!code ++]
+```
+
+</Solution>
 
 In the `src/workshop/api/modules/users/travelers.ts` file, we can complete the `getTravelersList` function to retrieve
 the list of users.
@@ -125,7 +143,8 @@ display information related to your users, current sessions, and recent activity
 service to modify user preferences and personal information.
 :::
 
-If you have followed the previous steps correctly, you should now see the list of users displayed on the /users page of
+If you have followed the previous steps correctly, you should now see the list of users displayed on the `/users` page
+of
 your application, with plenty of information about the wonderful individuals who are closely or remotely involved in
 this adventure! 🎉
 
