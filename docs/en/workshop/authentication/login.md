@@ -62,18 +62,26 @@ used to authenticate the traveler. You can now complete the `register` function 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {UserType} from '@/types/UserHook.type';
+import {AppwriteException, ID} from 'appwrite';
+import {account} from '@/api/config/client.config';
 
-const register = async (email: string, password: string, name: string) => {
+export async function register(
+  email: string,
+  password: string,
+  name: string,
+  login: (email: string, password: string) => Promise<void>
+): Promise<UserType | undefined> {
   try {
-    const session = await account.create(ID.unique(), email, password, name);
+    const session = await account.create(ID.unique(), email, password, name); // [!code ++]
     await login(email, password); // 👈 // [!code ++]
-    return session;
-  } catch (error: any) {
+
+    return session; // [!code ++]
+  } catch (error) {
     const appwriteException = error as AppwriteException;
     console.error(appwriteException.message);
   }
-};
+}
 ```
 
 </Solution>
