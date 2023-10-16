@@ -46,9 +46,8 @@ maximum values for a number or whether the attribute is required, for example.
 ```ts
 type Coordinate = {
   name: string; // Required
-  latitude: float; // Required
-  longitude: float; // Required
-  picture?: url; // Optional (?)
+  latitude: number; // Required
+  longitude: number; // Required
 };
 ```
 
@@ -57,7 +56,8 @@ type Coordinate = {
 Our collection is ready! However, there are two small details to manage.
 
 Firstly, Appwrite does not grant any default access permissions to collections, so you will need to modify them in the *
-*Settings** tab to allow all logged-in users to retrieve, create, modify, and delete documents.
+*Settings** tab to allow all logged-in users to retrieve, create, modify, and delete documents. In our case, we will
+give the maximum permissions: `Any`. (Don't forget to confirm with the **Update** button)
 
 <Image src="/assets/workshop/database/permission.png" imageAlt="Collection Permission" withSpacing ></Image>
 
