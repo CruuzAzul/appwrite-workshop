@@ -52,6 +52,7 @@ export default defineConfig({
                 link: '/workshop/configuration/start-application',
               },
               { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
+              { text: '🛟 : Configurer via GitPod', link: '/workshop/configuration/gitpod-appwrite-configuration' },
               {
                 text: 'Lier AppVenture à Appwrite',
                 link: '/workshop/configuration/link-application',
@@ -152,6 +153,7 @@ export default defineConfig({
                 link: '/en/workshop/configuration/start-application',
               },
               { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
+              { text: '🛟 : Configuration with GitPod', link: '/en/workshop/configuration/gitpod-appwrite-configuration' },
               {
                 text: 'Link AppVenture to Appwrite',
                 link: '/en/workshop/configuration/link-application',

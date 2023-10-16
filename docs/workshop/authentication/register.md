@@ -31,7 +31,7 @@ Authentification depuis le menu de gauche. Depuis cette page, vous pourrez voir 
 leurs informations ou encore même créer de nouveaux utilisateurs 🏝️
 <br/><br/>
 
-<Image src="/assets/workshop/authentication/auth-console.png" alt="Console Appwrite - Utilisateurs"></Image>
+<Image src="/assets/workshop/authentication/auth-console.png" imageAlt="Console Appwrite - Utilisateurs"></Image>
 
 **Mais nous sommes bien plus intéressés par l'API Appwrite pour gérer les utilisateurs. C'est pourquoi nous allons voir
 directement dans le code ! 🧑🏼‍💻**

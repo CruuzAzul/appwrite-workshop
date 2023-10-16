@@ -30,7 +30,7 @@ Appwrite provides a user interface directly in the console to manage users.
 You can access this Authentication section from the left menu. From this page, you can view the list of registered users, manage their information, or even create new users 🏝️
 <br/><br/>
 
-<Image src="/assets/workshop/authentication/auth-console.png" alt="Console Appwrite - Users"></Image>
+<Image src="/assets/workshop/authentication/auth-console.png" imageAlt="Console Appwrite - Users"></Image>
 
 **But we are much more interested in the Appwrite API for managing users. That's why we're going to dive directly into
 the code! 🧑🏼‍💻**
