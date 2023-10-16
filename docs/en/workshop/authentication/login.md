@@ -40,12 +40,12 @@ takes the traveler's email and password as parameters and uses the Appwrite API 
 ```ts
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const login = async (email: string, password: string) => {
+export async function login(email: string, password: string): Promise<void> {
   try {
     await account.createEmailSession(email, password); // [!code ++]
   } catch (error: any) {
-    const appwriteException = error as AppwriteException; // [!code ++]
-    console.error(appwriteException.message); // [!code ++]
+    const appwriteException = error as AppwriteException;
+    console.error(appwriteException.message);
   }
 };
 ```
@@ -106,7 +106,7 @@ workshop to mark the end of your adventure! 🏁
 ```ts
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const logout = async () => {
+export async function logout() {
   await account.deleteSession('current'); // [!code ++]
 };
 ```

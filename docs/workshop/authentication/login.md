@@ -39,12 +39,12 @@ pour effectuer la connexion.
 ```ts
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const login = async (email: string, password: string) => {
+export async function login(email: string, password: string): Promise<void> {
   try {
     await account.createEmailSession(email, password);  // [!code ++]
   } catch (error: any) {
-    const appwriteException = error as AppwriteException;  // [!code ++]
-    console.error(appwriteException.message);  // [!code ++]
+    const appwriteException = error as AppwriteException;
+    console.error(appwriteException.message);
   }
 };
 ```
@@ -105,7 +105,7 @@ pour marquer la fin de votre aventure ! 🏁
 ```ts
 import {account} from '@/api/config/client.config'; // [!code ++]
 
-const logout = async () => {
+export async function logout() {
   await account.deleteSession('current');  // [!code ++]
 };
 ```
