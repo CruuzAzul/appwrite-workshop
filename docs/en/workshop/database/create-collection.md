@@ -23,7 +23,7 @@ multiple documents.
 
 For this workshop, we've already created a database called **Workshop** for you to work with!
 
-To begin, create a collection called **Coords** in this database. You can do this by clicking the **+ Create Collection
+To begin, create a collection called **Coordinates** in this database. You can do this by clicking the **+ Create Collection
 ** button or by clicking on the **map +** to generate a random ID.
 
 <Image src="/assets/workshop/database/collectionModal.png" imageAlt="Collection Creation Modal" withSpacing ></Image>

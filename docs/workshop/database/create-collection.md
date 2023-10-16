@@ -25,7 +25,7 @@ plusieurs documents.
 Dans le cadre de ce Workshop, nous avons créé pour vous la base de donnée **Workshop**, dans laquelle vous allez pouvoir
 travailler !
 
-Pour commencer, créez une collection **Coords** dans cette base de donnée. Vous pouvez le faire en cliquant sur le
+Pour commencer, créez une collection **Coordonnées** dans cette base de donnée. Vous pouvez le faire en cliquant sur le
 bouton **+ Create collection**, ou en cliquant sur **la carte +**, vous pouvez générer un ID aléatoire.
 
 <Image src="/assets/workshop/database/collectionModal.png" imageAlt="Modal de création de collection" withSpacing></Image>
