@@ -32,6 +32,11 @@ git clone -b workshop https://github.com/CruuzAzul/app-appwrite-workshop.git
 :::tip
 Si vous n'avez pas pnpm installé, vous pouvez le faire en exécutant `npm install -g pnpm` ou en suivant les
 [instructions d'installation](https://pnpm.io/fr/installation) sur le site officiel de pnpm.
+
+---
+
+Il est recommandé d'avoir une version de Node.js supérieure ou égale à `v16.0.0` et une version de pnpm supérieure ou
+égale à `v8.4.0` 🏷️
 :::
 
 **3.** Lancez l'application en utilisant `pnpm dev` et ouvrez votre navigateur sur `localhost:3000`.
