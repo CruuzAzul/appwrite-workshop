@@ -61,7 +61,7 @@ adventurers is configured not to accept just any file!
 You can find the constraints of your bucket by going to the **Storage > Puzzle > Settings** section to see the
 indications regarding file size and extensions.
 
-<Image src="/assets/workshop/storage/ext-size.png" alt="Bucket Constraints"></Image>
+<Image src="/assets/workshop/storage/ext-size.png" imageAlt="Bucket Constraints"></Image>
 
 <br/>
 

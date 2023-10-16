@@ -62,7 +62,7 @@ fichier !
 Vous pouvez retrouver les contraintes de votre bucket en allant dans la section **Storage > Puzzle > Settings** pour
 voir les indications sur la taille et les extensions de fichier.
 
-<Image src="/assets/workshop/storage/ext-size.png" alt="Contraintes du bucket"></Image>
+<Image src="/assets/workshop/storage/ext-size.png" imageAlt="Contraintes du bucket"></Image>
 
 <br/>
 
