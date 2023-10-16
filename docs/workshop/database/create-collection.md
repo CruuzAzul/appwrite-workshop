@@ -49,9 +49,8 @@ valeur minimale et maximale pour un nombre, ou si l'attribut est requis par exem
 ```ts
 type Coordinate = {
   name: string; // Required
-  latitude: float; // Required
-  longitude: float; // Required
-  picture?: url; // Optional (?)
+  latitude: number; // Required
+  longitude: number; // Required
 };
 ```
 
@@ -61,7 +60,8 @@ Notre collection est prête ! En revanche, il reste deux petits détails à gér
 
 Premièrement, Appwrite ne donne aucune permission d’accès sur la collection par défaut, il vous faudra donc modifier
 ces dernières dans l’onglet **Settings**, pour que tous les utilisateurs connectés puissent récupérer, créer, modifier et
-supprimer des documents.
+supprimer des documents. Dans notre cas, nous allons donner les permissions maximales : `Any`. (N'oubliez pas de valider
+avec le bouton **Update**)
 
 <Image src="/assets/workshop/database/permission.png" imageAlt="Permission d'une collection" withSpacing></Image>
 
