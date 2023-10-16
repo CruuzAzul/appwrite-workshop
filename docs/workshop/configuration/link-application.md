@@ -73,8 +73,7 @@ export const AppwriteClient = new Client()
 **Ce code permettra d'initialiser le SDK Appwrite que nous utiliserons dans notre application. Il nous permettra par la
 suite d'initialiser les différents services Appwrite dans notre application.**
 
-**5.** C'est tout ! Votre AppVenture est maintenant prête à interagir avec votre instance Appwrite. Vous devriez voir un
-changement dans votre application, vous indiquant que votre application est maintenant liée à votre instance ! 🎊
+**5.** C'est tout ! Votre AppVenture est maintenant prête à interagir avec votre instance Appwrite ! 🎊
 
 <InfoBonus title="Alerte on a des IDs en clair dans le code côté client !! 😱">
 
