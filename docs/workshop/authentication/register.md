@@ -89,6 +89,7 @@ export async function register(
   }
 }
 ```
+
 </Solution>
 
 :::tip 🆔 Génération d'un identifiant unique

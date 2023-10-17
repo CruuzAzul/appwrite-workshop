@@ -86,6 +86,7 @@ export async function register(
   }
 }
 ```
+
 </Solution>
 
 :::tip 🆔 Generating a Unique Identifier

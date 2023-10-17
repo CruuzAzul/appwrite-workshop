@@ -7,7 +7,7 @@ title: Connexion des voyageurs
 <Hero
 title="Connexion des voyageurs 🔐"
 image="/assets/workshop/authentication/house-island.jpeg"
-description="Nous voici arrivés devant la batisse, la prochaine étape de notre voyage : la connexion des voyageurs.
+description="Nous voici arrivés devant la bâtisse, la prochaine étape de notre voyage : la connexion des voyageurs.
 Avant de pouvoir déverrouiller l'indice qui nous attend, nous devons d'abord accéder à notre application en étant
 connecté. Dans cette section, nous allons explorer en détail le processus de connexion et déconnexion et comment
 il peut être géré avec Appwrite 🔐"

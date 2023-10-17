@@ -63,6 +63,7 @@ You can use `EnvConfig` to access variables in the `.env.local` file.
 
 ```js
 import {Client} from 'appwrite';
+import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
