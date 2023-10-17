@@ -4,9 +4,9 @@
 
 <h2 align="center"> Le backend open-source qui challenge Firebase 🧳</h2><br />
 
-### Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
+### Découvrez les fondamentaux qui font d'Appwrite un outil indispensable pour tous les développeurs ! Embarquez avec nous pour cette expérience 🛫
 
-Le but de cet atelier est de vous faire découvrir l'univers du backend open-source et de vous familiariser avec la solution Appwrite. Durant cet événement, nous explorerons les fondamentaux d'Appwrite, de la mise en place de l'environnement à l'exploration de fonctionnalités plus avancées. Nous découvrirons ensemble les différents services de base qui font d'Appwrite un outil indispensable pour tout développeur à la recherche d'un backend facile à utiliser et performant 🚀
+Le but de cet atelier est de vous faire découvrir l'univers du backend open-source et de vous familiariser avec la solution Appwrite. Durant cet évènement, nous explorerons les fondamentaux d'Appwrite, de la mise en place de l'environnement à l'exploration de fonctionnalités plus avancées. Nous découvrirons ensemble les différents services de base qui font d'Appwrite un outil indispensable pour tout développeur à la recherche d'un backend facile à utiliser et performant 🚀
 
 ## 🖥️ Comment ça marche ?
 

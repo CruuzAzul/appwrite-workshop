@@ -36,7 +36,7 @@ sont fournies dans le workshop, mais tricher est découragé. La découverte est
 Préparez-vous pour une aventure de 1h30, où vous explorerez, apprendrez et développerez vos compétences en utilisant
 Appwrite. Vous pouvez également revenir plus tard et terminer votre voyage à votre rythme.
 
-Nous vous mettons pour vous aider, le lien vers la documentation liée à la partie du workshop que vous êtes en train de
+Nous vous mettons, pour vous aider, le lien vers la documentation liée à la partie du workshop que vous êtes en train de
 faire. Il vous suffit de cliquer sur le bouton `📖` en bas à droite de votre écran 🎁
 
 ## Les Technologies Utilisées 🧰

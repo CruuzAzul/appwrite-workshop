@@ -16,12 +16,12 @@ permettre d'entrer les précieuses coordonnées qui nous mèneront au fabuleux t
 fonctionne pas, **c'est à vous de le compléter pour pouvoir ajouter votre première destination.**
 
 Pour ce faire, rendez-vous dans le fichier `src/workshop/api/modules/database/coordinates.ts`, où vous pourrez trouver
-la fonction `createCoordinates` qui est appelé à la soumission du formulaire. À vous de la compléter en faisant appel au
-**SDK Appwrite** pour vous connecter à la base de donnée, et créer un document avec les informations contenu dans le
+la fonction `createCoordinates` qui est appelée à la soumission du formulaire. À vous de la compléter en faisant appel au
+**SDK Appwrite** pour vous connecter à la base de données, et créer un document avec les informations contenues dans le
 formulaire !
 
 :::tip 🆔 Génération d'un identifiant unique
-Lorsque vous interagissez avec Appwrite lors d'une création de données quelconque, il est nécessaire que votre donnée
+Lorsque vous interagissez avec Appwrite lors d'une création de donnée quelconque, il est nécessaire que votre donnée
 possède un identifiant unique. Pour cela, Appwrite vous fournit une fonction `ID.unique()` qui vous permet de générer
 un identifiant unique à chaque appel. Vous pouvez ensuite utiliser cet identifiant pour créer votre donnée !
 :::
@@ -54,7 +54,7 @@ export const createCoordinates = async (coordinatesData: Coordinate): Promise<Co
 </Solution>
 
 ::: info
-Pour l'utilisateur de Typescript, Appwrite met à disposition du type permettant de plus facilement typer nos data
+Pour l'utilisateur de TypeScript, Appwrite met à disposition du type permettant de plus facilement typer nos data
 dans notre application ! Vous pouvez aller voir le type `Coordinates` pour voir la manière dont il est fait.
 :::
 

@@ -8,7 +8,7 @@ title: Gestion des voyageurs
 title="Gestion des voyageurs 🧭"
 image="/assets/workshop/authentication/house-end.jpeg"
 description="Bienvenue en haut de l'île, à l'auberge des voyageurs ! Où vous aurez un aperçu complet de tous les
-voyageurs étant passé sur l'île. Avec le pouvoir du SDK côté serveur d'Appwrite, vous pouvez interagir avec tous
+voyageurs étant passés sur l'île. Avec le pouvoir du SDK côté serveur d'Appwrite, vous pouvez interagir avec tous
 les utilisateurs, afficher leurs informations et gérer leurs comptes en un seul endroit. Explorez cette île
 d'administration pour découvrir les fonctionnalités de gestion des voyageurs ! 🧭"
 />
@@ -23,7 +23,7 @@ partie [Configuration](/workshop/configuration/appwrite-configuration), vous êt
 L'API **Account** est l'API que vous devez utiliser dans vos applications client avec les SDK Client comme le web,
 Flutter, les applications mobiles et natives. L'API Account crée des sessions, qui représentent un utilisateur
 authentifié et sont attachées à son compte. Les sessions respectent les autorisations, ce qui signifie que
-les utilisateurs ne peuvent accéder aux ressources que s'ils ont reçues les autorisations appropriées.
+les utilisateurs ne peuvent accéder aux ressources que s'ils ont reçu les autorisations appropriées.
 
 L'API **Users** est une API dédiée à la gestion des utilisateurs du point de vue de l'administrateur. Elle doit être
 utilisée avec des applications backend ou côté serveur dotées de SDK serveur. L'API Users utilise des clés d'API
@@ -39,7 +39,7 @@ sur eux ! 🤜🏼 🤛🏼
 
 Pour commencer, nous devons initialiser notre SDK pour le service **Users**. Pour cela, même démarche que pour le
 service **Account**, nous allons importer le service **Users** et créer une nouvelle instance en lui passant en
-paramètre votre client Appwrite, mais aussi une clé API valide !
+paramètres votre client Appwrite, mais aussi une clé API valide !
 
 ## Étape 1️⃣ : Création d'une clé API
 
@@ -90,14 +90,14 @@ export const AppwriteClient = new Client()
 :::warning
 Attention, on remarque que de la même manière que le SDK côté client, on initialise notre instance avec `new Client()`
 mais cela ne signifie pas que c'est un SDK côté client. C'est donc la provenance du SDK qui détermine si c'est un SDK
-côté client ou côté serveur. Ici par exemple, nous allons l'importer d'un runtime Node.js côté serveur, en important
+côté client ou côté serveur. Ici, par exemple, nous allons l'importer d'un runtime Node.js côté serveur, en important
 notre `Client` depuis `node-appwrite` et non `appwrite` !
 :::
 
 <InfoBonus title="8 autres SDKs côté serveur !">
 
-Si plus tard, vous souhaitez utiliser un autre langage côté serveur, vous pouvez le faire sans problème. Appwrite
-propose 9 SDKs côté serveur différent, pour les langages suivants :
+Si plus tard vous souhaitez utiliser un autre langage côté serveur, vous pourrez le faire sans problème. Appwrite
+propose 9 SDKs côté serveur différents, pour les langages suivants :
 
 ![Server SDKs](/assets/workshop/authentication/server-sdks.png)
 
@@ -159,7 +159,7 @@ les informations personnelles de vos utilisateurs.
 :::
 
 Si vous avez bien suivi les étapes précédentes, vous devriez maintenant voir la liste des utilisateurs s'afficher sur
-la page `/users` de votre application, avec plein d'informations sur les superbes personnes qui participent de prêt ou
+la page `/users` de votre application, avec plein d'informations sur les superbes personnes qui participent de près ou
 de loin à cette aventure ! 🎉
 
 **En parlant d'aventure, il est temps de se tourner vers la suite, il nous reste encore plein de choses à découvrir donc

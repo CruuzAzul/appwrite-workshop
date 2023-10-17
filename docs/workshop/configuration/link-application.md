@@ -8,7 +8,7 @@ title: Lier l'AppVenture à votre Instance Appwrite
 title="Lier l'AppVenture à votre Instance Appwrite 🌐"
 image="/assets/workshop/configuration/app/bay_link.jpg"
 description="Félicitations, vous avez préparé votre AppVenture et maintenant, il est temps de la lier à votre instance
-Appwrite Cloud ! Sans ça l'AppVenture ne pourra pas interagir avec votre instance Appwrite et vous ne pourrez pas
+Appwrite Cloud ! Sans ça, l'AppVenture ne pourra pas interagir avec votre instance Appwrite et vous ne pourrez pas
 continuer votre voyage 🚢"
 />
 
@@ -19,21 +19,21 @@ l'instance Appwrite et de votre projet dans la console Appwrite Cloud 🏞️️
 
 ## Apprêtez votre AppVenture : Le raccordement à Appwrite 🧵
 
-Pour le moment lorsque vous accédez à votre AppVenture, vous verrez une page vous indiquant que votre application n'est
-pas encore liée à votre instance Appwrite. C'est normal, nous allons régler cela maintenant ! Pour cela l'application a
+Pour le moment, lorsque vous accédez à votre AppVenture, vous verrez une page vous indiquant que votre application n'est
+pas encore liée à votre instance Appwrite. C'est normal, nous allons régler cela maintenant ! Pour cela, l'application a
 besoin de quelques variables d'environnement :
 
 **1.** Créez un fichier `.env.local` à la racine du projet et configurez les variables d'environnement nécessaires en
 utilisant les informations que vous avez obtenues lors de la création de votre instance Appwrite Cloud. Copiez le
-contenu de`.env.example` dans `.env.local`.
+contenu de `.env.example` dans `.env.local`.
 
 **2.** Voici les premières variables d'environnement que vous devez configurer :
 
-- `NEXT_PUBLIC_APPWRITE_ENDPOINT` : Remplacez la valeur par l'URL de votre instance Appwrite Cloud, par default ce
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT` : Remplacez la valeur par l'URL de votre instance Appwrite Cloud, par défaut ce
   sera : `https://cloud.appwrite.io/v1`.
 
 - `NEXT_PUBLIC_APPWRITE_PROJECT_ID` : Cet ID est unique pour chaque projet Appwrite. Vous pouvez le trouver dans la
-  console Appwrite Cloud, en accédans à la page `Settings` dans la bar de navigation de gauche ou sur la route `/settings` :
+  console Appwrite Cloud, en accédant à la page `Settings` dans la barre de navigation de gauche ou sur la route `/settings` :
 
 <Image src="/assets/workshop/configuration/app/console_settings.png" imageAlt="Project settings screen" withSpacing></Image>
 
@@ -41,7 +41,7 @@ contenu de`.env.example` dans `.env.local`.
 Dans la partie `Settings` de la console Appwrite Cloud, vous trouverez l'ID du projet, mais aussi d'autres informations
 pour configurer votre projet :
 
-- L'activations des services Appwrite (Auth, Database, Storage, Functions)
+- L'activation des services Appwrite (Auth, Database, Storage, Functions)
 - La configuration de votre domaine personnalisé, de webhook, de votre serveur SMTP, etc.
 - L'interface pour migrer vos données d'une instance Appwrite self hosted vers une instance Appwrite Cloud ou encore
   pour importer vos données depuis une instance Firebase, Supabase ou encore Nhost dans votre instance Appwrite 🤩
@@ -81,13 +81,13 @@ Notez que certaines de nos variables sont préfixées par `NEXT_PUBLIC_` pour le
 
 Dans le cas des applications construites avec des outils tels que Firebase et Appwrite, il est courant de stocker des
 IDs en clair dans le code côté client. Cela peut sembler contre-intuitif en matière de sécurité, mais il y a une
-raison à cela. Ces clés sont utilisées par des SDK côté client pour intéragir auprès des services (Appwrite,
+raison à cela. Ces clés sont utilisées par des SDK côté client pour interagir auprès des services (Appwrite,
 Firebase...) et autoriser certaines opérations.
 
 Cependant, les services tels que Firebase et Appwrite offrent des mécanismes de sécurité robustes pour garantir que
 seules les applications authentifiées et autorisées peuvent effectuer certaines actions. Cela signifie que même si les
 clés sont exposées, elles ne sont pas suffisantes pour accéder aux données ou effectuer des opérations sans les bonnes
-autorisations, pour cela des mécanismes d'authentification et d'autorisation et de droits peuvent être configuré 📝
+autorisations. Pour cela, des mécanismes d'authentification, d'autorisation et de droits peuvent être configurés 📝
 
 Comme notamment lorsque l'on déclare les plateformes autorisées à accéder à notre instance en indiquant les domaines
 autorisés :
@@ -102,8 +102,8 @@ on a vu mieux comme sécurité... Vous penserez à changer ça plus tard 😅)
 
 ## À la recherche des traces des anciens explorateurs 🕵️‍♂️
 
-Avant de nous lancer dans ce périple passionnant, il est temps de jeter un coup d'œil que les anciens
-explorateurs ont laissés derrière eux. En effet, ils ont laissé des indices et des éléments qui
+Avant de nous lancer dans ce périple passionnant, il est temps de jeter un coup d'œil sur ce que les anciens
+explorateurs ont laissé derrière eux. En effet, ils ont laissé des indices et des éléments qui
 faciliteront notre progression. Nous allons récupérer ces informations et les intégrer à notre propre voyage.
 
 ### Exécuter le Script des Anciens Explorateurs 📜
@@ -139,7 +139,7 @@ l’entièreté des services
 
 <br/>
 
-**🧑🏼‍💻 Pour utiliser ce script, vous pouvez depuis un terminal, exécutez la commande :**
+**🧑🏼‍💻 Pour utiliser ce script, vous pouvez depuis un terminal, exécuter la commande :**
 
 _**Charger les données dans votre instance :**_
 
@@ -147,7 +147,7 @@ _**Charger les données dans votre instance :**_
 node ./script/init-travel.js
 ```
 
-_**Réinitailiser les données de votre instance :**_
+_**Réinitialiser les données de votre instance :**_
 
 ```bash
 node ./script/reset-travel.js

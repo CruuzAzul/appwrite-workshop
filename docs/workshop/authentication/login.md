@@ -25,13 +25,13 @@ partie précédente pour la [création de votre compte voyageur](/workshop/authe
 Dans notre cas, nous utiliserons le SDK Appwrite pour permettre à un voyageur de se connecter. Depuis l'application
 AppVenture, vous pouvez vous rendre sur la page de connexion `/login`. Le formulaire pour collecter les informations
 d'identification du voyageur est déjà prêt à l'emploi mais, comme pour celui d'inscription, il semble que des **morceaux
-de code pour communiquer avec Appwrite soient manquants**... Vous devrez donc les compléter à nouveau ! 🧑‍🔧
+de code pour communiquer avec Appwrite sont manquants**... Vous devrez donc les compléter à nouveau ! 🧑‍🔧
 
 ## Étape 1️⃣ : Écriture de la fonction de connexion
 
 En sachant que le service Account a déjà été initialisé dans la partie précédente, il ne nous reste plus qu'à
 compléter la fonction `login`, que vous pouvez trouver dans le fichier `src/workshop/api/modules/account/account.ts`.
-Rien de plus simple, cette fonction prend en paramètre l'e-mail et le mot de passe du voyageur et utilise l'API Appwrite
+Rien de plus simple, cette fonction prend en paramètres l'e-mail et le mot de passe du voyageur et utilise l'API Appwrite
 pour effectuer la connexion.
 
 <Solution>
@@ -55,7 +55,7 @@ export async function login(email: string, password: string) {
 Une fois que l'on a récupéré la session du voyageur, il est nécessaire de s'authentifier, car
 la connexion n'est pas automatique après l'inscription. Pour cela, nous avions besoin tout à l'heure de la
 fonction `login` que vous venez de créer... Vous pouvez donc maintenant compléter la fonction `register` en appelant la
-votre fonction avec les bons paramètres.
+fonction avec les bons paramètres.
 
 <Solution>
 
@@ -116,6 +116,6 @@ export async function logout() {
 
 <br />
 
-**Après vous êtres connectés avec succès, vous êtes prêt à explorer davantage les trésors qui vous attendent dans notre
+**Après vous être connecté avec succès, vous êtes prêt à explorer davantage les trésors qui vous attendent dans notre
 aventure sur l'île, et notamment à explorer le service Users d'Appwrite pour en apprendre plus sur les voyageurs
 passés ! 🗺️**

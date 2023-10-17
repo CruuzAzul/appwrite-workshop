@@ -22,10 +22,10 @@ La première étape est de créer une collection pour les stocker.
 Dans Appwrite, on peut créer plusieurs bases de données, qui peuvent contenir plusieurs collections, qui contiennent
 plusieurs documents.
 
-Dans le cadre de ce Workshop, nous avons créé pour vous la base de donnée **Workshop**, dans laquelle vous allez pouvoir
+Dans le cadre de ce Workshop, nous avons créé pour vous la base de données **Workshop**, dans laquelle vous allez pouvoir
 travailler !
 
-Pour commencer, créez une collection **Coordonnées** dans cette base de donnée. Vous pouvez le faire en cliquant sur le
+Pour commencer, créez une collection **Coordonnées** dans cette base de données. Vous pouvez le faire en cliquant sur le
 bouton **+ Create collection**, ou en cliquant sur **la carte +**, vous pouvez générer un ID aléatoire.
 
 <Image src="/assets/workshop/database/collectionModal.png" imageAlt="Modal de création de collection" withSpacing></Image>
@@ -33,7 +33,7 @@ bouton **+ Create collection**, ou en cliquant sur **la carte +**, vous pouvez g
 ## Définition du schéma 📄
 
 Une fois créée, pour pouvoir y insérer des documents, vous devez lui ajouter un **schéma** en créant des attributs avec
-chacun leur type prédéfini. Cette étape est obligatoire et provient du fait que le moteur de base de donnée utilisé est
+chacun leur type prédéfini. Cette étape est obligatoire et provient du fait que le moteur de base de données utilisé est
 Maria DB, un moteur SQL.
 
 Vous n’avez qu’à vous rendre dans l’onglet **Attributes**, puis cliquer sur le bouton **+ Create attribute**, ensuite

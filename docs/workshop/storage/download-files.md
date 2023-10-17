@@ -18,7 +18,7 @@ Félicitations, aventurier ! Vous avez réussi à récupérer toutes les images 
 montagne. Maintenant, il est temps de les afficher dans votre application pour résoudre le mystère du puzzle ! 🧩
 
 Après avoir initialisé le SDK Appwrite pour vous permettre de communiquer avec la partie **Storage** d'Appwrite, vous
-vous rendez dans le fichier `src/workshop/api/modules/storage/puzzle.ts` et modifier la fonction `getPuzzlePieces` qui
+vous rendez dans le fichier `src/workshop/api/modules/storage/puzzle.ts` et modifiez la fonction `getPuzzlePieces` qui
 va récupérer et retourner les images du stockage.
 
 :::tip
@@ -73,13 +73,13 @@ export const getPuzzlePiecesForPreviews = ({fileId}: FilePreview): URL => {
 ## Les pouvoirs des Transformations d'Images 🌟
 
 Malheureusement, une nouvelle énigme se présente à vous. Les images que vous avez collectées semblent endommagées, on ne
-parvient pas à les voir à l'écran malgré qu'elles soient bien présentes. Elles ne sont pas encore utilisables en l'état,
-mais ne vous inquiétez pas, car Appwrite est là pour vous aider grâce à ses transformations d'images ! 🪄
+parvient pas à les voir à l'écran bien qu'elles soient présentes. Elles ne sont pas encore utilisables en l'état,
+mais ne vous inquiétez pas, Appwrite est là pour vous aider grâce à ses transformations d'images ! 🪄
 
-Vous allez donc, modifiez la fonction de récupération des previews des images pour appliquer une transformation sur
-celle-ci côté serveur et restaurer les images endommagées.
+Vous allez donc modifier la fonction de récupération des previews des images pour appliquer une transformation sur
+celles-ci côté serveur et restaurer les images endommagées.
 
-Changer le fond des images en noir pour leur permettre de s'afficher corectement à l'écran ! Une fois les
+Changez le fond des images en noir pour leur permettre de s'afficher corectement à l'écran ! Une fois les
 transformations appliquées, les images devraient être prêtes pour la résolution du puzzle et la découverte des
 secrets de la montagne !
 

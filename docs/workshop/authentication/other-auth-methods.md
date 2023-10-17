@@ -5,7 +5,7 @@ title: Autres options d'authentification
 <Hero
 title="Autres options d'authentification 🔒"
 image="/assets/workshop/authentication/other-auth.jpeg"
-description="Nous semblons avoir terminé avec l'île de la méthode d'authentification par Email et Mot de Passe, mais au
+description="Nous semblons en avoir terminé avec l'île de la méthode d'authentification par Email et Mot de Passe, mais au
 loin, on semble voir d'autres îles, qui abritent d'autres options pour gérer l'authentification dans votre application.
 Bien que nous ne couvrions pas ces méthodes en détail dans le cadre de ce workshop, elles sont disponibles pour répondre
 à divers besoins d'authentification. Si vous avez de l'avance dans le workshop ou si vous souhaitez en savoir plus,
@@ -21,7 +21,7 @@ voici un aperçu de ces options bonus 🎁"
 ## 2️⃣ Authentification par lien magique (Magic URL)
 
 - **Explication** : Cette méthode permet aux utilisateurs de se connecter en cliquant sur un lien magique généré et
-  envoyé à leur adresse e-mail. Elle est utile pour une authentification sans mots de passe.
+  envoyé à leur adresse e-mail. Elle est utile pour une authentification sans mot de passe.
 - **Documentation** : [Magic URL Login](https://appwrite.io/docs/products/auth/magic-url)
 
 ## 3️⃣ Authentification OAuth 2
