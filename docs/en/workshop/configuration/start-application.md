@@ -57,7 +57,8 @@ won't need to worry about the rest of the application's code 🧑🏼‍💻
 ### In the Code 📝
 ---
 
-1️⃣ **Environment Variables**: You will find a `.env.local` file to configure environment variables. Make sure to adjust
+1️⃣ **Environment Variables**: You will find a `.env.example` file that you can use as a basis to configure
+environment variables. Make sure to adjust
 them according to the configuration information you obtained when setting up your Appwrite Cloud instance and
 initializing various services.
 
