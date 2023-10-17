@@ -53,7 +53,8 @@ Voici quelques endroits clés dans le code de l'AppVenture qui seront utiles tou
 ### Dans le code 📝
 ---
 
-1️⃣ **Variables d'Environnement** : Vous trouverez un fichier `.env.local` pour configurer les variables d'environnement.
+1️⃣ **Variables d'Environnement** : Vous trouverez un fichier `.env.example` sur lequel vous pourrez vous baser pour 
+configurer les variables d'environnement.
    Assurez-vous de les ajuster en fonction des informations de configuration que vous aurez obtenues lors de la création
    de votre instance Appwrite Cloud et de l'initialisation de vos différents services.
 

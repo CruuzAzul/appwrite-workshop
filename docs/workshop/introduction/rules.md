@@ -31,7 +31,7 @@ Bien que vous ayez la liberté de choisir votre propre itinéraire, nous vous re
 Le voyage peut être terminé à tout moment, car vous travaillerez sur des instances qui vous appartiennent. Les solutions
 sont fournies dans le workshop, mais tricher est découragé. La découverte est la clé de cette aventure !
 
-## La Durée de l'Expedition ⏱️
+## La Durée de l’Expédition ⏱️
 
 Préparez-vous pour une aventure de 1h30, où vous explorerez, apprendrez et développerez vos compétences en utilisant
 Appwrite. Vous pouvez également revenir plus tard et terminer votre voyage à votre rythme.
