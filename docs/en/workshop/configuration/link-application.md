@@ -119,6 +119,16 @@ Before running the script, make sure you've followed the previous configuration 
 Appwrite. Once that's done, launch the script and let it do its work.
 :::
 
+**3.** To allow the script to access the Appwrite instance, it will need an API key, which is a secret used by the server-side Appwrite SDKs, and the script requires it.
+
+To do this, go to the **Overview** section of the Appwrite console, then navigate to **Integrations**, and finally click on the **API Keys** tab. All that's left is to create a key by clicking the **Create Key** button, giving it a name, and selecting all the services.
+
+Once the key is created, you can add it to your `.env.local` file in the `APPWRITE_API_KEY_SCRIPT` variable.
+
+:::warning
+For the initialization script, we need access to all services, but in a real scenario, it's advisable not to assign all permissions to a single key. In the later part of the workshop, you will need to create other keys that don't have access to all services.
+:::
+
 <br/>
 
 **🧑🏼‍💻 To use this script, you can run the following command from a terminal:**

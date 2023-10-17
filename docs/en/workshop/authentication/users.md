@@ -51,6 +51,7 @@ treated as a secret. Never share them and keep them out of client applications.
 Go to the Appwrite console, in the **Overview** section. In the **Integrations** part, click on the **API Keys** tab.
 Then click the **Create Key** button. Give your API key a name, specify an expiration date if you wish, and select the
 application fields you want to grant to this API key.
+Next, enter it in the `APPWRITE_API_KEY_USERS` variable in your `.env.local` file.
 
 :::warning
 Do not grant your API key access to all application fields. This could compromise your application's security.
@@ -70,14 +71,15 @@ the Appwrite `Client` not from the client-side SDK but from the server-side SDK.
 <Solution>
 
 ```ts
-import {Client} from 'node-appwrite';
-import {EnvConfig} from './env.config';
+import { Client } from 'node-appwrite';
+import { EnvConfig } from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
   .setProject(EnvConfig.projectId ?? '')
-  .setKey(EnvConfig.apiKey ?? '');
+  .setKey(EnvConfig.apiKeyUsers ?? '');
 ```
+
 </Solution>
 
 :::warning
@@ -106,12 +108,12 @@ you do every time you use a new service.
 <Solution>
 
 ```ts
-import {Users} from 'node-appwrite';
+import { Users } from 'node-appwrite';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
   .setProject(EnvConfig.projectId ?? '')
-  .setKey(EnvConfig.apiKey ?? '');
+  .setKey(EnvConfig.apiKeyUsers ?? '');
 
 export const users = new Users(AppwriteClient); // [!code ++]
 ```
@@ -124,12 +126,12 @@ the list of users.
 <Solution>
 
 ```ts
-import {users} from '@/api/config/server.config'; // [!code ++]
-import {Users} from '@/models/users';
+import { users } from '@/api/config/server.config'; // [!code ++]
+import { Users } from '@/models/users';
 
 export const getTravelersList = async (): Promise<Users> => {
   try {
-    const {users: usersList} = await users.list<Users>(); // [!code ++]
+    const { users: usersList } = await users.list<Users>(); // [!code ++]
 
     return usersList; // [!code ++]
   } catch (error: any) {
