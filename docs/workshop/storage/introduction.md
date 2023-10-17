@@ -1,5 +1,5 @@
 ---
-title: Aux pieds des montagnes du Storage
+title: Au pied des montagnes du Storage
 ---
 
 <Documentation link="https://appwrite.io/docs/products/storage"></Documentation>
@@ -30,7 +30,7 @@ Storage et Wasabi en tant qu'adaptateurs de stockage. Certains de ces services p
 Appwrite 🏠
 
 ⚠️ **Notez que les adaptateurs de stockage ne sont pas disponibles dans la version cloud d'Appwrite, mais uniquement sur
-les version self hosted.**
+les versions self hosted.**
 
 🔗 [En savoir plus sur les adaptateurs de stockage](https://appwrite.io/docs/advanced/self-hosting/storage#adapters)
 

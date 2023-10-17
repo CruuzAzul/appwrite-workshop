@@ -7,15 +7,15 @@ title: Récupérer nos données
 <Hero
 title="Récupérons nos données ! 📑"
 image="/assets/workshop/database/get.jpg"
-description="Nous avons réussi à insérer de nouvelles données dans cette grande forêt qu’est la base de donnée,
-maintenant, il ne nous reste plus qu’à les récolter pour pouvoir les afficher ! Car bon... des données en base, c'est
+description="Nous avons réussi à insérer de nouvelles données dans cette grande forêt qu’est la base de données.
+Maintenant, il ne nous reste plus qu’à les récolter pour pouvoir les afficher ! Car bon... des données en base, c'est
 bien, des données en base affichées sur notre interface, c'est encore mieux !"
 />
 
 ## Récupération de documents 🗂️
 
 Pour ce faire, vous pouvez remplir la fonction `getCoordinatesList` pour qu'elle récupère toutes les coordonnées depuis
-notre collection, pour qu'elle puisse s'afficher dans directement sur l’AppVenture.
+notre collection, pour qu'elles puissent s'afficher directement sur l’AppVenture.
 
 <Solution>
 
@@ -39,13 +39,13 @@ export const getCoordinatesList = async (): Promise<Coordinates[]> => {
 
 </Solution>
 
-Un foie la fonction de récupération réalisée, vous devriez pouvoir voir les différentes coordonnées directement sur
+Une fois la fonction de récupération réalisée, vous devriez pouvoir voir les différentes coordonnées directement sur
 l'AppVenture 🎉
 
-Cependant, avec tous nos tests, il est possible que des mauvais documents aient été inséré en base, continuons notre
+Cependant, avec tous nos tests, il est possible que des mauvais documents aient été insérés en base, continuons notre
 chemin, nous trouverons peut-être une solution...
 
-<InfoBonus title="Différentes solution de récupération">
+<InfoBonus title="Différentes solutions de récupération">
 
 Dans ce workshop, tout passe par les différents SDK d’Appwrite.
 Cependant, vous avez aussi la possibilité d'accéder à vos données avec deux autres méthodes :

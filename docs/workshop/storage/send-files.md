@@ -7,7 +7,7 @@ title: L'Énigme Résolue - Module de Stockage Appwrite
 <Hero
 title="Énigme Résolue 🧩"
 image="/assets/workshop/storage/mountains-end.jpeg"
-description="Félicitations, aventurier ! Vous avez surement résolu l'énigme du puzzle et trouvé l'image qui vous servira
+description="Félicitations, aventurier ! Vous avez sûrement résolu l'énigme du puzzle et trouvé l'image qui vous servira
 de clé ! Maintenant, il vous suffit de l'envoyer dans le bucket Appwrite pour terminer ce module. Vous êtes sur le point
 de conclure votre aventure dans l'univers du stockage Appwrite. Continuez et rejoignez la prochaine destination ! 🚀"
 />
@@ -18,7 +18,7 @@ Vous êtes maintenant tout près de terminer ce module, aventurier ! Vous avez r
 clé, la dernière pièce du mystère. Pour achever cette quête, tout ce que vous avez à faire est d'envoyer cette
 image dans le bucket Appwrite que vous avez utilisé tout au long de cette aventure.
 
-Allez dans votre code, plus précisément dans le fichier `src/workshop/api/modules/storage/puzzle.ts`, et complêtez la
+Allez dans votre code, plus précisément dans le fichier `src/workshop/api/modules/storage/puzzle.ts`, et complétez la
 fonction qui récupère un tableau d'un ou plusieurs fichiers pour l'envoyer dans le bucket Appwrite. **Il ne vous reste
 plus qu'à envoyer le bon fichier 📤**
 

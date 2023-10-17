@@ -7,7 +7,7 @@ title: Inscription des voyageurs
 <Hero
 title="Inscription des voyageurs 📝"
 image="/assets/workshop/authentication/top-island.jpeg"
-description="Arrivé un peu plus haut sur l'île, on semble s'approcher d'une vieille batisse, ça doit être là-bas que
+description="Arrivé un peu plus haut sur l'île, on semble s'approcher d'une vieille bâtisse, ça doit être là-bas que
 l'on doit aller... Mais avant, nous allons voir comment s'inscrire dans la liste des voyageurs qui ont essayé cette
 aventure ! 🌴 Dans cette section, nous allons explorer le processus d'inscription, étape par étape ! L'inscription des
 voyageurs est la première étape essentielle de notre aventure. Avec Appwrite, cette tâche est simplifiée grâce au
@@ -43,7 +43,7 @@ pouvez voir en vous rendant sur la page d'inscription `/register` que le formula
 du voyageur est déjà créé ! 🥳 Pas de chance pour nous, il semble avoir été endommagé et certains **morceaux de code pour
 communiquer avec Appwrite sont manquants**... **Vous allez devoir réparer tout ça !** 🧑‍🔧
 
-## Étape 1️⃣ : Initaliser le service Account
+## Étape 1️⃣ : Initialiser le service Account
 
 Avant de pouvoir utiliser le service Account, vous devez l'initialiser avec votre client Appwrite. Pour ce faire, vous
 devez importer le service Account et créer une nouvelle instance de celui-ci en lui passant votre client Appwrite en
@@ -57,7 +57,7 @@ export const account = new Account(AppwriteClient);
 <InfoBonus title="3 autres SDKs côté client !">
 
 Si plus tard, vous souhaitez utiliser un autre langage côté client, vous pouvez le faire sans problème. Appwrite propose
-3 SDKs côté client différent, pour les langages suivants :
+3 SDKs côté client différents, pour les langages suivants :
 
 ![Client SDKs](/assets/workshop/authentication/client-sdks.png)
 
@@ -66,7 +66,7 @@ Si plus tard, vous souhaitez utiliser un autre langage côté client, vous pouve
 ## Étape 2️⃣ : Écrire la fonction d'inscription
 
 - Maintenant que le service Account est initialisé, nous allons pouvoir compléter la fonction `register` que vous pouvez
-  trouver dans le fichier `src/workshop/api/modules/account/account.ts`. Cette fonction prend en paramètre le nom, l'e-mail et
+  trouver dans le fichier `src/workshop/api/modules/account/account.ts`. Cette fonction prend en paramètres le nom, l'e-mail et
   le mot de passe du voyageur et utilise l'API Appwrite pour effectuer l'inscription.
 
 <Solution>

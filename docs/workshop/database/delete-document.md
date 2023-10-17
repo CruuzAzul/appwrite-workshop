@@ -8,8 +8,8 @@ title: Supprimer un document
 title="Enlevons les mauvais documents 🗑️"
 image="/assets/workshop/database/forest.jpg"
 description="Ça y est, on peut enfin voir ce que contient notre collection, et maintenant, il y a sûrement des données
-qui ne nous intéressent pas et qui fausserait notre chasse vers notre objectif, le trésor ! Une fois les coordonnées
-parasites supprimées, il ne nous restera qu’à trouver toutes les bonnes coordonnées dans le différent module, et le
+qui ne nous intéressent pas et qui fausseraient notre chasse vers notre objectif, le trésor ! Une fois les coordonnées
+parasites supprimées, il ne nous restera qu’à trouver toutes les bonnes coordonnées dans les différents modules, et le
 trésor sera à nous ! 🗺️"
 />
 
@@ -36,10 +36,10 @@ export const deleteCoordinates = async (id: string): Promise<void> => {
 </Solution>
 
 ::: info
-Il y a aussi la possibilité de modifier des données avec le sdk Appwrite, de la même manière dont vous avez réalisé
+Il y a aussi la possibilité de modifier des données avec le SDK Appwrite, de la même manière dont vous avez réalisé
 toutes les actions précédentes
 :::
 
-Notre collection est prête à accueillir toutes les informations nécessaires pour trouver le trésor, cependant, le module
+Notre collection est prête à accueillir toutes les informations nécessaires pour trouver le trésor. Cependant, le module
 ne semble pas être validé sur l’AppVenture ... il manque peut-être des coordonnées à ajouter à notre carte. 🗺️
 Vous pouvez passer à un autre module, ou vous rendre sur la partie bonus de celui-là pour découvrir le Realtime !

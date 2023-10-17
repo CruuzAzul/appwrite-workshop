@@ -6,7 +6,7 @@ title: Home
 hero:
   name: "Voyage au coeur d'Appwrite :"
   text: 'Le backend open-source qui challenge Firebase 🧳'
-  tagline: Bienvenue dans ce guide du voyageur ! 🗺️ Cette documentation vous guidera à travers chaque destination au coeur d'Appwrite ! Consultez les informations détaillées, les astuces et les solutions pour chaque module afin de découvrir les fondamentaux qui font d'Appwrite un outil indispensable pour tout les développeurs ! Embarquez avec nous pour cette expérience 🛫
+  tagline: Bienvenue dans ce guide du voyageur ! 🗺️ Cette documentation vous guidera à travers chaque destination au coeur d'Appwrite ! Consultez les informations détaillées, les astuces et les solutions pour chaque module afin de découvrir les fondamentaux qui font d'Appwrite un outil indispensable pour tous les développeurs ! Embarquez avec nous pour cette expérience 🛫
   actions:
     - theme: brand
       text: Commencer l'aventure 🚢
@@ -22,7 +22,7 @@ features:
   - icon:
       src: assets/firebase.svg
     title: Alternative à Firebase
-    details: Alternative à Firebase pour le développement du backend de votre applications web et mobiles.
+    details: Alternative à Firebase pour le développement du backend de vos applications web et mobiles.
   - icon:
       src: assets/open-source.svg
     title: Open Source
@@ -34,5 +34,5 @@ features:
   - icon:
       src: assets/dev.svg
     title: Pour les développeurs
-    details: Conçu par des développeur et pour des développeur ! Facile à utiliser et à intégrer dans vos applications.
+    details: Conçu par des développeurs et pour des développeurs ! Facile à utiliser et à intégrer dans vos applications.
 ---

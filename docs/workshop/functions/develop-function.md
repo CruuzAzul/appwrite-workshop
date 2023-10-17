@@ -13,18 +13,18 @@ indice qui nous mènera au trésor ! Votre mission va donc être de développer 
 ces fichues destinations ..."
 />
 
-## Étape 1️⃣ : Écouter l’événement de création de destination
+## Étape 1️⃣ : Écouter l’évènement de création de destination
 
 Pour commencer, il faut faire en sorte que votre fonction écoute toutes les nouvelles créations de documents dans la
 table des destinations (qui a déjà été créée pour vous en base de données).
 
-Pour faire cela, Appwrite met à disposition un système d'événement, que vous pouvez retrouver dans
+Pour faire cela, Appwrite met à disposition un système d'évènement, que vous pouvez retrouver dans
 la [documentation](https://appwrite.io/docs/advanced/platform/events#authentication-events), et qui vous permet de
 réagir à tout ce qui pourrait se passer dans votre instance Appwrite, de la modification d’un fichier en storage à la
 création d’un utilisateur.
 
 ::: warning
-Attention à ne pas écouter un événement déclenché par la fonction elle-même, cela pourrait créer une fonction qui
+Attention à ne pas écouter un évènement déclenché par la fonction elle-même, cela pourrait créer une fonction qui
 s’exécute en boucle.
 :::
 
@@ -41,7 +41,7 @@ application, il faudra les ajouter à notre fonction dans l’onglet **Settings*
 
 <Image src="/assets/workshop/functions/envVariable.png" imageAlt="Réglage des variable d’environnement dans la console Appwrite" withoutShadow ></Image>
 
-Elles seront ensuite disponible dans votre fonction à travers la bibliothèque système de votre langage (`process.env`
+Elles seront ensuite disponibles dans votre fonction à travers la bibliothèque système de votre langage (`process.env`
 dans le cas de Node.js) !
 :::
 
@@ -64,9 +64,9 @@ export default async ({req, res}) => {
 
 ## Étape 3️⃣ : Initialiser le service de base de donnée
 
-Une fois votre fonction lier à votre instance Appwrite, il nous faut initialiser les services dont on aura besoin.
+Une fois votre fonction liée à votre instance Appwrite, il nous faut initialiser les services dont on aura besoin.
 
-Dans notre cas, nous n'auront besoin que du service de base de donnée pour faire de la modification sur des documents.
+Dans notre cas, nous n'aurons besoin que du service de base de données pour faire de la modification sur des documents.
 
 <Solution>
 
@@ -89,7 +89,7 @@ export default async ({req, res}) => {
 
 ## Étape 4️⃣ : Modifier le nouvel objet créé
 
-Une fois que notre fonction écoute le bon événement, le document créé sera disponible dans le body de la requête mit à
+Une fois que notre fonction écoute le bon évènement, le document créé sera disponible dans le body de la requête mis à
 disposition par Appwrite. Il ne vous restera plus qu’à le modifier avec la fonction `decrypt` qui vous est fourni dans
 le fichier `/utils/decrypt.js` !
 
@@ -136,11 +136,11 @@ export default async ({req, res}) => {
 </Solution>
 
 Une fois que votre fonction est développée, il ne vous reste plus qu'à la tester en appuyant sur le bouton **Ajouter une
-destination** sur l'AppVenture, si la destination est bien décrypté, c'est gagné !
+destination** sur l'AppVenture, si la destination est bien décryptée, c'est gagné !
 
 **Continuez d’appuyer jusqu’à trouver l’indice 😉**
 
-<InfoBonus title="Déclencher ses fonctions à interval régulier">
+<InfoBonus title="Déclencher ses fonctions à intervalle régulier">
 <br />
 Nous avons vu que vous pouvez déclencher votre fonction depuis la console et en écoutant un évènement provenant de l’un des services d’Appwrite
 
@@ -150,7 +150,7 @@ journée ou de la semaine !
 Appwrite donne la possibilité de renseigner une chaîne de caractère **CRON** dans les réglages d’une fonction, et qui
 vous permettra de remplir ce besoin !
 
-<Image src="/assets/workshop/functions/cron.png" imageAlt="Réglage de l’execution des fonction par CRON" ></Image>
+<Image src="/assets/workshop/functions/cron.png" imageAlt="Réglage de l’exécution des fonctions par CRON" ></Image>
 
 <br/>
 </InfoBonus>

@@ -17,12 +17,14 @@ quand vous aurez besoin d'elle !"
 Maintenant que vous avez une idée de l'importance de l'AppVenture, voici comment la lancer :
 
 **1.** Clonez la branche `workshop` [repository de l'AppVenture](https://github.com/CruuzAzul/app-appwrite-workshop)
-depuis GitHub grâce à la commande 🥳
+depuis GitHub grâce à l'une de ces commandes 🥳
 
 ```bash
 # SSH
 git clone -b workshop git@github.com:CruuzAzul/app-appwrite-workshop.git
+```
 
+```bash
 # HTTPS
 git clone -b workshop https://github.com/CruuzAzul/app-appwrite-workshop.git
 ```
@@ -44,7 +46,7 @@ Il est recommandé d'avoir une version de Node.js supérieure ou égale à `v16.
 ## Les endroits clés de l'AppVenture 🔑
 
 Avant de mettre les voiles, comprenons rapidement l'architecture de l'AppVenture. Cette application est construite avec
-Next.js, un framework React. Elle nous permettra de communiquer avec notre instance Appwrite Cloud et d'intéragir avec
+Next.js, un framework React. Elle nous permettra de communiquer avec notre instance Appwrite Cloud et d'interagir avec
 les différents services comme l'authentification, stocker des données et exécuter des fonctions 📂
 
 Voici quelques endroits clés dans le code de l'AppVenture qui seront utiles tout au long de notre aventure ! Mis à part
@@ -66,14 +68,14 @@ ne pas y toucher ! 🙏🏼
 
 2️⃣ **Les différents services et composants** : vous trouverez dans le dossier `src/workshop` tous les services
    et composants que vous aurez à compléter. Vous pouvez les identifier grâce aux commentaires `HERE` présents dans le
-   code. Les différents fichiers à modifier seront indiqué tout au long de l'atelier.
+   code. Les différents fichiers à modifier seront indiqués tout au long de l'atelier.
 
 ### Dans l'interface 🖥️
 ---
 
 1️⃣ **Le dashboard** : vous trouverez un dashboard pour vous aider à naviguer dans l'application et à accéder aux
    différentes fonctionnalités. Vous pouvez y accéder en cliquant sur le bouton `Dashboard` en haut à droite de
-   l'application ou en vous randant sur `localhost:3000/dashboard`.
+   l'application ou en vous rendant sur `localhost:3000/dashboard`.
 
 2️⃣ **Votre carte au trésor à compléter** : vous trouverez une carte au trésor à compléter au fur et à mesure de votre
    progression dans l'atelier avec les coordonnées que vous aurez obtenues ! Pour y accéder, vous pourrez cliquer sur

@@ -28,7 +28,7 @@ consultez la [documentation d'Appwrite](https://appwrite.io/docs/quick-starts) p
 
 Premièrement, vous devez créer un compte Appwrite. Pour ce faire, vous pouvez vous rendre sur
 la [console d'Appwrite Cloud](https://cloud.appwrite.io/login) pour vous créer un compte. Vous pouvez également vous
-connecter avec votre compte GitHub, si vous le souhaiter ou alors utiliser un compte existant.
+connecter avec votre compte GitHub, si vous le souhaitez ou alors utiliser un compte existant.
 
 <Image src="/assets/workshop/configuration/console/console_signup.png" imageAlt="Onboarding screen Appwrite Cloud" withSpacing></Image>
 
@@ -36,7 +36,7 @@ connecter avec votre compte GitHub, si vous le souhaiter ou alors utiliser un co
 Cette instance Appwrite Cloud est gratuite et restera votre propriété même après la fin de ce workshop 💪🏼
 :::
 
-## Étape 2️⃣ : Créer de votre premier projet 🏗️
+## Étape 2️⃣ : Créer votre premier projet 🏗️
 
 Une fois votre compte créé, vous pouvez créer votre premier projet. Nommez-le par exemple `AppVenture` 📝
 
@@ -48,8 +48,8 @@ Une fois votre projet créée, vous pouvez voir votre instance vide, car elle n'
 
 <Image src="/assets/workshop/configuration/console/console_select_platform.png" imageAlt="Console select platform" withSpacing></Image>
 
-Sous **Add a platform**, ajoutez une **Web app**. Cela vous nous permettres par la suite de
-lié notre application web à cette instance Appwrite.
+Sous **Add a platform**, ajoutez une **Web app**. Cela va nous permettre par la suite de
+lier notre application web à cette instance Appwrite.
 
 Vous pouvez donner le nom `AppVenture Web` pour désigner votre application web et pour le nom d'hôte, vous devez
 renseigner `localhost` car c'est le nom de domaine qui sera utilisé par votre application web pour communiquer avec les
@@ -58,7 +58,7 @@ APIs Appwrite 📡
 <Image src="/assets/workshop/configuration/console/console_add_platform.png" imageAlt="Console form add platform" withSpacing></Image>
 
 Pour les étapes suivantes, vous pouvez passer ces étapes, car nous allons les couvrir dans la section suivante pour nous
-permettre cette fois de lié notre application web à notre instance Appwrite 🤯
+permettre cette fois de lier notre application web à notre instance Appwrite 🤯
 
 <Image src="/assets/workshop/configuration/console/console_end.png" imageAlt="Console screen" withSpacing></Image>
 
