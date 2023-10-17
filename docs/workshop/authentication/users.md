@@ -54,6 +54,7 @@ clientes.
 Rendez-vous dans la console Appwrite, dans la partie **Overview**. Dans la partie **Integrations**, cliquez sur l'onglet
 **API Keys**. Cliquez ensuite sur le bouton **Create Key**. Donnez un nom à votre clé API, indiquez une date
 d'expiration si vous le souhaitez, et sélectionnez les champs d'application que vous souhaitez accorder à cette clé API.
+Vous n'aurez plus qu’a la renseigner dans la variable `APPWRITE_API_KEY_USERS` de votre fichier `.env.local`
 
 :::warning
 Ne donnez pas accès à tous les champs d'application à votre clé API. Cela pourrait compromettre la sécurité de votre
@@ -75,14 +76,15 @@ Dans notre cas, nous allons utiliser le SDK côté serveur pour Node.js.
 <Solution>
 
 ```ts
-import {Client} from 'node-appwrite';
-import {EnvConfig} from './env.config';
+import { Client } from 'node-appwrite';
+import { EnvConfig } from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
   .setProject(EnvConfig.projectId ?? '')
-  .setKey(EnvConfig.apiKey ?? '');
+  .setKey(EnvConfig.apiKeyUsers ?? '');
 ```
+
 </Solution>
 
 :::warning
@@ -113,16 +115,17 @@ dans le fichier `src/workshop/api/config/server.config.ts` !
 <Solution>
 
 ```ts
-import {Client, Users} from 'node-appwrite';
-import {EnvConfig} from './env.config';
+import { Client, Users } from 'node-appwrite';
+import { EnvConfig } from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
   .setProject(EnvConfig.projectId ?? '')
-  .setKey(EnvConfig.apiKey ?? '');
+  .setKey(EnvConfig.apiKeyUsers ?? '');
 
 export const users = new Users(AppwriteClient); // [!code ++]
 ```
+
 </Solution>
 
 Dans le fichier `src/workshop/api/modules/users/travelers.ts`, nous allons donc pouvoir compléter la
@@ -131,12 +134,12 @@ fonction `getTravelersList` pour récupérer la liste des utilisateurs 👥
 <Solution>
 
 ```ts
-import {users} from '@/api/config/server.config'; // [!code ++]
-import {Users} from '@/models/users';
+import { users } from '@/api/config/server.config'; // [!code ++]
+import { Users } from '@/models/users';
 
 export const getTravelersList = async (): Promise<Users> => {
   try {
-    const {users: usersList} = await users.list<Users>(); // [!code ++]
+    const { users: usersList } = await users.list<Users>(); // [!code ++]
 
     return usersList; // [!code ++]
   } catch (error: any) {

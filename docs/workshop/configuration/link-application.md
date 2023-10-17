@@ -62,12 +62,11 @@ Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fi
 <Solution>
 
 ```js
-import {Client} from 'appwrite';
+import { Client } from 'appwrite';
 
-export const AppwriteClient = new Client()
-  .setEndpoint(EnvConfig.endpoint ?? '')
-  .setProject('<PROJECT_ID>');
+export const AppwriteClient = new Client().setEndpoint(EnvConfig.endpoint ?? '').setProject('<PROJECT_ID>');
 ```
+
 </Solution>
 
 **Ce code permettra d'initialiser le SDK Appwrite que nous utiliserons dans notre application. Il nous permettra par la
@@ -119,6 +118,22 @@ workshop fonctionne correctement 😅)
 :::warning
 Avant d'exécuter le script, assurez-vous d'avoir suivi les étapes de configuration précédentes pour lier votre
 AppVenture à Appwrite. Une fois cela fait, lancez le script et laissez-le faire son travail.
+:::
+
+**3.** Pour que le script puisse avoir accès à l’instance Appwrite, il aura besoin d’une clé API, qui est un secret utilisé par les SDK Appwrite coté serveur, et dont le script à besoin
+
+Pour ce faire, rendez vous dans la partie **Overview** de la console Appwrite, puis
+dans **Intégration** et enfin cliquer sur l’onglet **API Keys**. Il ne vous reste
+plus qu’à créer une clé en cliquant sur le bouton **Create Key**, de lui donner un nom
+puis sélectionnez tout les services.
+Une fois la clé créée, vous pouvez la renseigner dans votre fichier `.env.local` dans
+la variable `APPWRITE_API_KEY_SCRIPT`
+
+:::warning
+Pour le script d’initialisation, nous avons besoin d’un accès à tout les services,
+mais il est préférable en cas réel de ne pas attribuer tout les accès à une seule clé.
+Dans la suite du Workshop, vous devrez créer d’autres clés qui n’auront pas accès à
+l’entièreté des services
 :::
 
 <br/>
