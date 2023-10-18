@@ -52,7 +52,9 @@ the [Appwrite documentation on data migration](https://appwrite.io/docs/advanced
 **3.** Save the `.env.local` file after making these modifications.
 
 **4.** Update the file `client.config.ts` file in the `src/workshop/api/config/` folder and add the code to initialize the
-client-side Appwrite SDK.
+client-side Appwrite SDK. It is the initialisation of the SDK with the environment variables that will enable the
+application to communicate with your Appwrite instance via the various Appwrite services that we will
+initialize later.
 
 :::info
 You can use `EnvConfig` to access variables in the `.env.local` file.

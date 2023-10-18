@@ -53,7 +53,9 @@ la [documentation d'Appwrite sur la migration des données](https://appwrite.io/
 **3.** Sauvegardez le fichier `.env.local` après avoir effectué ces modifications.
 
 **4.** Modifiez le fichier `client.config.ts` dans le dossier `src/workshop/api/config/` et ajoutez-y le code permettant
-d'initialiser le SDK Appwrite côté client.
+d'initialiser le SDK Appwrite côté client. C'est l'initialisation du SDK avec les variables d'environnement qui
+permettra à l'application de communiquer avec votre instance Appwrite à travers les différents services Appwrite que
+nous initialiserons par la suite.
 
 :::info
 Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fichier `.env.local`
@@ -124,12 +126,11 @@ AppVenture à Appwrite. Une fois cela fait, lancez le script et laissez-le faire
 :::
 
 **3.** Pour que le script puisse avoir accès à l’instance Appwrite, il aura besoin d’une clé API, qui
-est un secret utilisé par les SDK Appwrite coté serveur, et dont le script à besoin.
+est un secret utilisé par les SDK Appwrite coté serveur, et dont le script a besoin.
 
-Pour ce faire, rendez vous dans la partie **Overview** de la console Appwrite, puis
-dans **Intégration** et enfin cliquer sur l’onglet **API Keys**. Il ne vous reste
-plus qu’à créer une clé en cliquant sur le bouton **Create Key**, de lui donner un nom
-puis sélectionnez tout les services.
+Pour ce faire, rendez-vous dans la partie **Overview** de la console Appwrite, puis dans **Intégration** et enfin
+cliquer sur l’onglet **API Keys**. Il ne vous reste plus qu’à créer une clé en cliquant sur le bouton **Create Key**, de
+lui donner un nom (`Admin`), et ensuite, sélectionnez tous les services.
 Une fois la clé créée, vous pouvez la renseigner dans votre fichier `.env.local` dans
 la variable `APPWRITE_API_KEY_SCRIPT`.
 
@@ -138,8 +139,8 @@ Vous venez de modifier une variable d’environnement, pensez à redémarrer vot
 :::
 
 :::warning
-Pour le script d’initialisation, nous avons besoin d’un accès à tout les services,
-mais il est préférable en cas réel de ne pas attribuer tout les accès à une seule clé.
+Pour le script d’initialisation, nous avons besoin d’un accès à tous les services,
+mais il est préférable en cas réel de ne pas attribuer tous les accès à une seule clé.
 Dans la suite du Workshop, vous devrez créer d’autres clés qui n’auront pas accès à
 l’entièreté des services
 :::

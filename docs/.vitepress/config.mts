@@ -1,5 +1,5 @@
-import { defineConfig, HeadConfig } from 'vitepress';
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
+import {defineConfig, HeadConfig} from 'vitepress';
+import {tabsMarkdownPlugin} from 'vitepress-plugin-tabs';
 
 interface LocaleSpecificConfig<ThemeConfig = any> {
   lang?: string;
@@ -30,6 +30,7 @@ export default defineConfig({
           { text: 'Accueil 🏠', link: '/' },
           { text: 'Workshop 💼', link: '/workshop/introduction/rules' },
           { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' },
+          { text: 'OpenFeedback 📝', link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase' },
         ],
 
         sidebar: [
@@ -131,6 +132,7 @@ export default defineConfig({
           { text: 'Home 🏠', link: '/en/' },
           { text: 'Workshop 💼', link: '/en/workshop/introduction/rules' },
           { text: 'Creators 👨🏼‍💻', link: '/en/creators.md' },
+          { text: 'OpenFeedback 📝', link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase' },
         ],
 
         sidebar: [
