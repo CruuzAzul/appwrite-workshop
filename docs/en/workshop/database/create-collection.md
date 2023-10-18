@@ -39,6 +39,10 @@ from the dropdown menu.
 You will then arrive at a modal where you can enter various information about your attribute, such as its minimum and
 maximum values for a number or whether the attribute is required, for example.
 
+:::info
+Latitude is a value ranging from -90 to 90, and longitude is a value ranging from -180 to 180. To simplify, we will use integers rather than floating-point numbers.
+:::
+
 <Image src="/assets/workshop/database/attributeModal.png" imageAlt="Attribute Creation Modal" withSpacing ></Image>
 
 #### The coordinate document follows this schema:
@@ -67,6 +71,10 @@ Next, for the AppVenture to access this collection, it needs to know its ID!
 
 To do this, simply retrieve the ID from the Appwrite console, right next to its name, and fill
 the `NEXT_PUBLIC_APPWRITE_COORDINATES_COLLECTION_ID` environment variable with it!
+
+:::danger
+You have just modified an environment variable, remember to restart your server to apply these changes.
+:::
 
 <Image src="/assets/workshop/database/idCollection.png" imageAlt="Collection Identifier" withSpacing ></Image>
 

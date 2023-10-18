@@ -19,6 +19,10 @@ Heureusement, un bouton de suppression est là pour vous permettre de supprimer 
 ne vous reste plus qu'à compléter la fonction `deleteCoordinates` dans le
 fichier `src/workshop/api/modules/database/coordinates.ts` pour que ce bouton soit fonctionnel, et le tour est joué !
 
+::: tip
+Une fois que vous avez supprimer un documents, n’oubliez pas de recharger la page pour voir disparaître votre document.
+:::
+
 <Solution>
 
 ```ts

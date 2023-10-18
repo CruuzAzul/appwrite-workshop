@@ -42,7 +42,6 @@ export const uploadFiles = async (
     );
   } catch (error: any) {
     throw new AppwriteException(error); // [!code ++]
-    console.error(error); // [!code ++]
   }
 };
 ```
