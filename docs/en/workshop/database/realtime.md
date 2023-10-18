@@ -34,7 +34,7 @@ of a document. You will need to sort through them to react only to the events th
 ---
 <br/>
 
-In AppVenture, you can add this functionality by going to the `CoordinatesCardList` component
+In AppVenture, you can add this functionality by going to the `CoordinatesCardsList` component
 in `src/workshop/components/database`, and adding the `unsubscribe` function in the `useEffect`. This function is called
 when the component is created and will open a connection with your database to keep the list of coordinates up to date!
 and completing
@@ -139,7 +139,7 @@ useEffect(() => {
     switch (eventType) { // [!code ++]
       case EventType.CREATE: // [!code ++]
         setUpdatedCoordinatesList((currentCoordinatesList) => [ // [!code ++]
-          response.payload as Coordinates, // [!code ++]
+          response.payload, // [!code ++]
           ...currentCoordinatesList, // [!code ++]
         ]); // [!code ++]
         break; // [!code ++]
@@ -153,8 +153,8 @@ useEffect(() => {
         break; // [!code ++]
       default: // [!code ++]
         break; // [!code ++]
-    }
-  });
+    } // [!code ++]
+  }); // [!code ++]
 }, []);
 ```
 </Solution>

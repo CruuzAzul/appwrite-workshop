@@ -57,6 +57,10 @@ Next, enter it in the `APPWRITE_API_KEY_USERS` variable in your `.env.local` fil
 Do not grant your API key access to all application fields. This could compromise your application's security.
 :::
 
+:::danger
+You have just modified an environment variable, remember to restart your server to apply these changes.
+:::
+
 <br/>
 
 <Image src="/assets/workshop/authentication/api-keys.png" imageAlt="Console screenshot of API key section"></Image>

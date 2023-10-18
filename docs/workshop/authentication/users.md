@@ -61,6 +61,10 @@ Ne donnez pas accès à tous les champs d'application à votre clé API. Cela po
 application.
 :::
 
+:::danger
+Vous venez de modifier une variable d’environnement, pensez à redémarrer votre serveur pour prendre en compte ces changements
+:::
+
 <br/>
 
 <Image src="/assets/workshop/authentication/api-keys.png" imageAlt="Screenshot de la console pour la section API Keys"></Image>

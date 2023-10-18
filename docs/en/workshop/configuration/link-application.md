@@ -29,11 +29,10 @@ contents of `.env.example` into `.env.local`.
 
 **2.** Here are the first environment variables you need to configure:
 
-- `NEXT_PUBLIC_APPWRITE_ENDPOINT`: Replace the value with the URL of your Appwrite Cloud instance. By default, it will
-  be: `https://cloud.appwrite.io/v1`.
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT`: Replace the value with the URL of your Appwrite instance. You can find it in the Appwrite console by accessing the 'Settings' page in the left 
+navigation bar or at the /settings route..
 
-- `NEXT_PUBLIC_APPWRITE_PROJECT_ID`: This ID is unique for each Appwrite project. You can find it in the Appwrite Cloud
-  console by accessing the `Settings` page in the left navigation bar or at the route `/settings`:
+- `NEXT_PUBLIC_APPWRITE_PROJECT_ID`: This ID is unique for each Appwrite project. You can also find it in the `Settings` page.
 
 <Image src="/assets/workshop/configuration/app/console_settings.png" imageAlt="Project settings screen" withSpacing></Image>
 
@@ -67,7 +66,7 @@ import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
-  .setProject('<PROJECT_ID>');
+  .setProject(EnvConfig.project ?? '');
 ```
 </Solution>
 
@@ -125,6 +124,10 @@ Appwrite. Once that's done, launch the script and let it do its work.
 To do this, go to the **Overview** section of the Appwrite console, then navigate to **Integrations**, and finally click on the **API Keys** tab. All that's left is to create a key by clicking the **Create Key** button, giving it a name, and selecting all the services.
 
 Once the key is created, you can add it to your `.env.local` file in the `APPWRITE_API_KEY_SCRIPT` variable.
+
+:::danger
+You have just modified an environment variable, remember to restart your server to apply these changes.
+:::
 
 :::warning
 For the initialization script, we need access to all services, but in a real scenario, it's advisable not to assign all permissions to a single key. In the later part of the workshop, you will need to create other keys that don't have access to all services.

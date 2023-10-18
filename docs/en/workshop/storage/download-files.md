@@ -20,9 +20,7 @@ After initializing the Appwrite SDK to allow you to communicate with the **Stora
 you'll go to the `src/workshop/api/modules/storage/puzzle.ts` file and modify the `getPuzzlePieces` function that will
 retrieve and return the storage images.
 
-:::tip
-You can use logs to display the retrieved images in your browser's console if you want to validate this first step.
-:::
+Once the list has been retrieved, you can proceed to the next step by clicking the button at the bottom of the page.
 
 <Solution>
 
@@ -152,5 +150,4 @@ can learn more about Appwrite's image transformations in
 the [documentation](https://appwrite.io/docs/products/storage/images).
 :::
 
-**You seem to have everything you need to solve the puzzle mystery and move on to the next step to check your discovery
-🧩**
+**You seem to have everything you need to solve the puzzle mystery and proceed to the next step by clicking the button at the bottom of the AppVenture page to verify your discovery 🧩**

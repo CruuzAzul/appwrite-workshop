@@ -29,11 +29,11 @@ contenu de `.env.example` dans `.env.local`.
 
 **2.** Voici les premières variables d'environnement que vous devez configurer :
 
-- `NEXT_PUBLIC_APPWRITE_ENDPOINT` : Remplacez la valeur par l'URL de votre instance Appwrite Cloud, par défaut ce
-  sera : `https://cloud.appwrite.io/v1`.
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT` : Remplacez la valeur par l'URL de votre instance Appwrite. Vous pouvez la trouver dans la
+  console Appwrite, en accédant à la page `Settings` dans la barre de navigation de gauche ou sur la route `/settings`.
 
-- `NEXT_PUBLIC_APPWRITE_PROJECT_ID` : Cet ID est unique pour chaque projet Appwrite. Vous pouvez le trouver dans la
-  console Appwrite Cloud, en accédant à la page `Settings` dans la barre de navigation de gauche ou sur la route `/settings` :
+- `NEXT_PUBLIC_APPWRITE_PROJECT_ID` : Cet ID est unique pour chaque projet Appwrite que vous pouvez aussi trouver dans la page
+`Settings`:
 
 <Image src="/assets/workshop/configuration/app/console_settings.png" imageAlt="Project settings screen" withSpacing></Image>
 
@@ -62,10 +62,12 @@ Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fi
 <Solution>
 
 ```js
-import {Client} from 'appwrite';
+import { lient} from 'appwrite';
 import {EnvConfig} from './env.config';
 
-export const AppwriteClient = new Client().setEndpoint(EnvConfig.endpoint ?? '').setProject('<PROJECT_ID>');
+export const AppwriteClient = new Client()
+  .setEndpoint(EnvConfig.endpoint ?? '')
+  .setProject(EnvConfig.project ?? '');
 ```
 
 </Solution>
@@ -121,14 +123,19 @@ Avant d'exécuter le script, assurez-vous d'avoir suivi les étapes de configura
 AppVenture à Appwrite. Une fois cela fait, lancez le script et laissez-le faire son travail.
 :::
 
-**3.** Pour que le script puisse avoir accès à l’instance Appwrite, il aura besoin d’une clé API, qui est un secret utilisé par les SDK Appwrite coté serveur, et dont le script à besoin
+**3.** Pour que le script puisse avoir accès à l’instance Appwrite, il aura besoin d’une clé API, qui
+est un secret utilisé par les SDK Appwrite coté serveur, et dont le script à besoin.
 
 Pour ce faire, rendez vous dans la partie **Overview** de la console Appwrite, puis
 dans **Intégration** et enfin cliquer sur l’onglet **API Keys**. Il ne vous reste
 plus qu’à créer une clé en cliquant sur le bouton **Create Key**, de lui donner un nom
 puis sélectionnez tout les services.
 Une fois la clé créée, vous pouvez la renseigner dans votre fichier `.env.local` dans
-la variable `APPWRITE_API_KEY_SCRIPT`
+la variable `APPWRITE_API_KEY_SCRIPT`.
+
+:::danger
+Vous venez de modifier une variable d’environnement, pensez à redémarrer votre serveur pour prendre en compte ces changements.
+:::
 
 :::warning
 Pour le script d’initialisation, nous avons besoin d’un accès à tout les services,

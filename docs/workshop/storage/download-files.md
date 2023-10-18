@@ -21,10 +21,7 @@ Après avoir initialisé le SDK Appwrite pour vous permettre de communiquer avec
 vous rendez dans le fichier `src/workshop/api/modules/storage/puzzle.ts` et modifiez la fonction `getPuzzlePieces` qui
 va récupérer et retourner les images du stockage.
 
-:::tip
-Vous pouvez utiliser des logs pour afficher les images récupérées dans la console de votre navigateur, si vous souhaitez
-valider cette première étape.
-:::
+Une fois la liste récupérée, vous pouvez passer à l’étape suivante en cliquant sur le bouton en bas de page.
 
 <Solution>
 
@@ -157,5 +154,5 @@ pour redimensionner une image pour une vue mobile. Vous pouvez en apprendre plus
 d'images d'Appwrite dans la [documentation](https://appwrite.io/docs/products/storage/images).
 :::
 
-**Vous semblez avoir tout ce qu'il faut pour résoudre le mystère du puzzle et passez à l'étape suivante pour vérifier
-votre découverte 🧩**
+**Vous semblez avoir tout ce qu'il faut pour résoudre le mystère du puzzle et passez à l'étape suivante en cliquant
+sur le bouton en bas de page sur l’AppVenture pour vérifier votre découverte 🧩**

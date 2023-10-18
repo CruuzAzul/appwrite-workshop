@@ -108,7 +108,7 @@ Pour tester rapidement votre fonction, vous pouvez cliquer sur le bouton **Execu
 apparaîtra dans l’onglet **Execution** 🚀
 :::
 
-<Image src="/assets/workshop/functions/exécution.png" imageAlt="Onglet exécution du module de fonction sur la console Appwrite" ></Image>
+<Image src="/assets/workshop/functions/execution.png" imageAlt="Onglet exécution du module de fonction sur la console Appwrite" ></Image>
 
 Une fois l’exécution terminée (en général après quelques millisecondes), on peut accéder aux différents logs de notre
 fonction, dans lesquels on devra trouver les différents affichages de notre fonction, _"Hello, logs!"_ et le _"Hello,

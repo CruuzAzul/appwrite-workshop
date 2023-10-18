@@ -19,6 +19,10 @@ Fortunately, a delete button is here to help you get rid of the documents we don
 the `deleteCoordinates` function in the `src/workshop/api/modules/database/coordinates.ts` file to make this button
 functional, and you're good to go!
 
+:::tip
+Once you have deleted a document, don't forget to refresh the page to see your document disappear.
+:::
+
 <Solution>
 
 ```ts

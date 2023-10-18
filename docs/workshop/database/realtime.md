@@ -36,7 +36,7 @@ intéressent.
 ---
 <br/>
 
-Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le composant `CoordinatesCardList`
+Sur l’AppVenture, vous pouvez ajouter ce fonctionnement en allant dans le composant `CoordinatesCardsList`
 dans `src/workshop/components/database`, et ajouter la fonction `unsubscribe` dans le `useEffect`. Cette fonction est
 appelée à la création du composant, et permettra d'ouvrir une connexion avec votre base de données pour que la liste de
 coordonnées reste à jour !
@@ -142,7 +142,7 @@ useEffect(() => {
     switch (eventType) { // [!code ++]
       case EventType.CREATE: // [!code ++]
         setUpdatedCoordinatesList((currentCoordinatesList) => [ // [!code ++]
-          response.payload as Coordinates, // [!code ++]
+          response.payload, // [!code ++]
           ...currentCoordinatesList, // [!code ++]
         ]); // [!code ++]
         break; // [!code ++]
@@ -156,8 +156,8 @@ useEffect(() => {
         break; // [!code ++]
       default: // [!code ++]
         break; // [!code ++]
-    }
-  });
+    } // [!code ++]
+  }); // [!code ++]
 }, []);
 ```
 </Solution>

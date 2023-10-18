@@ -42,6 +42,11 @@ sélectionner le bon type de donnée dans le menu déroulant.
 Vous arriverez ensuite sur un modal vous permettant de rentrer les différentes informations de votre attribut, comme sa
 valeur minimale et maximale pour un nombre, ou si l'attribut est requis par exemple.
 
+:::info
+La latitude est une valeur comprise entre -90 et 90, la longitude est une valeur comprise entre -180 et 180. Pour simplifier,
+nous allons utiliser des nombres entiers et non des flottants.
+:::
+
 <Image src="/assets/workshop/database/attributeModal.png" imageAlt="Modal de création d'attribut" withSpacing></Image>
 
 #### Le document de coordonnée est le schéma suivant :
@@ -71,6 +76,10 @@ Ensuite, pour que l’AppVenture puisse accéder à cette collection, il faut qu
 
 Pour cela, il vous suffit de récupérer l’ID sur la console Appwrite, juste à côté de son nom, et de remplir la variable
 d’environnement `NEXT_PUBLIC_APPWRITE_COORDINATES_COLLECTION_ID` avec !
+
+:::danger
+Vous venez de modifier une variable d’environnement, pensez à redémarrer votre serveur pour prendre en compte ces changements
+:::
 
 <Image src="/assets/workshop/database/idCollection.png" imageAlt="Identifiant d’un collection" withSpacing></Image>
 
