@@ -68,7 +68,7 @@ import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
-  .setProject(EnvConfig.project ?? '');
+  .setProject(EnvConfig.projectId ?? '');
 ```
 </Solution>
 
