@@ -25,8 +25,8 @@ Once the list has been retrieved, you can proceed to the next step by clicking t
 <Solution>
 
 ```ts
-import {storage} from '@/api/config/client.config'; // [!code ++]
-import {EnvConfig} from '@/api/config/env.config'; // [!code ++]
+import {storage} from '@/workshop/api/config/client.config'; // [!code ++]
+import {EnvConfig} from '@/workshop/api/config/env.config'; // [!code ++]
 
 export const getPuzzlePieces = async (): Promise<FilesList> => {
   try {
@@ -49,8 +49,8 @@ image preview, which is its URL based on its ID.
 <Solution>
 
 ```ts
-import {storage} from '@/api/config/client.config';
-import {EnvConfig} from '@/api/config/env.config';
+import {storage} from '@/workshop/api/config/client.config';
+import {EnvConfig} from '@/workshop/api/config/env.config';
 
 export const getPuzzlePiecesForPreviews = ({fileId}: FilePreview): URL => {
   try {
@@ -86,8 +86,8 @@ accept additional parameters that will allow you to apply transformations to the
 <Solution>
 
 ```ts
-import {storage} from '@/api/config/client.config';
-import {EnvConfig} from '@/api/config/env.config';
+import {storage} from '@/workshop/api/config/client.config';
+import {EnvConfig} from '@/workshop/api/config/env.config';
 
 export const getPuzzlePiecesForPreviews = ({
   fileId,

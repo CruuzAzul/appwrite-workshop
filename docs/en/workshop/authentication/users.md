@@ -130,7 +130,7 @@ the list of users.
 <Solution>
 
 ```ts
-import { users } from '@/api/config/server.config'; // [!code ++]
+import { users } from '@/workshop/api/config/server.config'; // [!code ++]
 import { Users } from '@/models/users';
 
 export const getTravelersList = async (): Promise<Users> => {

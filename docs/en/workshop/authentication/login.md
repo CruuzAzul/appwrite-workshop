@@ -38,7 +38,7 @@ takes the traveler's email and password as parameters and uses the Appwrite API 
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function login(email: string, password: string) {
   try {
@@ -63,7 +63,7 @@ used to authenticate the traveler. You can now complete the `register` function 
 ```ts
 import {UserType} from '@/types/UserHook.type';
 import {AppwriteException, ID} from 'appwrite';
-import {account} from '@/api/config/client.config';
+import {account} from '@/workshop/api/config/client.config';
 
 export async function register(
   email: string,
@@ -102,7 +102,7 @@ workshop to mark the end of your adventure! 🏁
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function logout() {
   try {

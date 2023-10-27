@@ -64,12 +64,12 @@ Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fi
 <Solution>
 
 ```js
-import { lient} from 'appwrite';
+import {Client} from 'appwrite';
 import {EnvConfig} from './env.config';
 
 export const AppwriteClient = new Client()
   .setEndpoint(EnvConfig.endpoint ?? '')
-  .setProject(EnvConfig.project ?? '');
+  .setProject(EnvConfig.projectId ?? '');
 ```
 
 </Solution>

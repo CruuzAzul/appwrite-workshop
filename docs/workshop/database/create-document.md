@@ -33,11 +33,11 @@ Vous pouvez utiliser `EnvConfig` pour accéder aux variables qui sont dans le fi
 <Solution>
 
 ```ts
-import {ID} from 'appwrite'; // [!code ++]
-import {database} from '../../config/client.config'; // [!code ++]
-import {EnvConfig} from '../../config/env.config'; // [!code ++]
+import { ID } from 'appwrite'; // [!code ++]
+import { database } from '../../config/client.config'; // [!code ++]
+import { EnvConfig } from '../../config/env.config'; // [!code ++]
 
-export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinate> => {
+export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinates> => {
   try {
     return await database.createDocument<Coordinates>( // [!code ++]
       EnvConfig.databaseId, // [!code ++]

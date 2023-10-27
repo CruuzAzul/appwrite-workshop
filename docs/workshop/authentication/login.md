@@ -37,7 +37,7 @@ pour effectuer la connexion.
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function login(email: string, password: string) {
   try {
@@ -62,14 +62,14 @@ fonction avec les bons paramètres.
 ```ts
 import {UserType} from '@/types/UserHook.type';
 import {AppwriteException, ID} from 'appwrite';
-import {account} from '@/api/config/client.config';
+import {account} from '@/workshop/api/config/client.config';
 
 export async function register(
   email: string,
   password: string,
   name: string,
   login: (email: string, password: string) => Promise<void>
-): Promise<UserType | undefined> {
+): Promise<UserType> {
   try {
     const session = await account.create(ID.unique(), email, password, name); // [!code ++]
     await login(email, password); // 👈 // [!code ++]
@@ -101,7 +101,7 @@ pour marquer la fin de votre aventure ! 🏁
 <Solution>
 
 ```ts
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function logout() {
   try {

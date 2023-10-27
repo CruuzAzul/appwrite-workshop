@@ -16,8 +16,8 @@ coordinates that will lead us to the fabulous treasure! 💰 Currently, the form
 complete it to add your first destination.**
 
 To do this, go to the `src/workshop/api/modules/database/coordinates.ts` file, where you will find
-the `createCoordinates` function that is called when the form is submitted. It's your job to complete it by using the *
-*Appwrite SDK** to connect to the database and create a document with the information provided in the form!
+the `createCoordinates` function that is called when the form is submitted. It's your job to complete it by using the \*
+\*Appwrite SDK\*\* to connect to the database and create a document with the information provided in the form!
 
 :::tip 🆔 Generating a Unique Identifier
 When you interact with Appwrite during any data creation, it is necessary that your data has a unique identifier. For
@@ -32,11 +32,11 @@ You can use `EnvConfig` to access the variables that are in the `.env.local` fil
 <Solution>
 
 ```ts
-import {ID} from 'appwrite'; // [!code ++]
-import {database} from '../../config/client.config'; // [!code ++]
-import {EnvConfig} from '../../config/env.config'; // [!code ++]
+import { ID } from 'appwrite'; // [!code ++]
+import { database } from '../../config/client.config'; // [!code ++]
+import { EnvConfig } from '../../config/env.config'; // [!code ++]
 
-export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinate> => {
+export const createCoordinates = async (coordinatesData: Coordinate): Promise<Coordinates> => {
   try {
     return await database.createDocument<Coordinates>( // [!code ++]
       EnvConfig.databaseId, // [!code ++]

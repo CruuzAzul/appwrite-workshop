@@ -74,14 +74,14 @@ Si plus tard, vous souhaitez utiliser un autre langage côté client, vous pouve
 ```ts
 import {UserType} from '@/types/UserHook.type';
 import {AppwriteException, ID} from 'appwrite'; // [!code ++]
-import {account} from '@/api/config/client.config'; // [!code ++]
+import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function register(
   email: string,
   password: string,
   name: string,
   login: (email: string, password: string) => Promise<void>
-): Promise<UserType | undefined> {
+): Promise<UserType> {
   try {
     return await account.create(ID.unique(), email, password, name); // [!code ++]
   } catch (error: any) {
