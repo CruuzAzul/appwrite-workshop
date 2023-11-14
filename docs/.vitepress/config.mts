@@ -1,5 +1,5 @@
-import {defineConfig, HeadConfig} from 'vitepress';
-import {tabsMarkdownPlugin} from 'vitepress-plugin-tabs';
+import { defineConfig, HeadConfig } from 'vitepress';
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 
 interface LocaleSpecificConfig<ThemeConfig = any> {
   lang?: string;
@@ -30,7 +30,10 @@ export default defineConfig({
           { text: 'Accueil 🏠', link: '/' },
           { text: 'Workshop 💼', link: '/workshop/introduction/rules' },
           { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' },
-          { text: 'OpenFeedback 📝', link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase' },
+          {
+            text: 'OpenFeedback 📝',
+            link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase',
+          },
         ],
 
         sidebar: [
@@ -52,8 +55,8 @@ export default defineConfig({
                 text: 'Démarrer notre application',
                 link: '/workshop/configuration/start-application',
               },
-              { text: '🛟 : Configurer via GitPod', link: '/workshop/configuration/gitpod-appwrite-configuration' },
-              { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
+              { text: 'Configurer notre instance', link: '/workshop/configuration/gitpod-appwrite-configuration' },
+              { text: 'Configurer la console Appwrite', link: '/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Lier AppVenture à Appwrite',
                 link: '/workshop/configuration/link-application',
@@ -132,7 +135,10 @@ export default defineConfig({
           { text: 'Home 🏠', link: '/en/' },
           { text: 'Workshop 💼', link: '/en/workshop/introduction/rules' },
           { text: 'Creators 👨🏼‍💻', link: '/en/creators.md' },
-          { text: 'OpenFeedback 📝', link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase' },
+          {
+            text: 'OpenFeedback 📝',
+            link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase',
+          },
         ],
 
         sidebar: [
@@ -155,10 +161,10 @@ export default defineConfig({
                 link: '/en/workshop/configuration/start-application',
               },
               {
-                text: '🛟 : Configuration with GitPod',
+                text: 'Configure our instance',
                 link: '/en/workshop/configuration/gitpod-appwrite-configuration',
               },
-              { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
+              { text: 'Configure Appwrite Console', link: '/en/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Link AppVenture to Appwrite',
                 link: '/en/workshop/configuration/link-application',

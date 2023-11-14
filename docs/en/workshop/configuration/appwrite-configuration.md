@@ -14,8 +14,8 @@ universe. These initial configurations will ensure a smooth and enjoyable experi
 
 ## Initial Configuration ⚙️
 
-To begin, let us guide you through the essential configurations for your Appwrite Cloud instance. In this section, we
-will show you how to create your own Appwrite instance, using the Cloud version. This will allow us to obtain the
+To begin, let us guide you through the essential configurations for your Appwrite instance. In this section, we
+will show you how to configure your instance. This will allow us to obtain the
 necessary configuration information for the rest of our journey 🏝️
 
 :::tip
@@ -26,14 +26,14 @@ the [Appwrite documentation](https://appwrite.io/docs/quick-starts) for helpful 
 ## Step 1️⃣: Create Your Appwrite Account 👤
 
 Firstly, you need to create an Appwrite account. To do this, you can go to
-the [Appwrite Cloud Console](https://cloud.appwrite.io/login) to create your account. You can also sign in with your
+the Appwrite Console to create your account. You can also sign in with your
 GitHub account if you prefer or use an existing account.
 
 <Image src="/assets/workshop/configuration/console/console_signup.png" imageAlt="Onboarding screen Appwrite Cloud" withSpacing></Image>
 
-::: info
+<!-- ::: info
 This Appwrite Cloud instance is free and will remain your property even after the end of this workshop 💪🏼
-:::
+::: -->
 
 ## Step 2️⃣: Create Your First Project 🏗️
 
@@ -72,7 +72,7 @@ this workshop**, but you can explore them later in your future adventures with A
 
 Appwrite was designed from the ground up with self-hosting in mind. You can install and run Appwrite on any operating
 system capable of running a Docker CLI. Self-hosted Appwrite instances can be configured flexibly with access to the
-same features found on Appwrite Cloud.
+same features found on the Gitpod instance or Appwrite Cloud.
 
 The easiest way to start running your Appwrite server is by running our **Docker installer tool** from your terminal. Before
 running the installation command, make sure you have Docker CLI installed on your host machine :
@@ -93,6 +93,14 @@ In addition to running Appwrite locally, you can also launch Appwrite using a pr
 quickly get started with Appwrite without installing Docker on your local machine.
 
 📖 [Documentation - One-Click Setups](https://appwrite.io/docs/advanced/self-hosting#one-click-setups)
+
+### Appwrite Cloud (BETA) 🌩️
+
+Appwrite Cloud is a managed version of Appwrite that is hosted and maintained by the Appwrite team. Appwrite Cloud is
+the easiest way to get started with Appwrite. It is free (with [limitations](https://appwrite.io/pricing)) to use and
+will remain your property even after the end of this workshop. 
+
+📖 [Documentation - Getting Started](https://cloud.appwrite.io/login)
 
 </InfoBonus>
 

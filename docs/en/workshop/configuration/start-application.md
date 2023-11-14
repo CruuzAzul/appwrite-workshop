@@ -48,7 +48,7 @@ backend it prefers? Well, it's Appwrite, of course! 🤔
 ## Key Locations in the AppVenture 🔑
 
 Before you set sail, let's quickly understand the architecture of the AppVenture. This application is built with
-Next.js, a React framework. It will allow us to communicate with our Appwrite Cloud instance and interact with various
+Next.js, a React framework. It will allow us to communicate with our Appwrite instance and interact with various
 services such as authentication, data storage, and function execution 📂
 
 Here are some key places in the AppVenture code that will be useful throughout our adventure. Apart from these, you
@@ -59,7 +59,7 @@ won't need to worry about the rest of the application's code 🧑🏼‍💻
 
 1️⃣ **Environment Variables**: You will find a `.env.example` file that you can use as a basis to configure
 environment variables. Make sure to adjust
-them according to the configuration information you obtained when setting up your Appwrite Cloud instance and
+them according to the configuration information you obtained when setting up your Appwrite instance and
 initializing various services.
 
 :::warning

@@ -46,7 +46,7 @@ Il est recommandé d'avoir une version de Node.js supérieure ou égale à `v16.
 ## Les endroits clés de l'AppVenture 🔑
 
 Avant de mettre les voiles, comprenons rapidement l'architecture de l'AppVenture. Cette application est construite avec
-Next.js, un framework React. Elle nous permettra de communiquer avec notre instance Appwrite Cloud et d'interagir avec
+Next.js, un framework React. Elle nous permettra de communiquer avec notre instance Appwrite et d'interagir avec
 les différents services comme l'authentification, stocker des données et exécuter des fonctions 📂
 
 Voici quelques endroits clés dans le code de l'AppVenture qui seront utiles tout au long de notre aventure ! Mis à part
@@ -58,7 +58,7 @@ Voici quelques endroits clés dans le code de l'AppVenture qui seront utiles tou
 1️⃣ **Variables d'Environnement** : Vous trouverez un fichier `.env.example` sur lequel vous pourrez vous baser pour 
 configurer les variables d'environnement.
    Assurez-vous de les ajuster en fonction des informations de configuration que vous aurez obtenues lors de la création
-   de votre instance Appwrite Cloud et de l'initialisation de vos différents services.
+   de votre instance Appwrite et de l'initialisation de vos différents services.
 
 :::warning
 **Les seuls autres fichiers que vous devrez modifier sont ceux présents dans le dossier `src/workshop`**. Tout le reste

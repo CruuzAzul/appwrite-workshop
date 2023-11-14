@@ -1,24 +1,24 @@
 ---
-title: Gitpod Configuration (Backup Solution)
+title: Configuration of our instance on Gitpod
 ---
 
 <Documentation link="https://appwrite.io/docs/advanced/self-hosting#one-click-setups"></Documentation>
 
 <Hero
-title="Gitpod Configuration (Backup Solution) 🛟"
+title="Configuration of our instance on Gitpod"
 image="/assets/workshop/configuration/gitpod/bay_gitpod.jpg"
 description="Welcome to the Gitpod Configuration section, your backup solution for your journey in the world of
 Appwrite. Sometimes, even the most experienced adventurers can encounter unexpected challenges. If you have already
 successfully set up Appwrite Cloud, you can continue without any worries by skipping this step! 🛠️"
 />
 
-::: warning
+<!-- ::: warning
 
 <br/>
 
 **🛟 If you have already successfully configured Appwrite Cloud,
 you can continue without any worries by skipping this step! 🚧**
-:::
+::: -->
 
 ## Step 1️⃣: Choose the Gitpod Provider 🤖
 
@@ -53,8 +53,6 @@ You should then see a loading window. Select 'Open Browser' to open your environ
 ## Step 3️⃣: Access the Appwrite Instance 🖥️
 
 Once the instance is started, you should see your Gitpod instance. After a short wait, you should see an Appwrite
-homepage in a browser. You can now proceed to set up your Appwrite instance with your application by following the steps
-in [the configuration from Appwrite Cloud](/workshop/configuration/appwrite-configuration.html#etape-1%EF%B8%8F%E2%83%A3-creation-de-votre-compte-appwrite-%F0%9F%91%A4),
-which will be the same
+homepage in a browser. You can now proceed to set up your Appwrite instance !
 
 <Image src="/assets/workshop/configuration/gitpod/gitpod_browser.png" alt="Gitpod Browser" withSpacing></Image>
