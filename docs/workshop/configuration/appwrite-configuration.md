@@ -14,9 +14,8 @@ nous. Ces configurations initiales garantiront une expérience agréable et sans
 
 ## Configuration Initiale ⚙️
 
-Pour commencer, laissez-nous vous guider à travers les configurations essentielles pour votre instance Appwrite Cloud.
-En effet, dans cette section, nous allons vous montrer comment créer votre propre instance Appwrite, en utilisant la
-version Cloud, cela nous permettra de récupérer les informations de configuration nécessaires pour la suite de notre
+Pour commencer, laissez-nous vous guider à travers les configurations essentielles pour votre instance Appwrite.
+En effet, dans cette section, nous allons vous montrer comment configurer votre instance, cela nous permettra de récupérer les informations de configuration nécessaires pour la suite de notre
 voyage 🏝️
 
 :::tip
@@ -27,14 +26,14 @@ consultez la [documentation d'Appwrite](https://appwrite.io/docs/quick-starts) p
 ## Étape 1️⃣ : Création de votre compte Appwrite 👤
 
 Premièrement, vous devez créer un compte Appwrite. Pour ce faire, vous pouvez vous rendre sur
-la [console d'Appwrite Cloud](https://cloud.appwrite.io/login) pour vous créer un compte. Vous pouvez également vous
+la console d'Appwrite pour vous créer un compte. Vous pouvez également vous
 connecter avec votre compte GitHub, si vous le souhaitez ou alors utiliser un compte existant.
 
 <Image src="/assets/workshop/configuration/console/console_signup.png" imageAlt="Onboarding screen Appwrite Cloud" withSpacing></Image>
 
-::: info
+<!-- ::: info
 Cette instance Appwrite Cloud est gratuite et restera votre propriété même après la fin de ce workshop 💪🏼
-:::
+::: -->
 
 ## Étape 2️⃣ : Créer votre premier projet 🏗️
 
@@ -74,7 +73,7 @@ Appwrite
 
 Appwrite a été conçu dès le départ dans une optique d'auto-hébergement. Vous pouvez installer et exécuter Appwrite sur
 n'importe quel système d'exploitation capable d'exécuter une CLI Docker. Les instances Appwrite auto-hébergées peuvent
-être configurées de manière flexible avec un accès aux mêmes fonctionnalités que celles trouvées sur Appwrite Cloud.
+être configurées de manière flexible avec un accès aux mêmes fonctionnalités que celles trouvées sur l’instance Gitpod ou la version Cloud.
 
 La façon la plus simple de commencer à faire fonctionner votre serveur Appwrite est d'exécuter notre outil 
 d'**installation Docker** à partir de votre terminal. Avant d'exécuter la commande d'installation, assurez-vous que Docker CLI

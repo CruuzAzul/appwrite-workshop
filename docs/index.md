@@ -14,9 +14,6 @@ hero:
     - theme: alt
       text: Documentation Appwrite 📚
       link: https://appwrite.io/docs
-    - theme: alt
-      text: Code du Workshop 👨🏼‍💻
-      link: https://github.com/CruuzAzul/app-appwrite-workshop
 
 features:
   - icon:
