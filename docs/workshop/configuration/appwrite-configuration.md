@@ -96,6 +96,14 @@ Cela vous permet de démarrer rapidement avec Appwrite sans installer Docker sur
 
 📖 [Documentation - Configurations en un clic](https://appwrite.io/docs/advanced/self-hosting#one-click-setups)
 
+### Appwrite Cloud (BETA) 🌩️
+
+Appwrite Cloud est une version gérée d'Appwrite hébergée et maintenue par l'équipe Appwrite. Appwrite Cloud est le moyen
+le plus simple de commencer avec Appwrite. Il est gratuit (avec [des limitations](https://appwrite.io/pricing)) et
+restera votre propriété même après la fin de ce workshop.
+
+📖 [Documentation - Pour commencer](https://cloud.appwrite.io/login)
+
 </InfoBonus>
 
 <br/>

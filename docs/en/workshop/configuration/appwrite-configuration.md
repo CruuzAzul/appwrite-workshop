@@ -94,6 +94,14 @@ quickly get started with Appwrite without installing Docker on your local machin
 
 📖 [Documentation - One-Click Setups](https://appwrite.io/docs/advanced/self-hosting#one-click-setups)
 
+### Appwrite Cloud (BETA) 🌩️
+
+Appwrite Cloud is a managed version of Appwrite that is hosted and maintained by the Appwrite team. Appwrite Cloud is
+the easiest way to get started with Appwrite. It is free (with [limitations](https://appwrite.io/pricing)) to use and
+will remain your property even after the end of this workshop. 
+
+📖 [Documentation - Getting Started](https://cloud.appwrite.io/login)
+
 </InfoBonus>
 
 <br/>
