@@ -1,6 +1,32 @@
-<h1 align="center">Workshop : Voyage au coeur d'Appwrite ✍🏼</h1><br />
+<h1 align="center">🇬🇧 Workshop: Journey into Appwrite's Heart ✍🏼</h1><br />
 
-<img width="1440" alt="Screenshot 2023-04-09 at 20 19 54" src="https://user-images.githubusercontent.com/60877626/230789815-dd5f5eaa-c83f-404d-bfcc-0cf724b5e1b8.png">
+<img width="1790" alt="image" src="https://github.com/CruuzAzul/appwrite-workshop/assets/60877626/b9ddf77e-a0d0-4bdd-bb3c-228559deafe7">
+
+## The Open-Source Backend Challenging Firebase 🧳
+
+### Discover the fundamentals that make Appwrite an essential tool for all developers! Join us for this experience 🛫
+
+The purpose of this workshop is to introduce you to the world of open-source backend and familiarize you with the Appwrite solution. During this event, we will explore the basics of Appwrite, from setting up the environment to exploring more advanced features. Together, we will discover the various core services that make Appwrite an indispensable tool for any developer looking for an easy-to-use and high-performance backend 🚀
+
+## 🖥️ How It Works
+
+The workshop was created in JS/TS. However, it is entirely possible to do it in Flutter or using another mobile technology, but some resources may not be available at the time of the workshop. However, there should be no problem following the workshop outline with another compatible technology.
+
+**To follow the workshop, simply follow these instructions** 👉🏼 [Appwrite Workshop](https://appwrite-workshop.vercel.app/)
+
+## 🆘 Need Help?
+
+If you encounter difficulties during the workshop or have questions, feel free to contact us via our email address or our Github page. We are always happy to help and receive feedback to improve our workshops.
+
+## 🪪 License
+
+This workshop is under the MIT license. You are free to use, modify, and distribute it according to your needs, with proper attribution 🙏🏼
+
+<br/><br/>
+
+<h1 align="center">🇫🇷 Workshop : Voyage au coeur d'Appwrite ✍🏼</h1><br />
+
+<img width="1790" alt="image" src="https://github.com/CruuzAzul/appwrite-workshop/assets/60877626/b62ea713-1d97-4839-b714-0c96ce410055">
 
 <h2 align="center"> Le backend open-source qui challenge Firebase 🧳</h2><br />
 
