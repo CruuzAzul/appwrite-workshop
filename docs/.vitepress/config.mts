@@ -32,7 +32,7 @@ export default defineConfig({
           { text: 'Créateurs 👨🏼‍💻', link: '/creators.md' },
           {
             text: 'OpenFeedback 📝',
-            link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase',
+            link: 'https://openfeedback.io/o7zyKdkdRulRnrtU3DZo/2024-01-31/d7976860c1501ba9c5385309e1150260',
           },
         ],
 
@@ -55,8 +55,8 @@ export default defineConfig({
                 text: 'Démarrer notre application',
                 link: '/workshop/configuration/start-application',
               },
-              { text: 'Configurer notre instance', link: '/workshop/configuration/gitpod-appwrite-configuration' },
-              { text: 'Configurer la console Appwrite', link: '/workshop/configuration/appwrite-configuration' },
+              { text: '🛟 : Configurer via GitPod', link: '/workshop/configuration/gitpod-appwrite-configuration' },
+              { text: 'Configurer Appwrite Cloud', link: '/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Lier AppVenture à Appwrite',
                 link: '/workshop/configuration/link-application',
@@ -137,7 +137,7 @@ export default defineConfig({
           { text: 'Creators 👨🏼‍💻', link: '/en/creators.md' },
           {
             text: 'OpenFeedback 📝',
-            link: 'https://openfeedback.io/p32EOIbP5bj4WDdz8bJs/2023-10-19/voyageaucoeurdappwritelebackendopensourcequichallengefirebase',
+            link: 'https://openfeedback.io/o7zyKdkdRulRnrtU3DZo/2024-01-31/d7976860c1501ba9c5385309e1150260',
           },
         ],
 
@@ -161,10 +161,10 @@ export default defineConfig({
                 link: '/en/workshop/configuration/start-application',
               },
               {
-                text: 'Configure our instance',
+                text: '🛟 : Configuration with GitPod',
                 link: '/en/workshop/configuration/gitpod-appwrite-configuration',
               },
-              { text: 'Configure Appwrite Console', link: '/en/workshop/configuration/appwrite-configuration' },
+              { text: 'Configure Appwrite Cloud', link: '/en/workshop/configuration/appwrite-configuration' },
               {
                 text: 'Link AppVenture to Appwrite',
                 link: '/en/workshop/configuration/link-application',
