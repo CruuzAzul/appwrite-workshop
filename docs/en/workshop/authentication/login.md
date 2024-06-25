@@ -42,7 +42,7 @@ import {account} from '@/workshop/api/config/client.config'; // [!code ++]
 
 export async function login(email: string, password: string) {
   try {
-    await account.createEmailSession(email, password); // [!code ++]
+    await account.createEmailPasswordSession(email, password); // [!code ++]
   } catch (error: any) {
     throw new AppwriteException(error);
   }
